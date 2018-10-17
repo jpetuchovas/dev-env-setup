@@ -1,10 +1,11 @@
 ---
 - hosts: localhost
+  connection: local
 
   tasks:
     - name: Install packages
       apt:
-        name: "{{packages}}"
+        name: '{{ packages }}'
       vars:
         packages:
           - git
