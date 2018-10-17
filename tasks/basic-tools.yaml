@@ -1,7 +1,7 @@
 ---
-  - name: Install packages
-    apt:
-      name: '{{ packages }}'
-    vars:
-      packages:
-        - git
+- name: Install packages
+  apt:
+    name: '{{ packages }}'
+  vars:
+    packages:
+      - git
