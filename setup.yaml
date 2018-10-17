@@ -3,9 +3,4 @@
   connection: local
 
   tasks:
-    - name: Install packages
-      apt:
-        name: '{{ packages }}'
-      vars:
-        packages:
-          - git
+    - import_tasks: tasks/basic-tools.yaml
