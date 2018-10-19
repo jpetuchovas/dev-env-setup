@@ -3,4 +3,5 @@
   connection: local
 
   tasks:
-    - import_tasks: tasks/basic-tools.yaml
+    - import_tasks: tasks/users.yml
+    - import_tasks: tasks/basic-tools.yml
