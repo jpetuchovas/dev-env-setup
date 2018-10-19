@@ -3,5 +3,5 @@
   cron:
     name: Ansible provision
     user: ansible
-    minute: */10
+    minute: '*/10'
     job: /usr/bin/ansible-pull --only-if-changed --url https://github.com/jpetuchovas/automation.git > /dev/null
