@@ -2,6 +2,8 @@
 - hosts: localhost
   connection: local
 
+  vars_files: vars/common.yml
+
   tasks:
     - import_tasks: tasks/users.yml
     - import_tasks: tasks/cron.yml

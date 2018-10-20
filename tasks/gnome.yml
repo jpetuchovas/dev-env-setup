@@ -1,5 +1,12 @@
 ---
+- name: Install python-psutil package required by Ansible dconf module
+  become: true
+  apt:
+    name: python-psutil
+    state: present
+
 - name: Update GNOME dconf settings
+  become_user: '{{user}}'
   dconf:
     key: '{{item.key}}'
     value: '{{item.value}}'
