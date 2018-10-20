@@ -5,6 +5,7 @@
     uid: 900
 
 - name: Copy sudoers_ansible
+  become: yes
   copy:
     src: files/sudoers-ansible
     dest: /etc/sudoers.d/ansible
