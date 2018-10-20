@@ -13,7 +13,7 @@
 - name: Install packages
   become: true
   apt:
-    name: '{{ packages }}'
+    name: '{{packages}}'
     state: present
   vars:
     packages:
