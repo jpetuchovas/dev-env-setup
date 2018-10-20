@@ -18,3 +18,4 @@
   vars:
     packages:
       - git
+      - python-psutil
