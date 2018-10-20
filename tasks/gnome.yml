@@ -36,5 +36,7 @@
       value: 20.5
     - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-to
       value: 6
+    - key: /org/gnome/shell/disable-user-extensions
+      value: 'true'
     - key: /org/gnome/terminal/legacy/default-show-menubar
       value: 'false'
