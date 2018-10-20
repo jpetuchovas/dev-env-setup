@@ -13,7 +13,7 @@
     value: '{{item.value}}'
   loop:
     - key: /org/gnome/desktop/privacy/old-files-age
-      value: 'uint32 7'
+      value: uint32 7
     - key: /org/gnome/desktop/privacy/remove-old-trash-files
       value: 'true'
     - key: /org/gnome/desktop/privacy/report-technical-problems
