@@ -12,9 +12,29 @@
     key: '{{item.key}}'
     value: '{{item.value}}'
   loop:
+    - key: /org/gnome/desktop/calendar/show-weekdate
+      value: 'true'
+    - key: /org/gnome/desktop/interface/clock-show-date
+      value: 'true'
+    - key: /org/gnome/desktop/notifications/show-in-lock-screen
+      value: 'false'
     - key: /org/gnome/desktop/privacy/old-files-age
       value: uint32 7
+    - key: /org/gnome/desktop/privacy/remember-recent-files
+      value: 'false'
     - key: /org/gnome/desktop/privacy/remove-old-trash-files
       value: 'true'
     - key: /org/gnome/desktop/privacy/report-technical-problems
+      value: 'false'
+    - key: /org/gnome/desktop/privacy/send-software-usage-stats
+      value: 'false'
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-enabled
+      value: 'true'
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic
+      value: 'false'
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-from
+      value: 20.5
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-to
+      value: 6
+    - key: /org/gnome/terminal/legacy/default-show-menubar
       value: 'false'
