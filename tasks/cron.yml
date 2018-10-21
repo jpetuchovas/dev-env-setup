@@ -6,4 +6,4 @@
     minute: '*/10'
     job: >-
       /usr/bin/ansible-pull --only-if-changed --url
-      https://github.com/jpetuchovas/automation.git > /dev/null
+      https://github.com/jpetuchovas/dev-env-setup.git > /dev/null
