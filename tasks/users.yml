@@ -1,5 +1,11 @@
 ---
+- name: Create {{user}} user
+  become: true
+  user:
+    name: '{{user}}'
+
 - name: Create ansible user
+  become: true
   user:
     name: ansible
     uid: 900

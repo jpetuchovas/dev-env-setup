@@ -10,6 +10,13 @@
   apt:
     upgrade: dist
 
+- name: Install GNOME for virtual machine
+  become: true
+  apt:
+    name: ubuntu-desktop
+    state: present
+  when: lookup('env', 'LOGNAME') == 'vagrant'
+
 - name: Install packages
   become: true
   apt:
@@ -20,3 +27,5 @@
       - anki
       - git
       - snapd
+      - vagrant
+      - virtualbox

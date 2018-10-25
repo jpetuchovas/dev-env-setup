@@ -1,5 +1,6 @@
 ---
 - name: Set up cron job for ansible-pull
+  become: true
   cron:
     name: Ansible provision
     user: ansible
