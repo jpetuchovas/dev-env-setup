@@ -2,7 +2,7 @@
 - name: Add VirtualBox repository signing key
   become: true
   apt_key:
-    url: '{{virtual_box_repository_signing_key_url}}'
+    url: '{{virtualbox_repository_signing_key_url}}'
     state: present
 
 - name: Add repositories
@@ -12,7 +12,7 @@
     state: present
   loop:
     - ppa:git-core/ppa
-    - '{{virtual_box_repository}}'
+    - '{{virtualbox_repository}}'
 
 - name: Update repositories
   become: true
@@ -43,4 +43,4 @@
       - git
       - snapd
       - vagrant
-      - virtualbox-{{virtual_box_version}}
+      - virtualbox-{{virtualbox_version}}
