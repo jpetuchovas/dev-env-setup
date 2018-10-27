@@ -7,6 +7,7 @@ Vagrant.configure('2') do |config|
     virtualbox.memory = 4096
     virtualbox.cpus = 2
     virtualbox.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
+    virtualbox.customize ['modifyvm', :id, '--vram', '128']
   end
 
   config.vm.provision 'ansible_local' do |ansible|
