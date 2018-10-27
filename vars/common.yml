@@ -1,19 +1,19 @@
 ---
 user: justinas
 
+virtualbox_version: 5.2
+virtualbox_repository_signing_key_url: >-
+  https://www.virtualbox.org/download/oracle_vbox_2016.asc
 virtualbox_repository: >-
   deb https://download.virtualbox.org/virtualbox/debian
   {{ansible_distribution_release}} contrib
-virtualbox_repository_signing_key_url: >-
-  https://www.virtualbox.org/download/oracle_vbox_2016.asc
-virtualbox_version: 5.2
 
 vagrant_version: 2.2.0
 vagrant_deb_url: >-
   https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_{{ansible_architecture}}.deb
 
-anki_download_directory_path: /tmp/anki
 anki_version: 2.1.5
+anki_download_directory_path: /tmp/anki
 anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
   https://apps.ankiweb.net/downloads/current/{{anki_archive_name}}.tar.bz2
