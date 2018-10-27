@@ -23,6 +23,5 @@
     state: present
   vars:
     packages:
-      - anki
       - git
       - snapd
