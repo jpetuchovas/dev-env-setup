@@ -48,3 +48,6 @@
   become: true
   apt:
     deb: '{{vagrant_deb_url}}'
+
+- name: Install Vagrant vbguest plugin
+  command: vagrant plugin install vagrant-vbguest
