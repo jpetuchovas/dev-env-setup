@@ -7,3 +7,7 @@ virtualbox_repository: >-
 virtualbox_repository_signing_key_url: >-
   https://www.virtualbox.org/download/oracle_vbox_2016.asc
 virtualbox_version: 5.2
+
+vagrant_version: 2.2.0
+vagrant_deb_url: >-
+  https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_{{ansible_architecture}}.deb

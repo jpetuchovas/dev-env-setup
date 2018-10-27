@@ -42,5 +42,9 @@
       - anki
       - git
       - snapd
-      - vagrant
       - virtualbox-{{virtualbox_version}}
+
+- name: Install .deb packages
+  become: true
+  apt:
+    deb: '{{vagrant_deb_url}}'
