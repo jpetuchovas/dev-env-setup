@@ -1,2 +1,9 @@
 ---
 user: justinas
+
+virtual_box_repository: >-
+  deb https://download.virtualbox.org/virtualbox/debian
+  {{ansible_distribution_release}} contrib
+virtual_box_repository_signing_key_url: >-
+  https://www.virtualbox.org/download/oracle_vbox_2016.asc
+virtual_box_version: 5.2
