@@ -1,0 +1,33 @@
+---
+- name: Add VirtualBox repository signing key
+  become: true
+  apt_key:
+    url: '{{virtualbox_repository_signing_key_url}}'
+    state: present
+
+- name: Update repositories
+  become: true
+  apt:
+    update_cache: true
+  changed_when: false
+
+- name: Install VirtualBox
+  become: true
+  apt:
+    name: virtualbox-{{virtualbox_version}}
+    state: present
+
+- name: Install Vagrant
+  become: true
+  apt:
+    deb: '{{vagrant_deb_url}}'
+
+- name: Install Vagrant vbguest plugin
+  command: vagrant plugin install vagrant-vbguest
+
+- name: Install GNOME for virtual machine
+  become: true
+  apt:
+    name: ubuntu-desktop
+    state: present
+  when: lookup('env', 'LOGNAME') == 'vagrant'

@@ -1,18 +1,9 @@
 ---
-- name: Add VirtualBox repository signing key
-  become: true
-  apt_key:
-    url: '{{virtualbox_repository_signing_key_url}}'
-    state: present
-
-- name: Add repositories
+- name: Add git PPA repository
   become: true
   apt_repository:
-    repo: '{{item}}'
+    repo: ppa:git-core/ppa
     state: present
-  loop:
-    - ppa:git-core/ppa
-    - '{{virtualbox_repository}}'
 
 - name: Update repositories
   become: true
@@ -25,13 +16,6 @@
   apt:
     upgrade: dist
 
-- name: Install GNOME for virtual machine
-  become: true
-  apt:
-    name: ubuntu-desktop
-    state: present
-  when: lookup('env', 'LOGNAME') == 'vagrant'
-
 - name: Install packages
   become: true
   apt:
@@ -42,12 +26,3 @@
       - anki
       - git
       - snapd
-      - virtualbox-{{virtualbox_version}}
-
-- name: Install .deb packages
-  become: true
-  apt:
-    deb: '{{vagrant_deb_url}}'
-
-- name: Install Vagrant vbguest plugin
-  command: vagrant plugin install vagrant-vbguest

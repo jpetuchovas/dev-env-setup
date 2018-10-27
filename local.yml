@@ -9,3 +9,4 @@
     - import_tasks: tasks/cron.yml
     - import_tasks: tasks/basic-tools.yml
     - import_tasks: tasks/gnome.yml
+    - import_tasks: tasks/virtual-machines.yml
