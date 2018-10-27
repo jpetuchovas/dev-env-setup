@@ -36,4 +36,4 @@
   apt:
     name: ubuntu-desktop
     state: present
-  when: lookup('env', 'LOGNAME') == 'vagrant'
+  when: ansible_virtualization_role == 'guest'
