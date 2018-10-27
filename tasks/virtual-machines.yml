@@ -5,6 +5,12 @@
     url: '{{virtualbox_repository_signing_key_url}}'
     state: present
 
+- name: Add VirtualBox repository
+  become: true
+  apt_repository:
+    repo: '{{virtualbox_repository}}'
+    state: present
+
 - name: Update repositories
   become: true
   apt:
