@@ -1,8 +1,17 @@
 ---
-- name: Add git PPA repository
+- name: Add git repository signing key
+  become: true
+  apt_key:
+    keyserver: '{{ubuntu_key_server}}'
+    id: '{{git_signing_key_id}}'
+    keyring: /etc/apt/trusted.gpg.d/git.gpg
+    state: present
+
+- name: Add git repository
   become: true
   apt_repository:
-    repo: ppa:git-core/ppa
+    repo: '{{git_repository}}'
+    filename: git
     state: present
 
 - name: Update repositories

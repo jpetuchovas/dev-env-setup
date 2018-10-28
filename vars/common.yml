@@ -1,6 +1,13 @@
 ---
 user: justinas
 
+ubuntu_key_server: keyserver.ubuntu.com
+
+git_signing_key_id: E1DD270288B4E6030699E45FA1715D88E1DF1F24
+git_repository: >-
+  deb http://ppa.launchpad.net/git-core/ppa/ubuntu
+  {{ansible_distribution_release}} main
+
 virtualbox_version: 5.2
 virtualbox_repository_signing_key_url: >-
   https://www.virtualbox.org/download/oracle_vbox_2016.asc

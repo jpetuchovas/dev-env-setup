@@ -3,19 +3,16 @@
   become: true
   apt_key:
     url: '{{virtualbox_repository_signing_key_url}}'
+    keyring: /etc/apt/trusted.gpg.d/virtualbox.gpg
     state: present
 
 - name: Add VirtualBox repository
   become: true
   apt_repository:
     repo: '{{virtualbox_repository}}'
+    filename: virtualbox
     state: present
-
-- name: Update repositories
-  become: true
-  apt:
     update_cache: true
-  changed_when: false
 
 - name: Install VirtualBox
   become: true
