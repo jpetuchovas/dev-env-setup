@@ -10,6 +10,11 @@ git_repository: >-
   deb http://ppa.launchpad.net/git-core/ppa/ubuntu
   {{ansible_distribution_release}} main
 
+docker_signing_key_url: https://download.docker.com/linux/ubuntu/gpg
+docker_repository: >-
+  deb [arch=amd64] https://download.docker.com/linux/ubuntu
+   {{ansible_distribution_release}} stable
+
 brave_signing_key_url: >-
   https://brave-browser-apt-release.s3.brave.com/brave-core.asc
 brave_repository: >-

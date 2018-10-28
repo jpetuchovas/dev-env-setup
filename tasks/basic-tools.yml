@@ -18,6 +18,8 @@
       keyring: '{{apt_keys_directory_path}}/brave.gpg'
     - url: '{{microsoft_signing_key_url}}'
       keyring: '{{apt_keys_directory_path}}/microsoft.gpg'
+    - url: '{{docker_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/docker.gpg'
 
 - name: Add repositories
   become: true
@@ -32,6 +34,8 @@
       filename: git
     - repo: '{{vscode_repository}}'
       filename: vscode
+    - repo: '{{docker_repository}}'
+      filename: docker
 
 - name: Update repositories
   become: true
@@ -53,5 +57,6 @@
     packages:
       - brave-browser
       - code
+      - docker-ce
       - git
       - snapd
