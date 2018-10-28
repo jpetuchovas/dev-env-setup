@@ -8,8 +8,13 @@ git_repository: >-
   deb http://ppa.launchpad.net/git-core/ppa/ubuntu
   {{ansible_distribution_release}} main
 
+microsoft_signing_key_url: >-
+  https://packages.microsoft.com/keys/microsoft.asc
+vscode_repository: >-
+  deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+
 virtualbox_version: 5.2
-virtualbox_repository_signing_key_url: >-
+virtualbox_signing_key_url: >-
   https://www.virtualbox.org/download/oracle_vbox_2016.asc
 virtualbox_repository: >-
   deb https://download.virtualbox.org/virtualbox/debian

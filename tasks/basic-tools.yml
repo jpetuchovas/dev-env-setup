@@ -1,5 +1,5 @@
 ---
-- name: Add git repository signing key
+- name: Add git signing key
   become: true
   apt_key:
     keyserver: '{{ubuntu_key_server}}'
@@ -7,12 +7,24 @@
     keyring: /etc/apt/trusted.gpg.d/git.gpg
     state: present
 
-- name: Add git repository
+- name: Add Microsoft signing key
+  become: true
+  apt_key:
+    url: '{{microsoft_signing_key_url}}'
+    keyring: /etc/apt/trusted.gpg.d/microsoft.gpg
+    state: present
+
+- name: Add repositories
   become: true
   apt_repository:
-    repo: '{{git_repository}}'
-    filename: git
+    repo: '{{item.repo}}'
+    filename: '{{item.filename}}'
     state: present
+  loop:
+    - repo: '{{git_repository}}'
+      filename: git
+    - repo: '{{vscode_repository}}'
+      filename: vscode
 
 - name: Update repositories
   become: true
@@ -32,5 +44,6 @@
     state: present
   vars:
     packages:
+      - code
       - git
       - snapd

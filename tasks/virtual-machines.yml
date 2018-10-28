@@ -1,8 +1,8 @@
 ---
-- name: Add VirtualBox repository signing key
+- name: Add VirtualBox signing key
   become: true
   apt_key:
-    url: '{{virtualbox_repository_signing_key_url}}'
+    url: '{{virtualbox_signing_key_url}}'
     keyring: /etc/apt/trusted.gpg.d/virtualbox.gpg
     state: present
 
