@@ -7,7 +7,7 @@
     keyring: '{{apt_keys_directory_path}}/git.gpg'
     state: present
 
-- name: Add Microsoft signing key
+- name: Add signing keys from URLs
   become: true
   apt_key:
     url: '{{item.url}}'
