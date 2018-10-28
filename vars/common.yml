@@ -1,11 +1,19 @@
 ---
 user: justinas
 
+apt_keys_directory_path: /etc/apt/trusted.gpg.d
+
 ubuntu_key_server: keyserver.ubuntu.com
 
 git_signing_key_id: E1DD270288B4E6030699E45FA1715D88E1DF1F24
 git_repository: >-
   deb http://ppa.launchpad.net/git-core/ppa/ubuntu
+  {{ansible_distribution_release}} main
+
+brave_signing_key_url: >-
+  https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+brave_repository: >-
+  deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/
   {{ansible_distribution_release}} main
 
 microsoft_signing_key_url: >-

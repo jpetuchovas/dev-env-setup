@@ -4,15 +4,20 @@
   apt_key:
     keyserver: '{{ubuntu_key_server}}'
     id: '{{git_signing_key_id}}'
-    keyring: /etc/apt/trusted.gpg.d/git.gpg
+    keyring: '{{apt_keys_directory_path}}/git.gpg'
     state: present
 
 - name: Add Microsoft signing key
   become: true
   apt_key:
-    url: '{{microsoft_signing_key_url}}'
-    keyring: /etc/apt/trusted.gpg.d/microsoft.gpg
+    url: '{{item.url}}'
+    keyring: '{{item.keyring}}'
     state: present
+  loop:
+    - url: '{{brave_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/brave.gpg'
+    - url: '{{microsoft_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/microsoft.gpg'
 
 - name: Add repositories
   become: true
@@ -21,6 +26,8 @@
     filename: '{{item.filename}}'
     state: present
   loop:
+    - repo: '{{brave_repository}}'
+      filename: brave
     - repo: '{{git_repository}}'
       filename: git
     - repo: '{{vscode_repository}}'
@@ -44,6 +51,7 @@
     state: present
   vars:
     packages:
+      - brave-browser
       - code
       - git
       - snapd

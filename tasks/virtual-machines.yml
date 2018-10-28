@@ -3,7 +3,7 @@
   become: true
   apt_key:
     url: '{{virtualbox_signing_key_url}}'
-    keyring: /etc/apt/trusted.gpg.d/virtualbox.gpg
+    keyring: '{{apt_keys_directory_path}}/virtualbox.gpg'
     state: present
 
 - name: Add VirtualBox repository
