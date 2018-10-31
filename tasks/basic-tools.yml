@@ -60,3 +60,7 @@
       - docker-ce
       - git
       - snapd
+
+- name: Install Spotify
+  become: true
+  command: snap install spotify
