@@ -61,6 +61,9 @@
       - git
       - snapd
 
-- name: Install Spotify
+- name: Install snaps
   become: true
-  command: snap install spotify
+  command: snap install {{item}}
+  loop:
+    - spotify
+    - vlc
