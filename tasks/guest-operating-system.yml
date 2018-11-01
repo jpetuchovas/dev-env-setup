@@ -3,3 +3,4 @@
   apt:
     name: ubuntu-desktop
     state: present
+    install_recommends: false
