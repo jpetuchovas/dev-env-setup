@@ -3,4 +3,3 @@
   apt:
     name: ubuntu-desktop
     state: present
-  when: ansible_virtualization_role == 'guest'
