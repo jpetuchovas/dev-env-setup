@@ -1,0 +1,6 @@
+- name: Install GNOME for the Ubuntu guest operating system
+  become: true
+  apt:
+    name: ubuntu-desktop
+    state: present
+  when: ansible_virtualization_role == 'guest'

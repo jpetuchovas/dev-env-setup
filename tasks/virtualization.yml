@@ -27,10 +27,3 @@
 
 - name: Install Vagrant vbguest plugin
   command: vagrant plugin install vagrant-vbguest
-
-- name: Install GNOME for virtual machine
-  become: true
-  apt:
-    name: ubuntu-desktop
-    state: present
-  when: ansible_virtualization_role == 'guest'
