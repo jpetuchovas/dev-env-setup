@@ -16,10 +16,12 @@
   loop:
     - url: '{{brave_signing_key_url}}'
       keyring: '{{apt_keys_directory_path}}/brave.gpg'
-    - url: '{{microsoft_signing_key_url}}'
-      keyring: '{{apt_keys_directory_path}}/microsoft.gpg'
+    - url: '{{dbeaver_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/dbeaver.gpg'
     - url: '{{docker_signing_key_url}}'
       keyring: '{{apt_keys_directory_path}}/docker.gpg'
+    - url: '{{microsoft_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/microsoft.gpg'
 
 - name: Add repositories
   become: true
@@ -30,12 +32,14 @@
   loop:
     - repo: '{{brave_repository}}'
       filename: brave
+    - repo: '{{dbeaver_repository}}'
+      filename: dbeaver
+    - repo: '{{docker_repository}}'
+      filename: docker
     - repo: '{{git_repository}}'
       filename: git
     - repo: '{{vscode_repository}}'
       filename: vscode
-    - repo: '{{docker_repository}}'
-      filename: docker
 
 - name: Update repositories
   become: true
@@ -57,6 +61,7 @@
     packages:
       - brave-browser
       - code
+      - dbeaver-ce
       - docker-ce
       - git
       - snapd
