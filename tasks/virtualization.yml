@@ -28,8 +28,17 @@
 - name: Install Vagrant vbguest plugin
   command: vagrant plugin install vagrant-vbguest
 
-- name: Install a package to support Vagrant synced folders backed by NFS
+- name: Install NFS server to support Vagrant synced folders backed by NFS
   become: true
   apt:
     name: nfs-kernel-server
     state: present
+
+- name: Enable passwordless NFS configuration
+  become: true
+  copy:
+    src: files/sudoers-vagrant-synced-folders
+    dest: /etc/sudoers.d/vagrant-synced-folders
+    owner: root
+    group: root
+    mode: 0440
