@@ -10,4 +10,5 @@
     - import_tasks: tasks/gnome.yml
     - import_tasks: tasks/basic-tools.yml
     - import_tasks: tasks/virtualization.yml
+      when: ansible_virtualization_role == 'host'
     - import_tasks: tasks/spaced-repetition.yml
