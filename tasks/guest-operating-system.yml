@@ -1,6 +1,0 @@
-- name: Install GNOME for the Ubuntu guest operating system
-  become: true
-  apt:
-    name: ubuntu-desktop
-    state: present
-    install_recommends: false
