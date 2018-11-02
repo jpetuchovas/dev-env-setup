@@ -27,3 +27,9 @@
 
 - name: Install Vagrant vbguest plugin
   command: vagrant plugin install vagrant-vbguest
+
+- name: Install package for Vagrant synced folders backed by NFS support
+  become: true
+  apt:
+    name: nfs-kernel-server
+    state: present

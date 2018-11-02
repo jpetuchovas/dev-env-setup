@@ -1,5 +1,7 @@
 Vagrant.configure('2') do |config|
-  config.vm.box = 'ubuntu/bionic64'
+  config.vm.box = 'peru/ubuntu-18.04-desktop-amd64'
+  config.vm.synced_folder '.', '/vagrant', type: 'nfs'
+  config.vm.network 'private_network', type: 'dhcp'
 
   config.vm.provider 'virtualbox' do |virtualbox|
     virtualbox.gui = true
@@ -11,7 +13,6 @@ Vagrant.configure('2') do |config|
   end
 
   config.vm.provision 'ansible_local' do |ansible|
-    ansible.install_mode = 'pip'
     ansible.limit = 'all,localhost'
     ansible.playbook = 'local.yml'
   end
