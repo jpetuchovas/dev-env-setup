@@ -4,6 +4,7 @@
   user:
     name: '{{user}}'
     groups: sudo
+    shell: /bin/bash
     # justinas
     password: $6$mysecretsalt$u.SLHFJRv7zzTUMz.Qlz3tIqqh/An4KUOp49QYGqZWccadwYfOKT6T7ptHy8Gm4iPlfNUMEJAOsFPierEBE7z/
     update_password: on_create
