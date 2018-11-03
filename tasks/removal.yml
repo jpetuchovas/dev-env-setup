@@ -9,14 +9,22 @@
       - deja-dup
       - firefox
       - gir1.2-totemplparser-1.0
+      - gnome-accessibility-themes
+      - gnome-calendar
+      - gnome-getting-started-docs
+      - gnome-initial-setup
       - gnome-mahjongg
       - gnome-mines
+      - gnome-software-common
       - gnome-sudoku
       - gnome-todo-common
       - libgnome-games-support-common
       - libgnome-todo
       - libtotem0
+      - mousetweaks
+      - orca
       - remmina-common
+      - thunderbird
       - totem-common
       - ubuntu-web-launchers
     state: absent
