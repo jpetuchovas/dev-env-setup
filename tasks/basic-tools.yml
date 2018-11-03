@@ -55,10 +55,7 @@
 - name: Install packages
   become: true
   apt:
-    name: '{{packages}}'
-    state: present
-  vars:
-    packages:
+    name:
       - brave-browser
       - code
       - dbeaver-ce
@@ -66,6 +63,7 @@
       - git
       - snapd
       - texlive-full
+    state: present
 
 - name: Install snaps
   become: true
