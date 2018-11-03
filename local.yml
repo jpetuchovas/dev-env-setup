@@ -13,3 +13,4 @@
       when: ansible_virtualization_role == 'host'
     - import_tasks: tasks/spaced-repetition.yml
     - import_tasks: tasks/default-applications.yml
+    - import_tasks: tasks/removal.yml

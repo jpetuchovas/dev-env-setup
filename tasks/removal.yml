@@ -1,0 +1,28 @@
+---
+- name: Remove unneeded packages
+  become: true
+  apt:
+    name:
+      - aisleriot
+      - brltty
+      - cheese
+      - deja-dup
+      - firefox
+      - gir1.2-totemplparser-1.0
+      - gnome-mahjongg
+      - gnome-mines
+      - gnome-sudoku
+      - gnome-todo-common
+      - libgnome-games-support-common
+      - libgnome-todo
+      - libtotem0
+      - remmina-common
+      - totem-common
+      - ubuntu-web-launchers
+    state: absent
+    purge: true
+
+- name: Remove dependencies that are no longer required
+  become: true
+  apt:
+    autoremove: true
