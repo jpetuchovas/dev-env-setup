@@ -4,9 +4,11 @@
   apt:
     name:
       - aisleriot
+      - branding-ubuntu
       - brltty
       - cheese
       - deja-dup
+      - example-content
       - firefox
       - gir1.2-totemplparser-1.0
       - gnome-accessibility-themes
@@ -18,6 +20,7 @@
       - gnome-software-common
       - gnome-sudoku
       - gnome-todo-common
+      - guile-2.0-libs
       - libgnome-games-support-common
       - libgnome-todo
       - libtotem0
@@ -34,3 +37,10 @@
   become: true
   apt:
     autoremove: true
+
+- name: Delete unnecessary examples.desktop file
+  become: true
+  become_user: '{{user}}'
+  file:
+    path: ~/examples.desktop
+    state: absent
