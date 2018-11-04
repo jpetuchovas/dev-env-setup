@@ -45,8 +45,20 @@
     autoremove: true
 
 - name: Delete unnecessary examples.desktop file
-  become: true
   become_user: '{{user}}'
   file:
     path: ~/examples.desktop
     state: absent
+
+- name: Mask unwanted GNOME services
+  become_user: '{{user}}'
+  systemd:
+    name: '{{item}}'
+    scope: user
+    masked: true
+    state: stopped
+  loop:
+    - evolution-addressbook-factory.service
+    - evolution-calendar-factory.service
+    - evolution-source-registry.service
+    - gvfs-goa-volume-monitor.service
