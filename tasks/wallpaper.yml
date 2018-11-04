@@ -1,0 +1,24 @@
+---
+- name: Create directory for wallpaper
+  become: true
+  become_user: '{{user}}'
+  file:
+    path: '{{wallpaper_directory_path}}'
+    state: directory
+
+- name: Download wallpaper
+  become: true
+  become_user: '{{user}}'
+  get_url:
+    url: '{{wallpaper_url}}'
+    dest: '{{wallpaper_directory_path}}/{{wallpaper_file_name}}'
+    owner: '{{user}}'
+    group: '{{user}}'
+    mode: 0600
+
+- name: Set wallpaper
+  become: true
+  become_user: '{{user}}'
+  dconf:
+    key: /org/gnome/desktop/background/picture-uri
+    value: "'file://{{wallpaper_directory_path}}/{{wallpaper_file_name}}'"

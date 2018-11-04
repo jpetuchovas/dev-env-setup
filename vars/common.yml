@@ -45,3 +45,8 @@ anki_download_directory_path: /tmp/anki
 anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
   https://apps.ankiweb.net/downloads/current/{{anki_archive_name}}.tar.bz2
+
+wallpaper_url: >-
+  https://images.pexels.com/photos/39573/beach-leaf-green-nature-39573.jpeg?dl&fit=crop&crop=entropy&w=1920&h=1280
+wallpaper_directory_path: /home/{{user}}/Pictures/wallpapers
+wallpaper_file_name: beach-leaf.jpg
