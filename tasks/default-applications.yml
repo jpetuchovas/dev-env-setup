@@ -2,3 +2,7 @@
 - name: Set Brave as default web browser
   become_user: '{{user}}'
   command: xdg-settings set default-web-browser brave-browser.desktop
+
+- name: Set VS Code as default text editor
+  become_user: '{{user}}'
+  command: xdg-mime default code.desktop text/plain
