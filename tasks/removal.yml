@@ -20,11 +20,13 @@
       - gnome-software-common
       - gnome-sudoku
       - gnome-todo-common
+      - gnome-video-effects
       - guile-2.0-libs
       - libgnome-games-support-common
       - libgnome-todo
       - libtotem0
       - mousetweaks
+      - nautilus-sendto
       - orca
       - remmina-common
       - thunderbird
