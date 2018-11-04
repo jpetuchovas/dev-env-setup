@@ -46,6 +46,7 @@
     autoremove: true
 
 - name: Delete unnecessary examples.desktop file
+  become: true
   become_user: '{{user}}'
   file:
     path: ~/examples.desktop
