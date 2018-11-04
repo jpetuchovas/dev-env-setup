@@ -28,6 +28,11 @@
       value: 'false'
     - key: /org/gnome/desktop/privacy/send-software-usage-stats
       value: 'false'
+    - key: /org/gnome/desktop/search-providers/disabled
+      value:
+        - 'org.gnome.Terminal.desktop'
+        - 'seahorse.desktop'
+        - 'gnome-control-center.desktop'
     - key: /org/gnome/desktop/wm/preferences/num-workspaces
       value: 1
     - key: /org/gnome/mutter/dynamic-workspaces
