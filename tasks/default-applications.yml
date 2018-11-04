@@ -1,5 +1,4 @@
 ---
 - name: Set Brave as default web browser
-  become: true
   become_user: '{{user}}'
   command: xdg-settings set default-web-browser brave-browser.desktop
