@@ -4,6 +4,8 @@
   apt:
     name:
       - aisleriot
+      - apport
+      - apport-symptoms
       - branding-ubuntu
       - brltty
       - cheese
@@ -31,7 +33,9 @@
       - remmina-common
       - thunderbird
       - totem-common
+      - ubuntu-report
       - ubuntu-web-launchers
+      - whoopsie
     state: absent
     purge: true
 
