@@ -22,3 +22,18 @@
   dconf:
     key: /org/gnome/desktop/background/picture-uri
     value: "'file://{{wallpaper_directory_path}}/{{wallpaper_file_name}}'"
+
+- name: Set screensaver
+  become: true
+  become_user: '{{user}}'
+  dconf:
+    key: '{{item.key}}'
+    value: '{{item.value}}'
+  loop:
+    - key: /org/gnome/desktop/screensaver/picture-uri
+      value: >-
+        'file:///usr/share/gnome-control-center/pixmaps/noise-texture-light.png'
+    - key: /org/gnome/desktop/screensaver/primary-color
+      value: "'#000000'"
+    - key: /org/gnome/desktop/screensaver/secondary-color
+      value: "'#000000'"
