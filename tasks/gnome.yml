@@ -28,6 +28,10 @@
       value: 'false'
     - key: /org/gnome/desktop/privacy/send-software-usage-stats
       value: 'false'
+    - key: /org/gnome/desktop/wm/preferences/num-workspaces
+      value: 1
+    - key: /org/gnome/mutter/dynamic-workspaces
+      value: 'false'
     - key: /org/gnome/settings-daemon/plugins/color/night-light-enabled
       value: 'true'
     - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic
