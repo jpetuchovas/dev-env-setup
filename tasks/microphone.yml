@@ -1,0 +1,4 @@
+---
+- name: Mute microphone
+  become: true
+  command: amixer cset name='Capture Switch' off
