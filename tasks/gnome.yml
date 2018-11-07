@@ -14,6 +14,8 @@
   loop:
     - key: /org/gnome/desktop/calendar/show-weekdate
       value: 'true'
+    - key: /org/gnome/desktop/datetime/automatic-timezone
+      value: 'true'
     - key: /org/gnome/desktop/interface/clock-show-date
       value: 'true'
     - key: /org/gnome/desktop/notifications/show-in-lock-screen
@@ -51,5 +53,14 @@
       value: 'false'
     - key: /org/gnome/shell/disable-user-extensions
       value: 'true'
+    - key: /org/gnome/shell/favorite-apps
+      value:
+        - 'org.gnome.Nautilus.desktop'
+        - 'brave-browser.desktop'
+        - 'code.desktop'
+        - 'org.gnome.Terminal.desktop'
+        - 'dbeaver.desktop'
+        - 'virtualbox.desktop'
+        - 'spotify_spotify.desktop'
     - key: /org/gnome/terminal/legacy/default-show-menubar
       value: 'false'
