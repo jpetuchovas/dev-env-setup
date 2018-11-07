@@ -13,6 +13,7 @@
     - import_tasks: tasks/spaced-repetition.yml
     - import_tasks: tasks/default-applications.yml
     - import_tasks: tasks/gnome.yml
+    - import_tasks: tasks/locale.yml
     - import_tasks: tasks/microphone.yml
     - import_tasks: tasks/wallpaper.yml
     - import_tasks: tasks/removal.yml
