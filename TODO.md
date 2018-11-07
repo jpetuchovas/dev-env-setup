@@ -1,3 +1,3 @@
-Thins not currently performed by Ansible:
+Things not currently performed by Ansible:
 
-* Setting input sources multiple languages (US and LT).
+* Setting input sources to multiple languages (US and LT).
