@@ -49,7 +49,7 @@
   become: true
   become_user: '{{user}}'
   file:
-    path: ~/examples.desktop
+    path: ~{{user}}/examples.desktop
     state: absent
 
 - name: Mask unwanted GNOME services
