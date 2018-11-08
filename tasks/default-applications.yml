@@ -1,4 +1,11 @@
 ---
+- name: Create .config directory
+  become: true
+  become_user: '{{user}}'
+  file:
+    path: ~{{user}}/.config
+    state: directory
+
 - name: Set Brave as default web browser
   become: true
   become_user: '{{user}}'
