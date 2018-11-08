@@ -71,3 +71,4 @@
   loop:
     - spotify
     - vlc
+    - node --classic --channel={{nodejs_major_version}}
