@@ -72,3 +72,13 @@
     - spotify
     - vlc
     - node --classic --channel={{nodejs_major_version}}
+
+- name: Install Node.js packages
+  become: true
+  npm:
+    name: '{{item}}'
+    global: true
+    state: present
+  loop:
+    - create-react-app
+    - typescript
