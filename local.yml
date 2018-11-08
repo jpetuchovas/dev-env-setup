@@ -16,4 +16,5 @@
     - import_tasks: tasks/locale.yml
     - import_tasks: tasks/microphone.yml
     - import_tasks: tasks/wallpaper.yml
+    - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/removal.yml

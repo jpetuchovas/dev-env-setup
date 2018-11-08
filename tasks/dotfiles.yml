@@ -1,0 +1,14 @@
+---
+- name: Clone dotfiles
+  become: true
+  become_user: '{{user}}'
+  git:
+    repo: https://github.com/jpetuchovas/dotfiles.git
+    dest: ~{{user}}/dotfiles
+
+- name: Set up dotfiles
+  become: true
+  become_user: '{{user}}'
+  command: ./install
+  args:
+    chdir: ~{{user}}/dotfiles
