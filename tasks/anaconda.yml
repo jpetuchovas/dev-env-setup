@@ -12,12 +12,11 @@
     - name: Download Anaconda installer
       get_url:
         url: '{{anaconda_download_url}}'
-        dest: >-
-          '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
+        dest: '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
         owner: '{{user}}'
         group: '{{user}}'
         timeout: 600
-        mode: 0755
+        mode: 0700
 
     - name: Run Anaconda installer
       command: >-
@@ -26,7 +25,6 @@
 
     - name: Delete Anaconda installer
       file:
-        path: >-
-          '{{anaconda_download_directory_path}}'
+        path: '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
         state: absent
   when: not anaconda_conda_binary.stat.exists
