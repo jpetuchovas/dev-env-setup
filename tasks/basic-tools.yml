@@ -59,6 +59,7 @@
       - brave-browser
       - code
       - dbeaver-ce
+      - direnv
       - docker-ce
       - git
       - python-pip
