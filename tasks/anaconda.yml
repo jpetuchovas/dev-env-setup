@@ -1,23 +1,33 @@
 ---
-- name: Download Anaconda installer
-  become: true
-  become_user: '{{user}}'
-  get_url:
-    url: '{{anaconda_download_url}}'
-    dest: '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
-    timeout: 600
-    mode: 0755
+- name: Check if Anaconda is installed
+  stat:
+    path: '{{anaconda_installation_directory}}/bin/conda'
+  changed_when: false
+  register: anaconda_conda_binary
 
-- name: Install Anaconda
-  become: true
-  become_user: '{{user}}'
-  command: >-
-    '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
-    -b -p {{anaconda_installation_directory}}
+- when: not anaconda_conda_binary.stat.exists
+  block:
+    - name: Download Anaconda installer
+      become: true
+      become_user: '{{user}}'
+      get_url:
+        url: '{{anaconda_download_url}}'
+        dest: >-
+          '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
+        timeout: 600
+        mode: 0755
 
-- name: Delete Anaconda installer
-  become: true
-  become_user: '{{user}}'
-  file:
-    path: '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
-    state: absent
+    - name: Install Anaconda
+      become: true
+      become_user: '{{user}}'
+      command: >-
+        '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
+        -b -p {{anaconda_installation_directory}}
+
+    - name: Delete Anaconda installer
+      become: true
+      become_user: '{{user}}'
+      file:
+        path: >-
+          '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
+        state: absent
