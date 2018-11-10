@@ -5,29 +5,28 @@
   changed_when: false
   register: anaconda_conda_binary
 
-- when: not anaconda_conda_binary.stat.exists
+- name: Install Anaconda
+  become: true
+  become_user: '{{user}}'
   block:
     - name: Download Anaconda installer
-      become: true
-      become_user: '{{user}}'
       get_url:
         url: '{{anaconda_download_url}}'
         dest: >-
           '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
+        owner: '{{user}}'
+        group: '{{user}}'
         timeout: 600
         mode: 0755
 
-    - name: Install Anaconda
-      become: true
-      become_user: '{{user}}'
+    - name: Run Anaconda installer
       command: >-
         '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
         -b -p {{anaconda_installation_directory}}
 
     - name: Delete Anaconda installer
-      become: true
-      become_user: '{{user}}'
       file:
         path: >-
-          '{{anaconda_download_directory_path}}/{{anaconda_installer_name}}'
+          '{{anaconda_download_directory_path}}'
         state: absent
+  when: not anaconda_conda_binary.stat.exists
