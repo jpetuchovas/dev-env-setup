@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
 ansible-playbook local.yml --ask-become-pass
+
+# Could not set the input sources using the Ansible's dconf module, therefore
+# the input sources are set using this script.
+dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'us'), ('xkb', 'lt')]"
