@@ -48,6 +48,14 @@ anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
   https://apps.ankiweb.net/downloads/current/{{anki_archive_name}}.tar.bz2
 
+anaconda_version: 5.3.0
+anaconda_download_directory_path: /tmp
+anaconda_installer_name: >-
+  Anaconda3-{{anaconda_version}}-{{ansible_system}}-{{ansible_architecture}}.sh
+anaconda_download_url: >-
+  https://repo.anaconda.com/archive/{{anaconda_installer_name}}
+anaconda_installation_directory: ~{{user}}/anaconda3
+
 nodejs_major_version: 11
 
 wallpaper_url: >-
