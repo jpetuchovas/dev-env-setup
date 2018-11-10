@@ -62,15 +62,8 @@
       - direnv
       - docker-ce
       - git
-      - python-pip
       - snapd
       - texlive-full
-    state: present
-
-- name: Install PySpark
-  become: true
-  pip:
-    name: pyspark
     state: present
 
 - name: Install snaps

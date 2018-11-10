@@ -9,6 +9,7 @@
     - import_tasks: tasks/cron.yml
     - import_tasks: tasks/basic-tools.yml
     - import_tasks: tasks/anaconda.yml
+    - import_tasks: tasks/spark.yml
     - import_tasks: tasks/virtualization.yml
       when: ansible_virtualization_role == 'host'
     - import_tasks: tasks/spaced-repetition.yml
