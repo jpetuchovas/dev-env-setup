@@ -59,6 +59,7 @@
       - brave-browser
       - code
       - dbeaver-ce
+      - dconf-editor
       - direnv
       - docker-ce
       - git
