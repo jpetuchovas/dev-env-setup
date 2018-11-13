@@ -59,7 +59,7 @@
       value:
         - 'org.gnome.Nautilus.desktop'
         - 'brave-browser.desktop'
-        - 'code.desktop'
+        - 'code-url-handler.desktop'
         - 'org.gnome.Terminal.desktop'
         - 'dbeaver.desktop'
         - 'virtualbox.desktop'
