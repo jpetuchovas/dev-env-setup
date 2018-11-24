@@ -38,7 +38,7 @@ virtualbox_repository: >-
   deb https://download.virtualbox.org/virtualbox/debian
   {{ansible_distribution_release}} contrib
 
-vagrant_version: 2.2.0
+vagrant_version: 2.2.1
 vagrant_deb_url: >-
   https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_{{ansible_architecture}}.deb
 
@@ -48,7 +48,7 @@ anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
   https://apps.ankiweb.net/downloads/current/{{anki_archive_name}}.tar.bz2
 
-anaconda_version: 5.3.0
+anaconda_version: 5.3.1
 anaconda_download_directory_path: /tmp
 anaconda_installer_name: >-
   Anaconda3-{{anaconda_version}}-{{ansible_system}}-{{ansible_architecture}}.sh
