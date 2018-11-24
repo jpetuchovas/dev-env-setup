@@ -2,4 +2,4 @@
 - name: Install PySpark
   become: true
   become_user: '{{user}}'
-  command: '{{anaconda_installation_directory}}/bin/pip install pyspark'
+  command: '{{anaconda_installation_directory}}/bin/conda install --yes pyspark'
