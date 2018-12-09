@@ -38,7 +38,7 @@ virtualbox_repository: >-
   deb https://download.virtualbox.org/virtualbox/debian
   {{ansible_distribution_release}} contrib
 
-vagrant_version: 2.2.1
+vagrant_version: 2.2.2
 vagrant_deb_url: >-
   https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_{{ansible_architecture}}.deb
 
