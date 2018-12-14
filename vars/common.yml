@@ -42,7 +42,7 @@ vagrant_version: 2.2.2
 vagrant_deb_url: >-
   https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_{{ansible_architecture}}.deb
 
-anki_version: 2.1.5
+anki_version: 2.1.6
 anki_download_directory_path: /tmp/anki
 anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
