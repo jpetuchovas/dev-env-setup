@@ -71,6 +71,7 @@
   become: true
   command: snap install {{item}}
   loop:
+    - bitwarden
     - mathpix-snipping-tool
     - spotify
     - vlc
