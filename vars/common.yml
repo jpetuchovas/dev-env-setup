@@ -31,7 +31,7 @@ microsoft_signing_key_url: >-
 vscode_repository: >-
   deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
 
-virtualbox_version: 5.2
+virtualbox_version: 6.0
 virtualbox_signing_key_url: >-
   https://www.virtualbox.org/download/oracle_vbox_2016.asc
 virtualbox_repository: >-
@@ -42,7 +42,7 @@ vagrant_version: 2.2.2
 vagrant_deb_url: >-
   https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_{{ansible_architecture}}.deb
 
-anki_version: 2.1.6
+anki_version: 2.1.7
 anki_download_directory_path: /tmp/anki
 anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
