@@ -20,3 +20,5 @@
     - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/spark.yml
     - import_tasks: tasks/removal.yml
+    - import_tasks: tasks/peripherals.yml
+      when: is_logitech_m705_mouse_used

@@ -1,0 +1,12 @@
+---
+- name: Create /usr/share/X11/xorg.conf.d directory
+  become: true
+  file:
+    path: /usr/share/X11/xorg.conf.d
+    state: directory
+
+- name: Disable horizontal scrolling for Logitech M705 mouse
+  become: true
+  copy:
+    src: files/logitech-m705.conf
+    dest: /usr/share/X11/xorg.conf.d/99-logitech-m705.conf

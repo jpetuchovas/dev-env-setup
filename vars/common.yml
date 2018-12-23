@@ -62,3 +62,5 @@ wallpaper_url: >-
   https://images.pexels.com/photos/39573/beach-leaf-green-nature-39573.jpeg?dl&fit=crop&crop=entropy&w=1920&h=1280
 wallpaper_directory_path: /home/{{user}}/Pictures/wallpapers
 wallpaper_file_name: beach-leaf.jpg
+
+is_logitech_m705_mouse_used: true
