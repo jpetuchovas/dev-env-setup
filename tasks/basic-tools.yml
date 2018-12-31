@@ -22,6 +22,8 @@
       keyring: '{{apt_keys_directory_path}}/docker.gpg'
     - url: '{{microsoft_signing_key_url}}'
       keyring: '{{apt_keys_directory_path}}/microsoft.gpg'
+    - url: '{{yarn_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/yarn.gpg'
 
 - name: Add repositories
   become: true
@@ -40,6 +42,8 @@
       filename: git
     - repo: '{{vscode_repository}}'
       filename: vscode
+    - repo: '{{yarn_repository}}'
+      filename: yarn
 
 - name: Update repositories
   become: true
@@ -66,6 +70,14 @@
       - snapd
       - texlive-full
     state: present
+
+- name: Install Yarn
+  become: true
+  apt:
+    name:
+      - yarn
+    state: present
+    install_recommends: false
 
 - name: Install snaps
   become: true
