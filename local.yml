@@ -17,6 +17,7 @@
     - import_tasks: tasks/gnome.yml
     - import_tasks: tasks/locale.yml
     - import_tasks: tasks/microphone.yml
+      when: ansible_virtualization_role == 'host'
     - import_tasks: tasks/wallpaper.yml
     - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/spark.yml
