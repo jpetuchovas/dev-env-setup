@@ -22,6 +22,8 @@
       keyring: '{{apt_keys_directory_path}}/docker.gpg'
     - url: '{{microsoft_signing_key_url}}'
       keyring: '{{apt_keys_directory_path}}/microsoft.gpg'
+    - url: '{{keybase_signing_key_url}}'
+      keyring: '{{apt_keys_directory_path}}/keybase.gpg'
     - url: '{{yarn_signing_key_url}}'
       keyring: '{{apt_keys_directory_path}}/yarn.gpg'
 
@@ -40,6 +42,8 @@
       filename: docker
     - repo: '{{git_repository}}'
       filename: git
+    - repo: '{{keybase_repository}}'
+      filename: keybase
     - repo: '{{vscode_repository}}'
       filename: vscode
     - repo: '{{yarn_repository}}'
@@ -67,6 +71,7 @@
       - direnv
       - docker-ce
       - git
+      - keybase
       - snapd
       - texlive-full
     state: present
@@ -87,3 +92,6 @@
     - mathpix-snipping-tool
     - spotify
     - vlc
+
+- name: Restart Keybase
+  command: run_keybase
