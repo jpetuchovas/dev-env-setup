@@ -4,7 +4,7 @@ ansible-playbook local.yml --ask-become-pass
 
 source ~/.nvm/nvm.sh
 nvm install node
-npm install -g create-react-app typescript
+npm install --global create-react-app typescript
 
 # Could not set the input sources using the Ansible's dconf module, therefore
 # the input sources are set using this script.
