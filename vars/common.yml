@@ -1,7 +1,8 @@
 ---
 user: justinas
 
-dotfiles_repository_url: https://github.com/jpetuchovas/dotfiles.git
+dotfiles_repository_url: git@github.com:jpetuchovas/dotfiles.git
+dotfiles_directory: ~{{user}}/dotfiles
 
 apt_keys_directory_path: /etc/apt/trusted.gpg.d
 
@@ -68,4 +69,9 @@ wallpaper_url: >-
 wallpaper_directory_path: /home/{{user}}/Pictures/wallpapers
 wallpaper_file_name: beach-leaf.jpg
 
+k380_function_keys_conf_repository_url: >-
+  git@github.com:jergusg/k380-function-keys-conf.git
+k380_function_keys_conf_directory: ~{{user}}/k380-function-keys-conf
+
 is_logitech_m705_mouse_used: true
+is_logitech_k380_keyboard_used: true

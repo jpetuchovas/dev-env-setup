@@ -4,11 +4,11 @@
   become_user: '{{user}}'
   git:
     repo: '{{dotfiles_repository_url}}'
-    dest: ~{{user}}/dotfiles
+    dest: '{{dotfiles_directory}}'
 
 - name: Set up dotfiles
   become: true
   become_user: '{{user}}'
   command: ./install
   args:
-    chdir: ~{{user}}/dotfiles
+    chdir: '{{dotfiles_directory}}'

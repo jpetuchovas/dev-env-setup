@@ -1,12 +1,41 @@
 ---
-- name: Create /usr/share/X11/xorg.conf.d directory
-  become: true
-  file:
-    path: /usr/share/X11/xorg.conf.d
-    state: directory
-
 - name: Disable horizontal scrolling for Logitech M705 mouse
   become: true
-  copy:
-    src: files/logitech-m705.conf
-    dest: /usr/share/X11/xorg.conf.d/99-logitech-m705.conf
+  block:
+    - name: Create /usr/share/X11/xorg.conf.d directory
+      file:
+        path: /usr/share/X11/xorg.conf.d
+        state: directory
+
+    - name: Copy configuration file for Logitech M705 mouse
+      copy:
+        src: files/logitech-m705.conf
+        dest: /usr/share/X11/xorg.conf.d/99-logitech-m705.conf
+  when: is_logitech_m705_mouse_used
+
+- name: Make function keys default on a Logitech K380 keyboard
+  block:
+    - name: Clone k380-function-keys-conf
+      become: true
+      become_user: '{{user}}'
+      git:
+        repo: '{{k380_function_keys_conf_repository_url}}'
+        dest: '{{k380_function_keys_conf_directory}}'
+
+    - name: Build k380-function-keys-conf
+      become: true
+      become_user: '{{user}}'
+      command: ./build.sh
+      args:
+        chdir: '{{k380_function_keys_conf_directory}}'
+
+    - name: Copy rules to make function keys default on a Logitech K380 keyboard
+      become: true
+      copy:
+        src: '{{k380_function_keys_conf_directory}}/80-k380.rules'
+        dest: /etc/udev/rules.d/80-k380.rules
+
+    - name: Signal systemd-udevd to reload the rules files
+      become: true
+      command: udevadm control --reload
+  when: is_logitech_k380_keyboard_used
