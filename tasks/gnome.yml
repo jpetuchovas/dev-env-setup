@@ -52,7 +52,7 @@
     - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-from
       value: 19.5
     - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-to
-      value: 4
+      value: 4.0
     - key: /org/gnome/settings-daemon/plugins/power/idle-dim
       value: 'false'
     - key: /org/gnome/shell/disable-user-extensions
