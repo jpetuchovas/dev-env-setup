@@ -17,6 +17,10 @@ brave_repository: >-
 dbeaver_signing_key_url: https://dbeaver.io/debs/dbeaver.gpg.key
 dbeaver_repository: deb https://dbeaver.io/debs/dbeaver-ce /
 
+dropbox_version: 2019.02.14
+dropbox_deb_url: >-
+  https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_{{dropbox_version}}_amd64.deb
+
 docker_signing_key_url: https://download.docker.com/linux/ubuntu/gpg
 docker_repository: >-
   deb [arch=amd64] https://download.docker.com/linux/ubuntu

@@ -95,3 +95,8 @@
 
 - name: Restart Keybase
   command: run_keybase
+
+- name: Install Dropbox
+  become: true
+  apt:
+    deb: '{{dropbox_deb_url}}'
