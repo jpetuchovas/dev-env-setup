@@ -93,6 +93,10 @@
     - spotify
     - vlc
 
+- name: Install AWS CLI
+  become: true
+  command: snap install aws-cli --classic
+
 - name: Restart Keybase
   command: run_keybase
 
