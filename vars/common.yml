@@ -60,7 +60,7 @@ anki_archive_name: anki-{{anki_version}}-{{ansible_system|lower}}-amd64
 anki_download_url: >-
   https://apps.ankiweb.net/downloads/current/{{anki_archive_name}}.tar.bz2
 
-anaconda_version: 2018.12
+anaconda_version: 2019.03
 anaconda_download_directory_path: /tmp
 anaconda_installer_name: >-
   Anaconda3-{{anaconda_version}}-{{ansible_system}}-{{ansible_architecture}}.sh
