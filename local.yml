@@ -13,6 +13,7 @@
     - import_tasks: tasks/virtualization.yml
       when: ansible_virtualization_role == 'host'
     - import_tasks: tasks/spaced-repetition.yml
+    - import_tasks: tasks/station.yml
     - import_tasks: tasks/default-applications.yml
     - import_tasks: tasks/gnome.yml
     - import_tasks: tasks/locale.yml

@@ -40,6 +40,11 @@ microsoft_signing_key_url: >-
 vscode_repository: >-
   deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
 
+station_download_directory_path: /tmp/station
+station_appimage_name: station.AppImage
+station_download_url: >-
+  https://dl.getstation.com/download/linux_64?filetype=AppImage
+
 yarn_signing_key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
 yarn_repository: deb https://dl.yarnpkg.com/debian/ stable main
 
