@@ -12,7 +12,7 @@
     dest: '{{station_download_directory_path}}/{{station_appimage_name}}'
     owner: '{{user}}'
     group: '{{user}}'
-    mode: 0700
+    mode: 0711
 
 - name: Install Station
   become: true
