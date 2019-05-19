@@ -40,7 +40,7 @@ microsoft_signing_key_url: >-
 vscode_repository: >-
   deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
 
-station_download_directory_path: /tmp/station
+station_download_directory_path: ~{{user}}/appimages
 station_appimage_name: station.AppImage
 station_download_url: >-
   https://dl.getstation.com/download/linux_64?filetype=AppImage
