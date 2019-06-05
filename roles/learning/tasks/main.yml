@@ -1,0 +1,13 @@
+---
+- name: Install Anki
+  become: true
+  snap:
+    name: anki-woodrow
+    channel: latest/edge
+    state: present
+
+- name: Install Mathpix Snipping Tool
+  become: true
+  snap:
+    name: mathpix-snipping-tool
+    state: present

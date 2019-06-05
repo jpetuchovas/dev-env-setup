@@ -1,4 +1,0 @@
----
-- name: Install PySpark
-  become: true
-  command: '{{anaconda_installation_directory}}/bin/conda install --yes pyspark'

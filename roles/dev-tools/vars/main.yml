@@ -1,0 +1,29 @@
+anaconda_version: 2019.03
+anaconda_download_directory_path: /tmp
+anaconda_installer_name: >-
+  Anaconda3-{{ anaconda_version }}-{{ ansible_system }}-{{ ansible_architecture }}.sh
+anaconda_download_url: >-
+  https://repo.anaconda.com/archive/{{ anaconda_installer_name }}
+anaconda_installation_directory: ~{{ user_name }}/anaconda3
+
+docker_signing_key_url: https://download.docker.com/linux/ubuntu/gpg
+docker_repository: >-
+  deb [arch=amd64] https://download.docker.com/linux/ubuntu
+  {{ ansible_distribution_release }} stable
+
+git_signing_key_id: E1DD270288B4E6030699E45FA1715D88E1DF1F24
+git_repository: >-
+  deb http://ppa.launchpad.net/git-core/ppa/ubuntu
+  {{ ansible_distribution_release }} main
+
+vagrant_version: 2.2.4
+vagrant_deb_url: >-
+  https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_{{ ansible_architecture }}.deb
+
+virtualbox_version: 6.0
+virtualbox_signing_key_url: >-
+  https://www.virtualbox.org/download/oracle_vbox_2016.asc
+virtualbox_repository: >-
+  deb https://download.virtualbox.org/virtualbox/debian
+  {{ ansible_distribution_release }} contrib
+

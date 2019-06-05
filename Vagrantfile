@@ -14,6 +14,6 @@ Vagrant.configure('2') do |config|
 
   config.vm.provision 'ansible_local' do |ansible|
     ansible.limit = 'all,localhost'
-    ansible.playbook = 'local.yml'
+    ansible.playbook = 'setup.yml'
   end
 end

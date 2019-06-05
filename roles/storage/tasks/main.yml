@@ -1,0 +1,17 @@
+---
+- name: Install Dropbox
+  become: true
+  apt:
+    deb: '{{ dropbox_deb_url }}'
+    state: present
+
+- name: Prevent Dropbox syncing issues
+  become: true
+  lineinfile:
+    path: /etc/sysctl.conf
+    regexp: '^fs.inotify.max_user_watches='
+    line: 'fs.inotify.max_user_watches=100000'
+
+- name: Restart sysctl
+  become: true
+  command: sysctl -p

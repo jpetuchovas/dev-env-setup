@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-ansible-playbook local.yml --ask-become-pass
+ansible-playbook setup.yml --ask-become-pass "$@"
 
-source ~/.nvm/nvm.sh
-nvm install node
-npm install --global create-react-app typescript
-
-# Could not set the input sources using the Ansible's dconf module, therefore
+# Could not set the input sources using the Ansible’s dconf module, therefore
 # the input sources are set using this script.
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'us'), ('xkb', 'lt')]"

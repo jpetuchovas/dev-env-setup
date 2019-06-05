@@ -1,0 +1,15 @@
+---
+- name: Install Mattermost
+  become: true
+  snap:
+    name: mattermost-desktop
+    state: present
+
+- name: Install VPN packages
+  become: true
+  apt:
+    name:
+      - libcharon-extra-plugins
+      - libcharon-standard-plugins
+      - resolvconf
+      - strongswan

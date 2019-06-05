@@ -1,0 +1,25 @@
+---
+- hosts: localhost
+  roles:
+    - role: users
+      tags: users
+    - role: base
+      tags: base
+    - role: editors
+      tags: editors
+    - role: security
+      tags: security
+    - role: storage
+      tags: storage
+    - role: dev-tools
+      tags: dev-tools
+    - role: peripherals
+      tags: peripherals
+    - role: learning
+      tags: learning
+    - role: media
+      tags: media
+    - role: desktop-env
+      tags: desktop-env
+    - role: current-job-specific
+      tags: current-job-specific

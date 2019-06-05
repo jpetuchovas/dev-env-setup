@@ -1,0 +1,22 @@
+---
+- name: Add the VirtualBox signing key
+  become: true
+  apt_key:
+    url: '{{ virtualbox_signing_key_url }}'
+    keyring: '{{ apt_keys_directory_path }}/virtualbox.gpg'
+    state: present
+
+- name: Add the VirtualBox repository
+  become: true
+  apt_repository:
+    repo: '{{ virtualbox_repository }}'
+    filename: virtualbox
+    state: present
+
+
+- name: Install VirtualBox
+  become: true
+  apt:
+    name: virtualbox-{{ virtualbox_version }}
+    state: present
+    update_cache: true

@@ -1,0 +1,8 @@
+---
+- name: Install media packages
+  become: true
+  snap:
+    name:
+      - spotify
+      - vlc
+    state: present

@@ -1,0 +1,80 @@
+---
+- name: Install dconf-editor
+  become: true
+  apt:
+    name: dconf-editor
+    state: present
+
+- name: Install the python-psutil package required by the Ansible’s dconf module
+  become: true
+  apt:
+    name: python-psutil
+    state: present
+
+- name: Update GNOME dconf settings
+  become: true
+  become_user: '{{ user_name }}'
+  dconf:
+    key: '{{ item.key }}'
+    value: '{{ item.value }}'
+  loop:
+    - key: /org/gnome/desktop/calendar/show-weekdate
+      value: 'true'
+    - key: /org/gnome/desktop/datetime/automatic-timezone
+      value: 'true'
+    - key: /org/gnome/desktop/interface/clock-show-date
+      value: 'true'
+    - key: /org/gnome/desktop/interface/cursor-blink
+      value: 'false'
+    - key: /org/gnome/desktop/interface/show-battery-percentage
+      value: 'true'
+    - key: /org/gnome/desktop/notifications/show-in-lock-screen
+      value: 'false'
+    - key: /org/gnome/desktop/privacy/old-files-age
+      value: uint32 7
+    - key: /org/gnome/desktop/privacy/remember-recent-files
+      value: 'false'
+    - key: /org/gnome/desktop/privacy/remove-old-trash-files
+      value: 'true'
+    - key: /org/gnome/desktop/privacy/report-technical-problems
+      value: 'false'
+    - key: /org/gnome/desktop/privacy/send-software-usage-stats
+      value: 'false'
+    - key: /org/gnome/desktop/screensaver/picture-uri
+      value: >-
+        'file:///usr/share/gnome-control-center/pixmaps/noise-texture-light.png'
+    - key: /org/gnome/desktop/screensaver/primary-color
+      value: "'#000000'"
+    - key: /org/gnome/desktop/screensaver/secondary-color
+      value: "'#000000'"
+    - key: /org/gnome/desktop/search-providers/disabled
+      value:
+        - 'org.gnome.Terminal.desktop'
+        - 'seahorse.desktop'
+        - 'org.gnome.Software.desktop'
+    - key: /org/gnome/desktop/wm/preferences/num-workspaces
+      value: 1
+    - key: /org/gnome/mutter/dynamic-workspaces
+      value: 'false'
+    - key: /org/gnome/nautilus/desktop/trash-icon-visible
+      value: 'false'
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-enabled
+      value: 'true'
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic
+      value: 'false'
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-from
+      value: 19.0
+    - key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-to
+      value: 4.5
+    - key: /org/gnome/settings-daemon/plugins/power/idle-dim
+      value: 'false'
+    - key: /org/gnome/shell/favorite-apps
+      value:
+        - 'org.gnome.Nautilus.desktop'
+        - 'firefox.desktop'
+        - 'code_code.desktop'
+        - 'org.gnome.Terminal.desktop'
+        - 'spotify_spotify.desktop'
+        - 'mattermost-desktop_mattermost-desktop.desktop'
+    - key: /org/gnome/terminal/legacy/default-show-menubar
+      value: 'false'
