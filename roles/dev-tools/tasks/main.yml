@@ -1,0 +1,21 @@
+---
+- import_tasks: git.yml
+- import_tasks: anaconda.yml
+- import_tasks: docker.yml
+- import_tasks: virtualbox.yml
+  when: ansible_virtualization_role == 'host'
+- import_tasks: vagrant.yml
+  when: ansible_virtualization_role == 'host'
+
+- name: Install direnv
+  become: true
+  apt:
+    name: direnv
+    state: present
+
+- name: Install AWS CLI
+  become: true
+  snap:
+    name: aws-cli
+    classic: true
+    state: present

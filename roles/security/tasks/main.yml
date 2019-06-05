@@ -1,0 +1,8 @@
+---
+- import_tasks: keybase.yml
+
+- name: Install Bitwarden
+  become: true
+  snap:
+    name: bitwarden
+    state: present

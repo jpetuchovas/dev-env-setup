@@ -1,0 +1,24 @@
+---
+- name: Add the Docker signing key
+  become: true
+  apt_key:
+    url: '{{ docker_signing_key_url }}'
+    keyring: '{{ apt_keys_directory_path }}/docker.gpg'
+    state: present
+
+- name: Add the Docker repository
+  become: true
+  apt_repository:
+    repo: '{{ docker_repository }}'
+    filename: docker
+    state: present
+
+- name: Install Docker
+  become: true
+  apt:
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+    state: present
+    update_cache: true

@@ -1,0 +1,12 @@
+---
+- name: Create the .config directory
+  become: true
+  become_user: '{{ user_name }}'
+  file:
+    path: ~{{ user_name }}/.config
+    state: directory
+
+- name: Set Visual Studio Code as the default text editor
+  become: true
+  become_user: '{{ user_name }}'
+  command: xdg-mime default code_code.desktop text/plain
