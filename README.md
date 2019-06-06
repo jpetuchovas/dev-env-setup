@@ -1,4 +1,4 @@
-# Development environment setup
+# Development Environment Setup
 
 [Ansible](https://www.ansible.com/) playbook used to setup my development environment on Ubuntu 18.04.
 
@@ -18,7 +18,7 @@ To run the playbook, run the command:
 ./run
 ```
 
-## Virtual development environment
+## Virtual Development Environment
 
 To create a virtual machine and provision it using the Ansible playbook, you can use the included [Vagrantfile](https://www.vagrantup.com/docs/vagrantfile/) (this requires [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) to be installed). This is handy when testing changes made to the playbook.
 

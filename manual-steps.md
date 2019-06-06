@@ -18,6 +18,6 @@ The quickest way is to just copy over the entire `~/.gnupg` directory.
 
 Clone the dotfiles repository and run the installation script.
 
-## Sound effects
+## Sound Effects
 
 Turn off sound effects.
