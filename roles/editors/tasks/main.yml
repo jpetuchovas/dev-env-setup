@@ -1,7 +1,2 @@
 ---
-- name: Install Visual Studio Code
-  become: true
-  snap:
-    name: code
-    classic: true
-    state: present
+- import_tasks: vscode.yml
