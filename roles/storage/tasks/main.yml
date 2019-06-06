@@ -10,7 +10,7 @@
   lineinfile:
     path: /etc/sysctl.conf
     regexp: '^fs.inotify.max_user_watches='
-    line: 'fs.inotify.max_user_watches=100000'
+    line: 'fs.inotify.max_user_watches=524288'
 
 - name: Restart sysctl
   become: true
