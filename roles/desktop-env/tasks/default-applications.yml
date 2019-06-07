@@ -9,4 +9,4 @@
 - name: Set Visual Studio Code as the default text editor
   become: true
   become_user: '{{ user_name }}'
-  command: xdg-mime default code_code.desktop text/plain
+  command: xdg-mime default code.desktop text/plain

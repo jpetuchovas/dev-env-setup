@@ -72,7 +72,7 @@
       value:
         - 'org.gnome.Nautilus.desktop'
         - 'firefox.desktop'
-        - 'code_code.desktop'
+        - 'code.desktop'
         - 'org.gnome.Terminal.desktop'
         - 'spotify_spotify.desktop'
         - 'mattermost-desktop_mattermost-desktop.desktop'
