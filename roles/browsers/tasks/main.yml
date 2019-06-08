@@ -1,0 +1,8 @@
+---
+- import_tasks: firefox.yml
+
+- name: Install Chromium
+  become: true
+  snap:
+    name: chromium
+    state: present

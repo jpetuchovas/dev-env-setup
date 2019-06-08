@@ -71,7 +71,7 @@
     - key: /org/gnome/shell/favorite-apps
       value:
         - 'org.gnome.Nautilus.desktop'
-        - 'firefox.desktop'
+        - 'firefox_firefox.desktop'
         - 'code.desktop'
         - 'org.gnome.Terminal.desktop'
         - 'spotify_spotify.desktop'

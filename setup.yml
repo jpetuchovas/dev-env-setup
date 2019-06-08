@@ -7,6 +7,8 @@
       tags: base
     - role: editors
       tags: editors
+    - role: browsers
+      tags: browsers
     - role: security
       tags: security
     - role: storage
@@ -19,7 +21,7 @@
       tags: learning
     - role: media
       tags: media
-    - role: desktop-env
-      tags: desktop-env
     - role: current-job-specific
       tags: current-job-specific
+    - role: desktop-env
+      tags: desktop-env
