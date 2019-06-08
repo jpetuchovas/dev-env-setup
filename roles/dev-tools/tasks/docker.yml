@@ -22,3 +22,16 @@
       - containerd.io
     state: present
     update_cache: true
+
+- name: Create the docker group
+  become: true
+  group:
+    name: docker
+    state: present
+
+- name: Add the user {{ user_name }} to the docker group
+  become: true
+  user:
+    name: '{{ user_name }}'
+    groups: docker
+    append: true
