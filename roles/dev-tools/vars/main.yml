@@ -11,6 +11,16 @@ docker_repository: >-
   deb [arch=amd64] https://download.docker.com/linux/ubuntu
   {{ ansible_distribution_release }} stable
 
+docker_compose_version: 1.24.0
+docker_compose_download_url: >-
+  https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-{{ ansible_system }}-{{ ansible_architecture }}
+docker_compose_installation_path:
+  /usr/local/bin/docker-compose
+docker_compose_command_completion_url: >-
+  https://raw.githubusercontent.com/docker/compose/{{ docker_compose_version }}/contrib/completion/bash/docker-compose
+docker_compose_command_completion_installation_path: >-
+  /etc/bash_completion.d/docker-compose
+
 git_signing_key_id: E1DD270288B4E6030699E45FA1715D88E1DF1F24
 git_repository: >-
   deb http://ppa.launchpad.net/git-core/ppa/ubuntu

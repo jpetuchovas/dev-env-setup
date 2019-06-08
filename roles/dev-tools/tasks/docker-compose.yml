@@ -1,0 +1,14 @@
+---
+- name: Install Docker Compose
+  become: true
+  get_url:
+    url: '{{ docker_compose_download_url }}'
+    dest: '{{ docker_compose_installation_path }}'
+    mode: 0755
+
+- name: Install the Docker Compose command completion
+  become: true
+  get_url:
+    url: '{{ docker_compose_command_completion_url }}'
+    dest: '{{ docker_compose_command_completion_installation_path }}'
+    mode: 0755

@@ -2,6 +2,7 @@
 - import_tasks: git.yml
 - import_tasks: anaconda.yml
 - import_tasks: docker.yml
+- import_tasks: docker-compose.yml
 - import_tasks: virtualbox.yml
   when: ansible_virtualization_role == 'host'
 - import_tasks: vagrant.yml
