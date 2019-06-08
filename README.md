@@ -1,6 +1,6 @@
 # Development Environment Setup
 
-[Ansible](https://www.ansible.com/) playbook used to setup my development environment on Ubuntu 18.04.
+An [Ansible](https://www.ansible.com/) playbook used to setup my development environment on Ubuntu 18.04.
 
 ## Installation
 
