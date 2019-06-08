@@ -1,0 +1,16 @@
+---
+- name: Install Node.js
+  become: true
+  snap:
+    name: node
+    channel: 10/stable
+    classic: true
+    state: present
+
+- name: Install the Gatsby CLI
+  become: true
+  npm:
+    name: gatsby-cli
+    global: true
+    unsafe_perm: true
+    state: present
