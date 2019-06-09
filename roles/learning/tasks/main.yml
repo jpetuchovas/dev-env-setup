@@ -11,3 +11,9 @@
   snap:
     name: mathpix-snipping-tool
     state: present
+
+- name: Install LaTeX
+  become: true
+  apt:
+    name: texlive-full
+    state: present
