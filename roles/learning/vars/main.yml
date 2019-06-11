@@ -1,0 +1,5 @@
+anki_version: 2.1.13
+anki_download_directory_path: /tmp/anki
+anki_archive_name: anki-{{ anki_version }}-{{ ansible_system | lower }}-amd64
+anki_download_url: >-
+  https://apps.ankiweb.net/downloads/current/{{ anki_archive_name }}.tar.bz2
