@@ -74,6 +74,7 @@
         - 'firefox_firefox.desktop'
         - 'code.desktop'
         - 'org.gnome.Terminal.desktop'
+        - 'anki.desktop'
         - 'spotify_spotify.desktop'
         - 'mattermost-desktop_mattermost-desktop.desktop'
     - key: /org/gnome/terminal/legacy/default-show-menubar
