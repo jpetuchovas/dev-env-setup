@@ -2,22 +2,17 @@
 
 A couple of manual steps to perform on a new computer.
 
-## SSH Keys
-
-Copy `id_rsa.pub` and `id_rsa` to `~/.ssh`. Then make sure the permissions are correct:
-
-```bash
-sudo chmod 600 ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
-```
-
-## GPG Keys
-
-The quickest way is to just copy over the entire `~/.gnupg` directory.
-
 ## Dotfiles
 
 Clone the dotfiles repository and run the installation script.
 
-## Sound Effects
+## Terminal
 
-Turn off sound effects.
+- View -> Hide Marks.
+- Preferences -> Profiles -> Keyboard -> Check “Use Option as Meta key”.
+- Modify the title bar.
+- Copy color scheme from Visual Studio Code.
+
+## System Preferences
+
+Set various system preferences such as Night Shift schedule.

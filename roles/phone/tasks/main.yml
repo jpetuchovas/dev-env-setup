@@ -1,7 +1,7 @@
 ---
-- name: Install Dropbox
+- name: Install Android File Transfer
   become: true
   become_user: '{{ user_name }}'
   homebrew_cask:
-    name: dropbox
+    name: android-file-transfer
     state: present

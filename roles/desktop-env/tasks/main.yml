@@ -1,5 +1,0 @@
----
-- import_tasks: default-applications.yml
-- import_tasks: gnome.yml
-- import_tasks: locale.yml
-- import_tasks: wallpaper.yml

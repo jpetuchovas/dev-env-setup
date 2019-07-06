@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-sudo apt-key --keyring /etc/apt/trusted.gpg.d/ansible.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 6125E2A8C77F2818FB7BD15B93C4A3FD7BB9C367
-echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ansible.list
-sudo apt update
-sudo apt --yes install ansible
+xcode-select --install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install ansible
 
 chmod +x run

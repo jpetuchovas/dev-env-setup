@@ -1,0 +1,22 @@
+---
+- name: Install a newer version of Bash
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew:
+    name:
+      - bash
+      - bash-completion@2
+    state: present
+
+- name: Add the path of the new Bash version to /etc/shells
+  become: true
+  lineinfile:
+    path: /etc/shells
+    line: /usr/local/bin/bash
+    state: present
+
+- name: Change shell for current user
+  become: true
+  user:
+    name: '{{ user_name }}'
+    shell: /usr/local/bin/bash

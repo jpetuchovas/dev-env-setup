@@ -1,0 +1,14 @@
+---
+- name: Tap the Homebrew cask of drivers
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_tap:
+    name: homebrew/cask-drivers
+    state: present
+
+- name: Install Logitech Options
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name: logitech-options
+    state: present

@@ -1,4 +1,0 @@
-k380_function_keys_conf_repository_url: >-
-  https://github.com/jergusg/k380-function-keys-conf.git
-k380_function_keys_conf_directory_path: >-
-  ~{{ user_name }}/programs/k380-function-keys-conf

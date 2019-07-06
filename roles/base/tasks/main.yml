@@ -1,11 +1,16 @@
 ---
-- name: Update repositories
+- name: Update Homebrew and upgrade all packages
   become: true
-  apt:
-    update_cache: true
-  changed_when: false
+  become_user: '{{ user_name }}'
+  homebrew:
+    update_homebrew: true
+    upgrade_all: true
 
-- name: Upgrade packages
+- name: Install basic tools
   become: true
-  apt:
-    upgrade: dist
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name:
+      - spectacle
+      - the-unarchiver
+    state: present

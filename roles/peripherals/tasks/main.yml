@@ -1,5 +1,3 @@
 ---
-- import_tasks: logitech-k380-keyboard.yml
-- import_tasks: logitech-m705-mouse.yml
-- import_tasks: microphone.yml
-  when: ansible_virtualization_role == 'host'
+- import_tasks: logitech-options.yml
+  when: are_logitech_peripherals_used | bool

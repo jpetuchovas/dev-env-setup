@@ -15,13 +15,13 @@
       tags: storage
     - role: dev-tools
       tags: dev-tools
+    - role: productivity
+      tags: productivity
     - role: peripherals
       tags: peripherals
     - role: learning
       tags: learning
     - role: media
       tags: media
-    - role: current-job-specific
-      tags: current-job-specific
-    - role: desktop-env
-      tags: desktop-env
+    - role: phone
+      tags: phone

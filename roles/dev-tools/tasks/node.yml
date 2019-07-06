@@ -1,16 +1,19 @@
 ---
-- name: Install Node.js
+- name: Install nvm
   become: true
-  snap:
-    name: node
-    channel: 10/stable
-    classic: true
+  become_user: '{{ user_name }}'
+  homebrew:
+    name: nvm
     state: present
 
-- name: Install the Gatsby CLI
+- name: Create nvm’s working directory
   become: true
-  npm:
-    name: gatsby-cli
-    global: true
-    unsafe_perm: true
-    state: present
+  become_user: '{{ user_name }}'
+  file:
+    path: ~/.nvm
+    state: directory
+
+- name: Install Node.js
+  become: true
+  become_user: '{{ user_name }}'
+  shell: . /usr/local/opt/nvm/nvm.sh && nvm install node && nvm use node

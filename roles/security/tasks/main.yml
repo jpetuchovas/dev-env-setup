@@ -1,8 +1,9 @@
 ---
-- import_tasks: keybase.yml
-
-- name: Install Bitwarden
+- name: Install security applications
   become: true
-  snap:
-    name: bitwarden
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name:
+      - authy
+      - bitwarden
     state: present

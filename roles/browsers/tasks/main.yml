@@ -1,8 +1,7 @@
 ---
-- import_tasks: firefox.yml
-
-- name: Install Chromium
+- name: Install Chrome
   become: true
-  snap:
-    name: chromium
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name: google-chrome
     state: present

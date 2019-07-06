@@ -1,14 +1,10 @@
 ---
-- name: Install LaTeX
+- name: Install learning applications
   become: true
-  apt:
-    name: texlive-full
-    state: present
-
-- import_tasks: anki.yml
-
-- name: Install Mathpix Snipping Tool
-  become: true
-  snap:
-    name: mathpix-snipping-tool
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name:
+      - anki
+      - mactex
+      - mathpix-snipping-tool
     state: present

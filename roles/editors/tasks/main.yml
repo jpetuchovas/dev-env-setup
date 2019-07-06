@@ -1,2 +1,7 @@
 ---
-- import_tasks: vscode.yml
+- name: Install Visual Studio Code
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name: visual-studio-code
+    state: present

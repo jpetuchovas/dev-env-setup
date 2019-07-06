@@ -1,6 +1,0 @@
----
-- name: Set locale
-  become: true
-  copy:
-    src: files/locale
-    dest: /etc/default/locale

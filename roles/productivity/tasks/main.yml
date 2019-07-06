@@ -1,9 +1,8 @@
----
-- name: Install media applications
+- name: Install productivity applications
   become: true
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
-      - spotify
-      - vlc
+      - dynalist
+      - freedom
     state: present

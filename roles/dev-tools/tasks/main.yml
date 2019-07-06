@@ -1,22 +1,27 @@
 ---
-- import_tasks: git.yml
-- import_tasks: anaconda.yml
-- import_tasks: docker.yml
+- name: Install development packages
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew:
+    name:
+      - awscli
+      - docker-completion
+      - docker-compose-completion
+      - git
+      - vagrant-completion
+    state: present
+
+- name: Install development applications
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name:
+      - devdocs
+      - docker
+      - vagrant
+      - virtualbox
+    state: present
+
+- import_tasks: bash.yml
+- import_tasks: python.yml
 - import_tasks: node.yml
-- import_tasks: virtualbox.yml
-  when: ansible_virtualization_role == 'host'
-- import_tasks: vagrant.yml
-  when: ansible_virtualization_role == 'host'
-
-- name: Install direnv
-  become: true
-  apt:
-    name: direnv
-    state: present
-
-- name: Install AWS CLI
-  become: true
-  snap:
-    name: aws-cli
-    classic: true
-    state: present
