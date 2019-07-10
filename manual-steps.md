@@ -10,6 +10,7 @@ Clone the dotfiles repository and run the installation script.
 
 - View -> Hide Marks.
 - Preferences -> Profiles -> Keyboard -> Check “Use Option as Meta key”.
+- Preferences -> Profiles -> Advanced -> Uncheck “Audible Bell”.
 - Modify the title bar.
 - Copy color scheme from Visual Studio Code.
 
