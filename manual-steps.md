@@ -17,3 +17,7 @@ Clone the dotfiles repository and run the installation script.
 ## System Preferences
 
 Set various system preferences such as Night Shift schedule.
+
+## Yarn
+
+If needed, install Yarn with `npm install --global yarn`.
