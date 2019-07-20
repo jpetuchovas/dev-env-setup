@@ -5,4 +5,5 @@
     name:
       - dynalist
       - freedom
+      - toggl
     state: present
