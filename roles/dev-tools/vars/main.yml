@@ -1,5 +1,5 @@
 pyenv_python_versions:
   # In order of precedence
-  - 3.7.3
-  - 3.6.8
+  - 3.7.4
+  - 3.6.9
   - anaconda3-2019.03
