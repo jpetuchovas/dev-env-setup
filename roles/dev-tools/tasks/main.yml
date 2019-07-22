@@ -8,6 +8,7 @@
       - docker-completion
       - docker-compose-completion
       - git
+      - rsync
       - vagrant-completion
     state: present
 
