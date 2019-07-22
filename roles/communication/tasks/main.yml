@@ -1,0 +1,7 @@
+---
+- name: Install Slack
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name: slack
+    state: present

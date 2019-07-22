@@ -17,6 +17,8 @@
       tags: dev-tools
     - role: productivity
       tags: productivity
+    - role: communication
+      tags: communication
     - role: peripherals
       tags: peripherals
     - role: learning
