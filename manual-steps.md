@@ -100,7 +100,8 @@ Uncheck:
 ### Keyboard
 
 - Shortcuts:
-  - Check “Select next source in Input menu”.
+  - Mission Control -> Uncheck “Show Dashboard”.
+  - Input Sources -> Check “Select next source in Input menu”.
   - At the bottom select “All controls”.
 - Dictation -> Next to “Shortcut” select “Off”.
 
