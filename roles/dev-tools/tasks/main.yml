@@ -8,7 +8,9 @@
       - docker-completion
       - docker-compose-completion
       - git
+      - jq
       - rsync
+      - tig
       - vagrant-completion
     state: present
 
