@@ -37,6 +37,7 @@ If needed, install Yarn with `npm install --global yarn`.
 ### View Options
 
 - Go to any folder.
+- View -> Show Path Bar.
 - View -> Show View Options:
   - Group By -> Name.
   - Sort By -> Snap to Grid.
