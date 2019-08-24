@@ -12,7 +12,12 @@ If needed, install Yarn with `npm install --global yarn`.
 
 ## Valgrind
 
-If needed, install Valgrind with `brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-macos/master/valgrind.rb`.
+If needed, install Valgrind with
+
+```bash
+brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-macos/master/valgrind.rb
+brew pin valgrind
+```
 
 ## Terminal
 
