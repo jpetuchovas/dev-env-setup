@@ -5,5 +5,5 @@
     name:
       - dynalist
       - freedom
-      - toggl
+      - toptracker
     state: present
