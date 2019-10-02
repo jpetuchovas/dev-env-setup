@@ -12,3 +12,5 @@
   homebrew:
     name: nano
     state: present
+
+- import_tasks: spacemacs.yml
