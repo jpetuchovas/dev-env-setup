@@ -23,6 +23,7 @@
       - docker
       - vagrant
       - virtualbox
+      - wireshark
     state: present
 
 - import_tasks: bash.yml
