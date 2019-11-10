@@ -1,0 +1,14 @@
+---
+- name: Install Java
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name: java
+    state: present
+
+- name: Install Maven
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew:
+    name: maven
+    state: present
