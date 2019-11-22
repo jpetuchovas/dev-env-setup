@@ -19,6 +19,10 @@ brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-maco
 brew pin valgrind
 ```
 
+## VS Code
+
+If VS Code Vim plugin is installed, to enable key-repeating follow the instructions: <https://marketplace.visualstudio.com/items?itemName=vscodevim.vim#mac>.
+
 ## Terminal
 
 - View -> Hide Marks.
