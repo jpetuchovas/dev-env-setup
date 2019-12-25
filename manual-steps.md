@@ -10,15 +10,6 @@ Clone the dotfiles repository and run the installation script.
 
 If needed, install Yarn with `npm install --global yarn`.
 
-## Valgrind
-
-If needed, install Valgrind with
-
-```bash
-brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-macos/master/valgrind.rb
-brew pin valgrind
-```
-
 ## Terminal
 
 - View -> Hide Marks.

@@ -16,9 +16,6 @@
 - name: Install the needed Python versions
   become: true
   become_user: '{{ user_name }}'
-  # The additional variables before the pyenv command are necessary here to
-  # prevent the error: “ImportError: No module named pyexpat”.
-  # See: https://github.com/pyenv/pyenv/issues/1066
   shell: pyenv install {{ item }}
   register: pyenv_install_result
   failed_when: >-
