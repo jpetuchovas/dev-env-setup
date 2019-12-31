@@ -5,6 +5,7 @@
     name:
       - dynalist
       - freedom
+      - hazeover
       - michaelvillar-timer
       - toptracker
     state: present
