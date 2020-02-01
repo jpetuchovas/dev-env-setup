@@ -4,6 +4,7 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
+      - drawio
       - grammarly
       - slack
     state: present
