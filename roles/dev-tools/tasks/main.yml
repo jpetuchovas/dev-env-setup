@@ -21,6 +21,7 @@
     name:
       - devdocs
       - docker
+      - menumeters
       - vagrant
       - virtualbox
       - wireshark
