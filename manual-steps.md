@@ -108,6 +108,7 @@ Uncheck:
 
 ### Keyboard
 
+- Keyboard -> Increase “Key Repeat” and “Delay Until Repeat“ if needed.
 - Shortcuts:
   - Mission Control -> Uncheck “Show Dashboard”.
   - Input Sources -> Check “Select next source in Input menu”.
