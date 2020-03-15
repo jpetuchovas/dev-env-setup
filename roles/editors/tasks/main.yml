@@ -6,9 +6,11 @@
     name: visual-studio-code
     state: present
 
-- name: Install an updated version of nano
+- name: Install command-line editors
   become: true
   become_user: '{{ user_name }}'
   homebrew:
-    name: nano
+    name:
+      - nano
+      - vim
     state: present
