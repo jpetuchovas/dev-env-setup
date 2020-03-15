@@ -17,7 +17,15 @@ If needed, install Yarn with `npm install --global yarn`.
   - Keyboard -> Check “Use Option as Meta key”.
   - Advanced -> Uncheck “Audible Bell”.
   - Advanced -> Uncheck “Working directory or document”, “Arguments”, “Active process name”, and “Dimensions”.
-  - Text -> Copy color scheme from Visual Studio Code.
+  - Text -> Copy color scheme from VS Code.
+
+## VS Code
+
+For VSCodeVim, execute the following:
+
+```bash
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
 
 ## Finder
 
