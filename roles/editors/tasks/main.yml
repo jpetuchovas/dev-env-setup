@@ -18,5 +18,5 @@
 - name: Install pandoc
   become: true
   become_user: '{{ user_name }}'
-  homebrew_cask:
+  homebrew:
     name: pandoc
