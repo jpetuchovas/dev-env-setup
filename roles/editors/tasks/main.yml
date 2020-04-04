@@ -14,3 +14,9 @@
       - nano
       - vim
     state: present
+
+- name: Install pandoc
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew_cask:
+    name: pandoc
