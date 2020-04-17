@@ -5,6 +5,6 @@
   homebrew_cask:
     name:
       - anki
-      - mactex
+      - mactex-no-gui
       - mathpix-snipping-tool
     state: present
