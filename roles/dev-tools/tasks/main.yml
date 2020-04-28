@@ -19,8 +19,6 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
-      - dash
-      - devdocs
       - docker
       - menumeters
       - vagrant

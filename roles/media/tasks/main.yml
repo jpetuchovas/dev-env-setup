@@ -4,6 +4,5 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
-      - spotify
       - vlc
     state: present

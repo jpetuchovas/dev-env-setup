@@ -3,9 +3,6 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
-      - dynalist
       - freedom
-      - hazeover
       - michaelvillar-timer
-      - toptracker
     state: present
