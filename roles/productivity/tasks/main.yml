@@ -5,4 +5,5 @@
     name:
       - freedom
       - michaelvillar-timer
+      - vienna
     state: present
