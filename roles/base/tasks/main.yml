@@ -14,3 +14,10 @@
       - spectacle
       - the-unarchiver
     state: present
+
+
+- name: Install mas
+  become: true
+  become_user: '{{ user_name }}'
+  homebrew:
+    name: mas
