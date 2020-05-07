@@ -3,7 +3,7 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
+      - clockify
       - freedom
-      - michaelvillar-timer
       - vienna
     state: present
