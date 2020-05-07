@@ -6,4 +6,5 @@
     name:
       - skim
       - vlc
+      - zotero
     state: present
