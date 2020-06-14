@@ -15,11 +15,13 @@
       - vim
     state: present
 
-- name: Install Mark Text
+- name: Install Markdown editors
   become: true
   become_user: '{{ user_name }}'
   homebrew_cask:
-    name: mark-text
+    name:
+      - mark-text
+      - obsidian
 
 - name: Install pandoc
   become: true
