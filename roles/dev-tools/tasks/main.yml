@@ -9,6 +9,7 @@
       - docker-compose-completion
       - git
       - jq
+      - mono
       - rsync
       - tig
       - vagrant-completion
@@ -20,7 +21,9 @@
   homebrew_cask:
     name:
       - docker
+      - dotnet-sdk
       - menumeters
+      - unity-hub
       - vagrant
       - virtualbox
       - wireshark
