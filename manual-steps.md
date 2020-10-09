@@ -6,6 +6,10 @@ A couple of manual steps to perform on a new computer.
 
 Clone the dotfiles repository and run the installation script.
 
+## n
+
+Install [n](https://github.com/tj/n) with [n-install](http://git.io/n-install-repo).
+
 ## Yarn
 
 If needed, install Yarn with `npm install --global yarn`.
