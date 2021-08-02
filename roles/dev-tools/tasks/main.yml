@@ -11,6 +11,7 @@
       - jq
       - rsync
       - tig
+      - tmux
       - vagrant-completion
     state: present
 
