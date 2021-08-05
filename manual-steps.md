@@ -14,6 +14,10 @@ Install [n](https://github.com/tj/n) with [n-install](http://git.io/n-install-re
 
 If needed, install Yarn with `npm install --global yarn`.
 
+## Vim
+
+Install [vim-plug](https://github.com/junegunn/vim-plug). Run `:PlugInstall` in Vim to install Vim plugins.
+
 ## Terminal
 
 * View -> Hide Marks.
