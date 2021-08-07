@@ -18,6 +18,14 @@ If needed, install Yarn with `npm install --global yarn`.
 
 Install [vim-plug](https://github.com/junegunn/vim-plug). Run `:PlugInstall` in Vim to install Vim plugins.
 
+## Obsidian
+
+Install Obsidian plugins:
+
+* Excalidraw.
+* Kanban.
+* Obsidian_to_Anki.
+
 ## Terminal
 
 * View -> Hide Marks.
