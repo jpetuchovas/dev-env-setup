@@ -20,6 +20,7 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
+      - cyberduck
       - docker
       - menumeters
       - vagrant
