@@ -1,3 +1,4 @@
 pyenv_python_versions:
   # In order of precedence
-  - 3.9.6
+  - 3.10.0
+  - 3.9.7
