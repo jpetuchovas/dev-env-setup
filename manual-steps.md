@@ -25,6 +25,7 @@ Install Obsidian plugins:
 * Excalidraw.
 * Kanban.
 * Obsidian_to_Anki.
+* Relative Line Numbers.
 
 ## Terminal
 
@@ -116,7 +117,9 @@ Uncheck:
 
 ### Keyboard
 
-* Keyboard -> Increase “Key Repeat” and “Delay Until Repeat“ if needed.
+* Keyboard:
+    * Increase “Key Repeat” and “Delay Until Repeat“ if needed.
+    * Modifier Keys: Remap Caps Lock to Control.
 * Shortcuts:
     * Mission Control -> Uncheck “Show Dashboard”.
     * Input Sources -> Check “Select next source in Input menu”.
