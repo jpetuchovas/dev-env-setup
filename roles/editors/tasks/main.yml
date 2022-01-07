@@ -12,6 +12,7 @@
   homebrew:
     name:
       - nano
+      - neovim
       - vim
     state: present
 
