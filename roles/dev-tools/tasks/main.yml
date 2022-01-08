@@ -26,6 +26,7 @@
       - menumeters
       - vagrant
       - virtualbox
+      - virtualbox-extension-pack
       - wireshark
     state: present
 
