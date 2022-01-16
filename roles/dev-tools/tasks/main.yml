@@ -13,6 +13,7 @@
       - tig
       - tmux
       - vagrant-completion
+      - wget
     state: present
 
 - name: Install development applications
