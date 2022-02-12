@@ -5,10 +5,3 @@
   homebrew_cask:
     name: google-chrome
     state: present
-
-- name: Install web app wrapper
-  become: true
-  become_user: '{{ user_name }}'
-  homebrew:
-    name: nativefier
-    state: present
