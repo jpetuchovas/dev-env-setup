@@ -1,4 +1,3 @@
----
 - name: Tap the Homebrew cask of drivers
   become: true
   become_user: '{{ user_name }}'

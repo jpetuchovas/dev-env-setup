@@ -1,4 +1,3 @@
----
 - name: Install security applications
   become: true
   become_user: '{{ user_name }}'

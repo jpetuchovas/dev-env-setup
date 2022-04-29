@@ -1,4 +1,3 @@
----
 - name: Create the user {{ user_name }}
   become: true
   user:
