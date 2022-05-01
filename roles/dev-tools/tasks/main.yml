@@ -28,7 +28,6 @@
       - vagrant
       - virtualbox
       - virtualbox-extension-pack
-      - wireshark
     state: present
 
 - import_tasks: bash.yml
