@@ -10,7 +10,6 @@
   become_user: '{{ user_name }}'
   homebrew_cask:
     name:
-      - karabiner-elements
       - spectacle
       - the-unarchiver
     state: present
