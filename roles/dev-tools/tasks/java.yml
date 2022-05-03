@@ -1,8 +1,8 @@
 - name: Install Java
   become: true
   become_user: '{{ user_name }}'
-  homebrew_cask:
-    name: java
+  homebrew:
+    name: openjdk@11
     state: present
 
 - name: Install Maven
