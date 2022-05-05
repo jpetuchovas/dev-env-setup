@@ -16,7 +16,8 @@ If needed, install Yarn with `npm install --global yarn`.
 
 ## Vim
 
-Install [vim-plug](https://github.com/junegunn/vim-plug). Run `:PlugInstall` in Vim to install Vim plugins.
+Install [vim-plug](https://github.com/junegunn/vim-plug). Run `:PlugInstall` in
+Vim to install Vim plugins.
 
 ## Obsidian
 
@@ -33,7 +34,8 @@ Install Obsidian plugins:
 * Preferences -> Profiles:
     * Keyboard -> Check "Use Option as Meta key".
     * Advanced -> Uncheck "Audible Bell".
-    * Advanced -> Uncheck "Working directory or document", "Arguments", "Active process name", and "Dimensions".
+    * Window -> Uncheck "Working directory or document", "Arguments",
+      "Active process name", and "Dimensions".
     * Text -> Copy color scheme from VS Code.
     * Text -> Font -> "Change..." -> Change font size.
 
@@ -49,7 +51,8 @@ Install Obsidian plugins:
     * justinas.
     * All checkboxes under "Locations".
 * Advanced:
-    * Check "Show all filename extensions", "Remove items from the Trash after 30 days", and "In windows when sorting by name".
+    * Check "Show all filename extensions", "Remove items from the Trash after
+      30 days", and "In windows when sorting by name".
     * Next to "When performing a search" select "Search the Current Folder".
 
 ### View Options
@@ -91,7 +94,8 @@ Install Obsidian plugins:
 
 ### Security & Privacy
 
-* Make sure that "Require password immediately after sleep or screen saver begins" is chosen.
+* Make sure that "Require password immediately after sleep or screen saver
+  begins" is chosen.
 * Firewall -> Turn On Firewall.
 
 ### Spotlight
@@ -136,4 +140,5 @@ Uncheck:
 
 ### Sound
 
-* Sound Effects -> Uncheck "Play user interface sound effects".
+* Sound Effects -> Uncheck "Pay sound on startup" and "Play user interface sound
+  effects".
