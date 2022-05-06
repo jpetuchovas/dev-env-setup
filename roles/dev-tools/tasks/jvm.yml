@@ -2,7 +2,9 @@
   become: true
   become_user: '{{ user_name }}'
   homebrew:
-    name: openjdk@11
+    name:
+      - openjdk@11
+      - scala
     state: present
 
 - name: Install Maven
