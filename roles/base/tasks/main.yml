@@ -11,6 +11,7 @@
   homebrew_cask:
     name:
       - spectacle
+      - hammerspoon
       - the-unarchiver
     state: present
 
