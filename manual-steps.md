@@ -28,6 +28,15 @@ Install Obsidian plugins:
 * Obsidian_to_Anki.
 * Relative Line Numbers.
 
+## IntelliJ IDEA
+
+Install IntelliJ IDEA if needed and enable plugins:
+
+* IdeaVim.
+* Protocol Buffers.
+* Scala.
+* VSCode Keymap.
+
 ## Terminal
 
 * View -> Hide Marks.
