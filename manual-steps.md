@@ -123,7 +123,7 @@ Uncheck:
 ### Keyboard
 
 * Keyboard:
-    * Increase "Key Repeat" and "Delay Until Repeat" if needed.
+    * Increase "Key Repeat" and "Delay Until Repeat" to max values.
     * Modifier Keys: Remap Caps Lock to Control.
 * Shortcuts:
     * Mission Control -> Uncheck "Show Dashboard".
