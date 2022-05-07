@@ -1,15 +1,8 @@
-- name: Install Java
+- name: Install Java and Scala installer
   become: true
   become_user: '{{ user_name }}'
   homebrew:
     name:
       - openjdk@11
-      - scala
-    state: present
-
-- name: Install Maven
-  become: true
-  become_user: '{{ user_name }}'
-  homebrew:
-    name: maven
+      - coursier/formulas/coursier
     state: present
