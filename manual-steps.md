@@ -108,8 +108,7 @@ Uncheck:
 * Events & Reminders.
 * Fonts.
 * Mail & Messages.
-* Spotlight Suggestions.
-* Allow Spotlight Suggestions in Look up.
+* Siri Suggestions.
 
 ### Displays
 
@@ -127,8 +126,6 @@ Uncheck:
     * Modifier Keys: Remap Caps Lock to Control.
 * Shortcuts:
     * Mission Control -> Uncheck "Show Dashboard".
-    * Input Sources -> Check "Select next source in Input menu".
-    * At the bottom select "All controls".
 * Dictation -> Next to "Shortcut" select "Off".
 
 ### Trackpad
@@ -140,5 +137,5 @@ Uncheck:
 
 ### Sound
 
-* Sound Effects -> Uncheck "Pay sound on startup" and "Play user interface sound
+* Sound Effects -> Uncheck "Play sound on startup" and "Play user interface sound
   effects".
