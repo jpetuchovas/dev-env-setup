@@ -37,6 +37,13 @@ Install IntelliJ IDEA if needed and enable plugins:
 * Scala.
 * VSCode Keymap.
 
+Update the preferences:
+
+* Editor -> General -> On Save -> Check "Remove trailing spaces on All lines",
+  "Remove trailing blank lines at the end of saved files", and "Ensure every
+  saved file ends with a line break".
+* Editor -> General -> Console -> Check "Use soft wraps in console".
+
 ## Terminal
 
 * View -> Hide Marks.
@@ -132,6 +139,7 @@ Uncheck:
 
 * Keyboard:
     * Increase "Key Repeat" and "Delay Until Repeat" to max values.
+    * Check "Use F1, F2, etc. keys as standard function keys".
     * Modifier Keys: Remap Caps Lock to Control.
 * Shortcuts:
     * Mission Control -> Uncheck "Show Dashboard".
