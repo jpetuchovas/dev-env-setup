@@ -14,6 +14,14 @@ Install [n](https://github.com/tj/n) with [n-install](http://git.io/n-install-re
 
 If needed, install Yarn with `npm install --global yarn`.
 
+## Scala
+
+If needed, install Scala using [coursier](https://get-coursier.io/):
+
+```shell
+cs setup
+```
+
 ## Vim
 
 Install [vim-plug](https://github.com/junegunn/vim-plug). Run `:PlugInstall` in
