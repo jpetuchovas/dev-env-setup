@@ -40,6 +40,7 @@ Install Obsidian plugins:
 
 Install IntelliJ IDEA if needed and enable plugins:
 
+* Bazel.
 * IdeaVim.
 * Protocol Buffers.
 * Scala.

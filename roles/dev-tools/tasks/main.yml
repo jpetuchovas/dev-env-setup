@@ -4,6 +4,8 @@
   homebrew:
     name:
       - awscli
+      - bazelisk
+      - buildifier
       - docker-completion
       - docker-compose-completion
       - git
