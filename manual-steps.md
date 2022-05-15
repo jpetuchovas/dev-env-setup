@@ -52,6 +52,7 @@ Update the preferences:
   "Remove trailing blank lines at the end of saved files", and "Ensure every
   saved file ends with a line break".
 * Editor -> General -> Console -> Check "Use soft wraps in console".
+* Editor -> Code Style -> Scala -> Scalafmt -> Check "Reformat on file save".
 
 ## Terminal
 
