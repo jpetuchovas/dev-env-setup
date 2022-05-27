@@ -6,13 +6,19 @@ A couple of manual steps to perform on a new computer.
 
 Clone the dotfiles repository and run the installation script.
 
-## n
+## Node
+
+### n
 
 Install [n](https://github.com/tj/n) with [n-install](http://git.io/n-install-repo).
 
-## Yarn
+### Yarn
 
-If needed, install Yarn with `npm install --global yarn`.
+If needed, install Yarn with `npm install -g yarn`.
+
+### WebSocket
+
+If needed, install `wscat` with `npm install -g wscat`.
 
 ## Scala
 
