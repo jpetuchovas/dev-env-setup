@@ -158,7 +158,7 @@ Uncheck:
     * Check "Use F1, F2, etc. keys as standard function keys".
     * Modifier Keys: Remap Caps Lock to Control.
 * Shortcuts:
-    * Mission Control -> Uncheck "Show Dashboard".
+    * Input Sources -> Uncheck "Select the previous input source"
 * Dictation -> Next to "Shortcut" select "Off".
 
 ### Trackpad
