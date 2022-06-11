@@ -57,7 +57,9 @@ Update the preferences:
 * Editor -> General -> On Save -> Check "Remove trailing spaces on All lines",
   "Remove trailing blank lines at the end of saved files", and "Ensure every
   saved file ends with a line break".
+* Editor -> General -> Appearance -> Uncheck "Caret blinking".
 * Editor -> General -> Console -> Check "Use soft wraps in console".
+* Editor -> General -> Editor Tabs -> Appearance -> Check "Mark modified (*)".
 * Editor -> Code Style -> Scala -> Scalafmt -> Check "Reformat on file save".
 
 ## Terminal
