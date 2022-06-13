@@ -7,7 +7,7 @@ An [Ansible](https://www.ansible.com/) playbook used to setup my development env
 In order to install Homebrew and Ansible and grant execute permission for the bash script `run`, run the command:
 
 ```bash
-chmod +x install && ./install
+./install
 ```
 
 ## Usage
