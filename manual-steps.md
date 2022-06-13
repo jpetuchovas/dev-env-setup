@@ -114,8 +114,9 @@ Update the preferences:
 
 ### Dock
 
-* Uncheck "Animate opening applications".
 * Check "Automatically hide and show the Dock".
+* Uncheck "Animate opening applications".
+* Uncheck "Show recent applications in Dock".
 
 ### Mission Control
 
