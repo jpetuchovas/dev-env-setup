@@ -9,6 +9,7 @@
       - docker-completion
       - docker-compose-completion
       - git
+      - go
       - jq
       - rsync
       - tig
