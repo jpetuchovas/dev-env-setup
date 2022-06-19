@@ -5,13 +5,5 @@
     name:
       - authy
       - bitwarden
+      - malwarebytes
     state: present
-
-- name: Install YubiKey dependencies
-  become: true
-  become_user: '{{ user_name }}'
-  homebrew:
-    name:
-      - libusb
-      - swig
-      - yubikey-personalization
