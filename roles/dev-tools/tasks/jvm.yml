@@ -3,6 +3,8 @@
   become_user: '{{ user_name }}'
   homebrew:
     name:
-      - openjdk@11
       - coursier/formulas/coursier
+      - jenv
+      - openjdk@11
+      - openjdk@17
     state: present
