@@ -46,8 +46,10 @@ Install Obsidian plugins:
 
 Install IntelliJ IDEA if needed and enable plugins:
 
+* Archive Browser.
 * Bazel.
 * IdeaVim.
+* Makefile Language.
 * Protocol Buffers.
 * Scala.
 * VSCode Keymap.
