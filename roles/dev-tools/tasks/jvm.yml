@@ -5,6 +5,7 @@
     name:
       - coursier/formulas/coursier
       - jenv
+      - maven
       - openjdk@11
       - openjdk@17
     state: present
