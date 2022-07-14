@@ -11,6 +11,7 @@
       - git
       - go
       - jq
+      - k9s
       - rsync
       - tig
       - tmux
