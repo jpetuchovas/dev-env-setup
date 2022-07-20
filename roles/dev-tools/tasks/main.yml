@@ -28,6 +28,7 @@
       - dbeaver-community
       - docker
       - menumeters
+      - postman
       - vagrant
       - virtualbox
       - virtualbox-extension-pack
