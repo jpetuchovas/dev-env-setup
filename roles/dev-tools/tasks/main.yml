@@ -6,6 +6,7 @@
       - awscli
       - bazelisk
       - buildifier
+      - cloc
       - docker-completion
       - docker-compose-completion
       - git
