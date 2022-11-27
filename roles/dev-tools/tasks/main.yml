@@ -3,7 +3,6 @@
   become_user: '{{ user_name }}'
   homebrew:
     name:
-      - awscli
       - bazelisk
       - buildifier
       - cloc
