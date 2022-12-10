@@ -10,7 +10,6 @@
   become_user: '{{ user_name }}'
   homebrew:
     name:
-      - nano
       - neovim
       - vim
     state: present

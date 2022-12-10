@@ -4,7 +4,6 @@
   homebrew:
     name:
       - bazelisk
-      - buildifier
       - cloc
       - docker-completion
       - docker-compose-completion
@@ -15,7 +14,6 @@
       - rsync
       - tig
       - tmux
-      - vagrant-completion
       - wget
     state: present
 
@@ -29,7 +27,6 @@
       - docker
       - menumeters
       - postman
-      - vagrant
       - virtualbox
       - virtualbox-extension-pack
     state: present
