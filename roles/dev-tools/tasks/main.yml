@@ -11,6 +11,7 @@
       - go
       - jq
       - k9s
+      - ripgrep
       - rsync
       - tig
       - tmux
