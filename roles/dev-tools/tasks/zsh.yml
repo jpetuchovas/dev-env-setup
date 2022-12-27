@@ -1,21 +1,22 @@
-- name: Install a newer version of Bash
+- name: Install a newer version of zsh
   become: true
   become_user: '{{ user_name }}'
   homebrew:
     name:
-      - bash
-      - bash-completion@2
+      - zsh
+      - zsh-completions
+      - zsh-autosuggestions
     state: present
 
-- name: Add the path of the new Bash version to /etc/shells
+- name: Add the path of the new zsh version to /etc/shells
   become: true
   lineinfile:
     path: /etc/shells
-    line: /usr/local/bin/bash
+    line: /usr/local/bin/zsh
     state: present
 
 - name: Change shell for current user
   become: true
   user:
     name: '{{ user_name }}'
-    shell: /usr/local/bin/bash
+    shell: /usr/local/bin/zsh

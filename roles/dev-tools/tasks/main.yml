@@ -32,6 +32,6 @@
       - virtualbox-extension-pack
     state: present
 
-- import_tasks: bash.yml
+- import_tasks: zsh.yml
 - import_tasks: python.yml
 - import_tasks: jvm.yml
