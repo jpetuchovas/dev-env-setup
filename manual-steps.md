@@ -62,6 +62,7 @@ Update the preferences:
 * Editor -> General -> Appearance -> Uncheck "Caret blinking".
 * Editor -> General -> Console -> Check "Use soft wraps in console".
 * Editor -> General -> Editor Tabs -> Appearance -> Check "Mark modified (*)".
+* Editor -> Font -> Change "Size" to 20.0.
 * Editor -> Code Style -> Java -> Tabs and Indents -> Change "Tab size" and
   "Indent" to 2 as well as "Continuation indent" to 4.
 * Editor -> Code Style -> Java -> Imports -> Change "Class count to use import
