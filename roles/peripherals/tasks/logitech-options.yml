@@ -5,9 +5,9 @@
     name: homebrew/cask-drivers
     state: present
 
-- name: Install Logitech Options
+- name: Install Logi Options+
   become: true
   become_user: '{{ user_name }}'
   homebrew_cask:
-    name: logitech-options
+    name: logi-options-plus
     state: present
