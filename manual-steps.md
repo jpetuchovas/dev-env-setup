@@ -37,10 +37,10 @@ Vim to install Vim plugins.
 
 Install Obsidian plugins:
 
-* Excalidraw.
 * Kanban.
-* Obsidian_to_Anki.
+* Reminder.
 * Relative Line Numbers.
+* Obsidian_to_Anki.
 
 ## IntelliJ IDEA
 
