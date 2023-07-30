@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 let
   user = "justinasp";
@@ -9,7 +9,10 @@ in {
     ../../common/darwin
   ];
 
-  users.users.${user}.home = /Users/${user};
+  users.users.${user} = {
+    home = /Users/${user};
+    shell = pkgs.zsh;
+  };
 
   home-manager.users.${user} = { pkgs, ... }:
   let

@@ -32,6 +32,12 @@ If you plan to use nix-darwin to configure zsh, source a configuration file crea
 echo 'if test -e /etc/static/zshrc; then . /etc/static/zshrc; fi' | sudo tee -a /etc/zshrc
 ```
 
+If the macOS user was not created by nix-darwin and [Can't set user shell without giving nix-darwin complete control over my user](https://github.com/LnL7/nix-darwin/issues/328) issue is still not solved, run:
+
+```bash
+chsh -s /run/current-system/sw/bin/zsh
+```
+
 If `infocmp alacritty` produces an error, run:
 
 ```bash

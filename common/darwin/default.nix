@@ -1,7 +1,13 @@
 { pkgs, ... }:
 
 {
-  environment.etc."nix/nix.conf".enable = false;
+  environment = {
+    etc = {
+      "nix/nix.conf".enable = false;
+      zshrc.enable = false;
+    };
+    shells = [ pkgs.zsh ];
+  };
 
   fonts = import ../fonts.nix pkgs;
 
@@ -17,7 +23,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.bash.enable = false;
+  programs = {
+    bash.enable = false;
+    zsh.enable = true;
+  };
 
   services.nix-daemon.enable = true;
 
