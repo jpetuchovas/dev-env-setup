@@ -48,10 +48,16 @@ nix build .#darwinConfigurations.${hostname}.system
 
 To activate configuration changes such as autohiding the dock, log out and log in again.
 
-## Garbage Collection
+## Misc
 
 To clean up Nix store, run the following command:
 
 ```bash
 nix store gc
+```
+
+Update flake lock file:
+
+```bash
+nix flake update
 ```

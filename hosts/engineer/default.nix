@@ -11,12 +11,16 @@ in {
 
   users.users.${user}.home = /Users/${user};
 
-  home-manager.users.${user} = { pkgs, ... }: {
+  home-manager.users.${user} = { pkgs, ... }:
+  let
+    common-packages = import ../../common/packages.nix { inherit pkgs; };
+    additional-packages = import ./packages.nix { inherit pkgs; };
+  in {
     imports = [
       ../../common/home-manager-users.nix
     ];
 
-    home.packages = import ../../common/packages.nix { inherit pkgs; };
+    home.packages = common-packages ++ additional-packages;
   };
 
   homebrew.casks = common-casks ++ additional-casks;

@@ -15,6 +15,8 @@
 
   home-manager.useGlobalPkgs = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.bash.enable = false;
 
   services.nix-daemon.enable = true;
