@@ -7,4 +7,6 @@ with pkgs; [
   ripgrep
   texlive.combined.scheme-full
   tmux
+  zsh-autosuggestions
+  zsh-completions
 ]
