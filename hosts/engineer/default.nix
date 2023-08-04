@@ -26,5 +26,8 @@ in {
     home.packages = common-packages ++ additional-packages;
   };
 
-  homebrew.casks = common-casks ++ additional-casks;
+  homebrew = {
+    brews = import ./brews.nix;
+    casks = common-casks ++ additional-casks;
+  };
 }

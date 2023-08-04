@@ -13,6 +13,12 @@
 
   homebrew = {
     enable = true;
+    # mas list
+    masApps = {
+      Pages = 409201541;
+      Keynote =  409183694;
+      Numbers = 409203825;
+    };
     onActivation = {
       autoUpdate = true;
       upgrade = true;

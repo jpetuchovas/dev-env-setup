@@ -3,6 +3,7 @@
 with pkgs; [
   alacritty
   git
+  jq
   neovim
   ripgrep
   texlive.combined.scheme-full
