@@ -1,8 +1,0 @@
-- import_tasks: logitech-options.yml
-  when: are_logitech_peripherals_used | bool
-
-- name: Install KensingtonWorks
-  become: true
-  become_user: '{{ user_name }}'
-  homebrew_cask:
-    name: kensingtonworks

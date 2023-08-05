@@ -1,9 +1,0 @@
-- name: Install learning applications
-  become: true
-  become_user: '{{ user_name }}'
-  homebrew_cask:
-    name:
-      - anki
-      - mactex-no-gui
-      - mathpix-snipping-tool
-    state: present

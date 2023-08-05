@@ -1,9 +1,0 @@
-- name: Install security applications
-  become: true
-  become_user: '{{ user_name }}'
-  homebrew_cask:
-    name:
-      - authy
-      - bitwarden
-      - malwarebytes
-    state: present
