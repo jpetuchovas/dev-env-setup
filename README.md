@@ -21,7 +21,7 @@ nix build .#darwinConfigurations.${hostname}.system
 
 # Create a symlink from /run to /private/var/run required by nix-darwin. This step is needed since macOS does not allow any software to write to the root directory.
 printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf
-# If the following command fails, restarting the OS achieves the same thing.
+# If the following command fails, restart the OS to achieve the same thing.
 /System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util -t
 
 ./result/sw/bin/darwin-rebuild switch --flake .

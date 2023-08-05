@@ -13,6 +13,14 @@
 
   outputs = { self, darwin, nixpkgs, home-manager }: {
     darwinConfigurations = {
+      Justinass-MacBook-Pro-3 = darwin.lib.darwinSystem {
+        system = "x86_64-darwin";
+        modules = [
+          home-manager.darwinModules.home-manager
+          ./hosts/builder
+        ];
+      };
+
       LT-QL0WRWJ26R = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
