@@ -27,12 +27,6 @@ printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf
 ./result/sw/bin/darwin-rebuild switch --flake .
 ```
 
-If you plan to use nix-darwin to configure zsh, source a configuration file created by nix-darwin when `programs.zsh.enable` configuration option is set to `true` (this might need to be run again after a macOS update):
-
-```bash
-echo 'if test -e /etc/static/zshrc; then . /etc/static/zshrc; fi' | sudo tee -a /etc/zshrc
-```
-
 If the macOS user was not created by nix-darwin and [Can't set user shell without giving nix-darwin complete control over my user](https://github.com/LnL7/nix-darwin/issues/328) issue is still not solved, run:
 
 ```bash

@@ -74,7 +74,7 @@ Update the preferences:
 
 ### Desktop & Screen Saver
 
-* Screen Saver -> Next to "Start after" select "Never".
+* Screen Saver -> Uncheck "Show screen saver after".
 
 ### Language & Region
 
@@ -101,7 +101,7 @@ Uncheck:
 
 * Night Shift -> Set a custom schedule.
 
-### Energy Saver
+### Battery
 
 * Battery -> Uncheck "Enable Power Nap while on battery power".
 * Power Adapter -> Uncheck "Put hard disks to sleep when possible".
