@@ -6,10 +6,6 @@ A couple of manual steps to perform on a new computer.
 
 Clone the dotfiles repository and run the installation script.
 
-## Node
-
-Install [n](https://github.com/tj/n) with [n-install](http://git.io/n-install-repo).
-
 ## Obsidian
 
 Install Obsidian plugins:
