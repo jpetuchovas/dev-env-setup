@@ -46,6 +46,7 @@
       };
 
       dock = {
+        appswitcher-all-displays = true;
         autohide = true;
         launchanim = false;
         show-recents = false;
@@ -54,12 +55,18 @@
 
       finder = {
         FXDefaultSearchScope = "SCcf";
+        ShowPathbar = true;
         _FXShowPosixPathInTitle = true;
+      };
+
+      menuExtraClock = {
+        ShowDate = 0;
       };
 
       NSGlobalDomain = {
         AppleScrollerPagingBehavior = true;
         AppleShowAllExtensions = true;
+        AppleICUForce24HourTime = true;
 
         # Delay Until Repeat.
         # Values in System Preferences UI: 120, 94, 68, 35, 25, 15.
@@ -67,7 +74,9 @@
         # Values in System Preferences UI: 120, 90, 60, 30, 12, 6, 2.
         KeyRepeat = 2;
 
+        NSDocumentSaveNewDocumentsToCloud = false;
         "com.apple.keyboard.fnState" = true;
+        "com.apple.sound.beep.feedback" = 0;
       };
 
       trackpad = {
@@ -76,7 +85,10 @@
       };
 
       CustomUserPreferences = {
-
+         "com.apple.finder" = {
+           FXRemoveOldTrashItems = true;
+           _FXSortFoldersFirst = true;
+         };
       };
     };
 

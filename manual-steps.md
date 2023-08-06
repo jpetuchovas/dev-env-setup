@@ -8,30 +8,7 @@ Clone the dotfiles repository and run the installation script.
 
 ## Node
 
-### n
-
 Install [n](https://github.com/tj/n) with [n-install](http://git.io/n-install-repo).
-
-### Yarn
-
-If needed, install Yarn with `npm install -g yarn`.
-
-### WebSocket
-
-If needed, install `wscat` with `npm install -g wscat`.
-
-## Scala
-
-If needed, install Scala using [coursier](https://get-coursier.io/):
-
-```shell
-cs setup
-```
-
-## Vim
-
-Install [vim-plug](https://github.com/junegunn/vim-plug). Run `:PlugInstall` in
-Vim to install Vim plugins.
 
 ## Obsidian
 
@@ -71,17 +48,6 @@ Update the preferences:
 * Editor -> Inlay Hints -> Code vision -> Uncheck "Code author".
 * Tools -> Actions on Save -> Check "Reformat code" for Java and Scala.
 
-## Terminal
-
-* View -> Hide Marks.
-* Preferences -> Profiles:
-    * Keyboard -> Check "Use Option as Meta key".
-    * Advanced -> Uncheck "Audible Bell".
-    * Window -> Uncheck "Working directory or document", "Arguments",
-      "Active process name", and "Dimensions".
-    * Text -> Copy color scheme from VS Code.
-    * Text -> Font -> "Change..." -> Change font size.
-
 ## Finder
 
 ### Preferences
@@ -93,14 +59,10 @@ Update the preferences:
     * Documents.
     * justinas.
     * All checkboxes under "Locations".
-* Advanced:
-    * Check "Remove items from the Trash after 30 days", and
-      "In windows when sorting by name".
 
 ### View Options
 
 * Go to any folder.
-* View -> Show Path Bar.
 * View -> Show View Options:
     * Group By -> Name.
     * Sort By -> Snap to Grid.
@@ -118,14 +80,9 @@ Update the preferences:
 
 * Screen Saver -> Next to "Start after" select "Never".
 
-### Mission Control
-
-* Next to "Dashboard" select "Off".
-
 ### Language & Region
 
 * Next to "Region" select "United States".
-* Check "24-Hour Time".
 
 ### Security & Privacy
 
