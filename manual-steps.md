@@ -94,9 +94,8 @@ Update the preferences:
     * justinas.
     * All checkboxes under "Locations".
 * Advanced:
-    * Check "Show all filename extensions", "Remove items from the Trash after
-      30 days", and "In windows when sorting by name".
-    * Next to "When performing a search" select "Search the Current Folder".
+    * Check "Remove items from the Trash after 30 days", and
+      "In windows when sorting by name".
 
 ### View Options
 
@@ -111,21 +110,13 @@ Update the preferences:
 
 ### General
 
-* Select "Jump to the spot that’s clicked".
 * Uncheck "Close windows when quitting an app".
 * Next to "Recent items" select "None".
 * Uncheck "Allow Handoff between this Mac and your iCloud devices".
 
 ### Desktop & Screen Saver
 
-* Change your wallpaper.
 * Screen Saver -> Next to "Start after" select "Never".
-
-### Dock
-
-* Check "Automatically hide and show the Dock".
-* Uncheck "Animate opening applications".
-* Uncheck "Show recent applications in Dock".
 
 ### Mission Control
 
@@ -140,7 +131,6 @@ Update the preferences:
 
 * Make sure that "Require password immediately after sleep or screen saver
   begins" is chosen.
-* Firewall -> Turn On Firewall.
 
 ### Spotlight
 
@@ -165,19 +155,12 @@ Uncheck:
 
 ### Keyboard
 
-* Keyboard:
-    * Increase "Key Repeat" and "Delay Until Repeat" to max values.
-    * Check "Use F1, F2, etc. keys as standard function keys".
-    * Modifier Keys: Remap Caps Lock to Control.
 * Shortcuts:
     * Input Sources -> Uncheck "Select the previous input source"
 * Dictation -> Next to "Shortcut" select "Off".
 
 ### Trackpad
 
-* Point & Click
-    * Check "Tap to click".
-    * Move the "Click" slider at "Light".
 * More Gestures -> Uncheck "Notification Center".
 
 ### Sound

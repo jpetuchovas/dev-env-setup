@@ -37,9 +37,52 @@
 
   services.nix-daemon.enable = true;
 
-  system.defaults = {
-    dock = {
-      autohide = true;
+  system = {
+    defaults = {
+      alf = {
+        allowdownloadsignedenabled = 1;
+        globalstate = 1;
+        stealthenabled = 1;
+      };
+
+      dock = {
+        autohide = true;
+        launchanim = false;
+        show-recents = false;
+        wvous-br-corner = 1;
+      };
+
+      finder = {
+        FXDefaultSearchScope = "SCcf";
+        _FXShowPosixPathInTitle = true;
+      };
+
+      NSGlobalDomain = {
+        AppleScrollerPagingBehavior = true;
+        AppleShowAllExtensions = true;
+
+        # Delay Until Repeat.
+        # Values in System Preferences UI: 120, 94, 68, 35, 25, 15.
+        InitialKeyRepeat = 15;
+        # Values in System Preferences UI: 120, 90, 60, 30, 12, 6, 2.
+        KeyRepeat = 2;
+
+        "com.apple.keyboard.fnState" = true;
+      };
+
+      trackpad = {
+        Clicking = true;
+        FirstClickThreshold = 0;
+      };
+
+      CustomUserPreferences = {
+
+      };
+    };
+
+    keyboard = {
+      enableKeyMapping = true;
+      remapCapsLockToControl = true;
     };
   };
 }
