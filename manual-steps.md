@@ -2,10 +2,6 @@
 
 A couple of manual steps to perform on a new computer.
 
-## Dotfiles
-
-Clone the dotfiles repository and run the installation script.
-
 ## Obsidian
 
 Install Obsidian plugins:
