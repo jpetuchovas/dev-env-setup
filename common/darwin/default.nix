@@ -46,7 +46,6 @@
       };
 
       dock = {
-        appswitcher-all-displays = true;
         autohide = true;
         launchanim = false;
         show-recents = false;
