@@ -5,6 +5,5 @@ with pkgs; [
   k9s
   kubectl
   slack
-  utm
   zoom-us
 ]

@@ -11,4 +11,8 @@
     name = "logi-options-plus";
     greedy = true;
   }
+  {
+    name = "utm";
+    greedy = true;
+  }
 ]
