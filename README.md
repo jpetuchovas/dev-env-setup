@@ -51,7 +51,13 @@ To activate configuration changes such as autohiding the dock, log out and log i
 
 ## Misc
 
-To clean up Nix store, run the following command:
+Delete non-current versions of a profile:
+
+```bash
+nix profile wipe-history
+```
+
+Clean up Nix store:
 
 ```bash
 nix store gc
