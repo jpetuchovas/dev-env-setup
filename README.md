@@ -43,11 +43,38 @@ ln -s ~/.nix-profile/share/terminfo/61/alacritty-direct ~/.terminfo/61/alacritty
 From now on, changes to the configuration can be applied by running:
 
 ```bash
-nix build .#darwinConfigurations.${hostname}.system
-./result/sw/bin/darwin-rebuild switch --flake .
+make switch
 ```
 
 To activate configuration changes such as autohiding the dock, log out and log in again.
+
+## NixOS VM
+
+Download [ISO image](https://nixos.org/download.html#nixos-iso).
+
+Create an UTM VM with hardware OpenGL acceleration enabled Retina display mode eabled.
+
+Once the VM is booted, change the root password to "root":
+
+```bash
+sudo su
+passwd
+```
+
+Run `ifconfig` in the VM to figure out its IP address. After that, in this a this repo's directory export an environment variable with the VM's IP address and perform installation:
+
+```bash
+export VM_ADDRESS=<VM's IP address>
+make vm-install
+```
+
+Remove the CD/DVD disk from the VM and start the VM again. Then run:
+
+```bash
+make vm-bootstrap
+```
+
+Finally, this repository can be cloned inside the VM.
 
 ## Misc
 

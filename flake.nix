@@ -16,16 +16,29 @@
       Justinass-MacBook-Pro-3 = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
-          home-manager.darwinModules.home-manager
           ./hosts/builder
+          home-manager.darwinModules.home-manager
         ];
       };
 
       LT-QL0WRWJ26R = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          home-manager.darwinModules.home-manager
           ./hosts/engineer
+          home-manager.darwinModules.home-manager
+        ];
+      };
+    };
+
+    nixosConfigurations = {
+      nixos-vm-aarch64 = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        specialArgs = {
+          hostName = "nixos-vm-aarch64";
+        };
+        modules = [
+          ./hosts/pheonix
+          home-manager.nixosModules.home-manager
         ];
       };
     };
