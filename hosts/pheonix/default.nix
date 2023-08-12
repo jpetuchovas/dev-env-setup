@@ -11,6 +11,7 @@ in {
   networking.hostName = hostName;
 
   services.openssh.enable = true;
+  services.spice-vdagentd.enable = true;
 
   users.users.${user} = {
     extraGroups = [
