@@ -5,9 +5,10 @@ HOSTNAME := $(shell hostname -s)
 
 VM_ADDRESS ?= FIXME
 VM_HOSTNAME ?= nixos-vm-aarch64
+VM_USER ?= justinasp
 ROOT_USER = root
 FLAKE_PATH = /dev-env-setup
-SSH_OPTIONS = -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+SSH_OPTIONS = -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
 
 switch:
 ifeq ($(UNAME), Darwin)
@@ -41,8 +42,15 @@ vm-install:
 	"
 
 vm-bootstrap:
-	rsync -av -e 'ssh $(SSH_OPTIONS)' --exclude=.git ./ $(ROOT_USER)@$(VM_ADDRESS):$(FLAKE_PATH)
-	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) " \
-		nixos-rebuild switch --flake $(FLAKE_PATH); \
-		reboot; \
-	"
+	$(MAKE) vm-copy-repo
+	$(MAKE) vm-switch
+	$(MAKE) vm-copy-secrets
+
+vm-copy-repo:
+	rsync -av --delete -e 'ssh $(SSH_OPTIONS)' --exclude=.git ./ $(ROOT_USER)@$(VM_ADDRESS):$(FLAKE_PATH)
+
+vm-switch:
+	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) "nixos-rebuild switch --flake $(FLAKE_PATH)"
+
+vm-copy-secrets:
+	rsync -av -e 'ssh $(SSH_OPTIONS)' --exclude=.DS_STORE --exclude=config $(HOME)/.ssh/ $(VM_USER)@$(VM_ADDRESS):~/.ssh

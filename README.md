@@ -79,7 +79,7 @@ Remove the CD/DVD disk from the VM and start the VM again. Then run:
 make vm-bootstrap
 ```
 
-Finally, clone this repository inside the VM and use `make switch` from now on.
+Finally, reboot the VM by using the `reboot` command. After that, clone this repository inside the VM and use `make switch` from now on.
 
 ## Misc
 
