@@ -50,9 +50,9 @@ To activate configuration changes such as autohiding the dock, log out and log i
 
 ## NixOS VM
 
-Download the [Minimal NixOS ISO image](https://nixos.org/download.html#nixos-iso).
+Download the [minimal NixOS ISO image](https://nixos.org/download.html#nixos-iso).
 
-Create an UTM VM with hardware OpenGL acceleration and Retina display mode enabled.
+Create a UTM VM with hardware OpenGL acceleration and Retina display mode enabled.
 
 Once the VM is booted, change the root password to "root":
 
