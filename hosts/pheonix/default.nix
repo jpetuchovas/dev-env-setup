@@ -10,11 +10,13 @@ in {
 
   networking.hostName = hostName;
 
-  programs.zsh.enable = true;
-
   services.openssh.enable = true;
 
   users.users.${user} = {
+    extraGroups = [
+      "wheel"
+    ];
+    hashedPassword = "$6$qy/S2xI7c.A7wRDi$qjvyPPvDUE1sleg8pOkj.tpaCrq51Qu/oKgjTfA4L7tL4T7rtlZRoy68yiKN1dcgafuUxkXsSfRY5AKQYTB8o0";
     isNormalUser = true;
     shell = pkgs.zsh;
   };

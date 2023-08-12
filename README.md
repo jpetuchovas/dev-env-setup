@@ -50,9 +50,9 @@ To activate configuration changes such as autohiding the dock, log out and log i
 
 ## NixOS VM
 
-Download [ISO image](https://nixos.org/download.html#nixos-iso).
+Download the [Minimal NixOS ISO image](https://nixos.org/download.html#nixos-iso).
 
-Create an UTM VM with hardware OpenGL acceleration enabled Retina display mode eabled.
+Create an UTM VM with hardware OpenGL acceleration and Retina display mode enabled.
 
 Once the VM is booted, change the root password to "root":
 
@@ -61,10 +61,15 @@ sudo su
 passwd
 ```
 
-Run `ifconfig` in the VM to figure out its IP address. After that, in this a this repo's directory export an environment variable with the VM's IP address and perform installation:
+Run `ifconfig` in the VM to figure out its IP address and export an environment variable with the VM's IP address:
 
 ```bash
 export VM_ADDRESS=<VM's IP address>
+```
+
+Perform NixOS installation:
+
+```bash
 make vm-install
 ```
 
@@ -74,7 +79,7 @@ Remove the CD/DVD disk from the VM and start the VM again. Then run:
 make vm-bootstrap
 ```
 
-Finally, this repository can be cloned inside the VM.
+Finally, clone this repository inside the VM and use `make switch` from now on.
 
 ## Misc
 

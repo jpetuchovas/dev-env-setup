@@ -4,16 +4,20 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  fonts = import ../fonts.nix pkgs;
+  fonts = {
+    fontDir.enable = true;
+    packages = import ../font-packages.nix { inherit pkgs; };
+  };
 
   nix = {
-    package = pkgs.nixFlakes;
     extraOptions = ''
-      experimental-features = nix-command flakes
+      experimental-features = nix-command flakes auto-allocate-uids
     '';
+    package = pkgs.nixFlakes;
+    settings.auto-optimise-store = true;
   };
 
   programs.zsh.enable = true;
 
-  system.stateVersion = "23.05";
+  system.stateVersion = "23.11";
 }

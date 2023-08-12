@@ -2,7 +2,9 @@
 # https://github.com/mitchellh/nixos-config/blob/main/Makefile
 UNAME := $(shell uname)
 HOSTNAME := $(shell hostname -s)
-VM_ADDRESS ?= unset
+
+VM_ADDRESS ?= FIXME
+VM_HOSTNAME ?= nixos-vm-aarch64
 ROOT_USER = root
 FLAKE_PATH = /dev-env-setup
 SSH_OPTIONS = -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
@@ -33,18 +35,14 @@ vm-install:
 			services.openssh.enable = true;\n \
 			services.openssh.settings.PermitRootLogin = \"yes\";\n \
 			users.users.root.initialPassword = \"root\";\n \
-			networking.hostName = \"nixos-vm-aarch64\";\n \
+			networking.hostName = \"$(VM_HOSTNAME)\";\n \
 		' /mnt/etc/nixos/configuration.nix; \
-		nixos-install --no-root-passwd; \
-		shutdown -h now; \
+		nixos-install --no-root-passwd && shutdown -h now; \
 	"
 
 vm-bootstrap:
-	$(MAKE) vm-copy
-	$(MAKE) vm-switch
-
-vm-copy:
-	rsync -av --delete -e 'ssh $(SSH_OPTIONS)' --exclude=.git ./ $(ROOT_USER)@$(VM_ADDRESS):$(FLAKE_PATH)
-
-vm-switch:
-	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) "nixos-rebuild switch --flake $(FLAKE_PATH)"
+	rsync -av -e 'ssh $(SSH_OPTIONS)' --exclude=.git ./ $(ROOT_USER)@$(VM_ADDRESS):$(FLAKE_PATH)
+	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) " \
+		nixos-rebuild switch --flake $(FLAKE_PATH); \
+		reboot; \
+	"
