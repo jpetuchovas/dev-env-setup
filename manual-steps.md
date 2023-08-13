@@ -40,9 +40,11 @@ Update the preferences:
 * Editor -> Inlay Hints -> Code vision -> Uncheck "Code author".
 * Tools -> Actions on Save -> Check "Reformat code" for Java and Scala.
 
-## Finder
+## macOS
 
-### Preferences
+### Finder
+
+#### Preferences
 
 * General -> Next to "New Finder windows show" select "justinas".
 * Sidebar -> Leave only the following checkboxes checked:
@@ -52,7 +54,7 @@ Update the preferences:
     * justinas.
     * All checkboxes under "Locations".
 
-### View Options
+#### View Options
 
 * Go to any folder.
 * View -> Show View Options:
@@ -60,28 +62,28 @@ Update the preferences:
     * Sort By -> Snap to Grid.
     * Use as Defaults.
 
-## System Preferences
+### System Preferences
 
-### General
+#### General
 
 * Uncheck "Close windows when quitting an app".
 * Next to "Recent items" select "None".
 * Uncheck "Allow Handoff between this Mac and your iCloud devices".
 
-### Desktop & Screen Saver
+#### Desktop & Screen Saver
 
 * Screen Saver -> Uncheck "Show screen saver after".
 
-### Language & Region
+#### Language & Region
 
 * Next to "Region" select "United States".
 
-### Security & Privacy
+#### Security & Privacy
 
 * Make sure that "Require password immediately after sleep or screen saver
   begins" is chosen.
 
-### Spotlight
+#### Spotlight
 
 Uncheck:
 
@@ -97,22 +99,22 @@ Uncheck:
 
 * Night Shift -> Set a custom schedule.
 
-### Battery
+#### Battery
 
 * Battery -> Uncheck "Enable Power Nap while on battery power".
 * Power Adapter -> Uncheck "Put hard disks to sleep when possible".
 
-### Keyboard
+#### Keyboard
 
 * Shortcuts:
     * Input Sources -> Uncheck "Select the previous input source"
 * Dictation -> Next to "Shortcut" select "Off".
 
-### Trackpad
+#### Trackpad
 
 * More Gestures -> Uncheck "Notification Center".
 
-### Sound
+#### Sound
 
 * Sound Effects -> Uncheck "Play sound on startup" and "Play user interface sound
   effects".

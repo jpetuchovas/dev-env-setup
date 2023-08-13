@@ -15,4 +15,8 @@
     name = "utm";
     greedy = true;
   }
+  {
+    name = "vmware-fusion";
+    greedy = true;
+  }
 ]

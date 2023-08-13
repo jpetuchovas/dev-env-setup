@@ -52,7 +52,10 @@ To activate configuration changes such as autohiding the dock, log out and log i
 
 Download the [minimal NixOS ISO image](https://nixos.org/download.html#nixos-iso).
 
-Create a UTM VM with hardware OpenGL acceleration and Retina display mode enabled.
+Create a VMware Fusion VM with the following settings:
+
+* Display: 3D graphics acceleration, maximum shared graphics memory, and full resolution for Retina display.
+* Hard Disk: SATA 192 GB.
 
 Once the VM is booted, change the root password to "root":
 
@@ -73,7 +76,7 @@ Perform NixOS installation:
 make vm-install
 ```
 
-Remove the CD/DVD disk from the VM and start the VM again. Then run:
+Then run:
 
 ```bash
 make vm-bootstrap

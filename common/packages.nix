@@ -3,6 +3,7 @@
 with pkgs; [
   alacritty
   git
+  gnumake
   jq
   neovim
   ripgrep

@@ -1,8 +1,10 @@
 { pkgs, ... }:
 
 {
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+  };
 
   fonts = {
     fontDir.enable = true;
@@ -17,7 +19,9 @@
     settings.auto-optimise-store = true;
   };
 
-  programs.zsh.enable = true;
+  programs = {
+    zsh.enable = true;
+  };
 
   system.stateVersion = "23.11";
 }

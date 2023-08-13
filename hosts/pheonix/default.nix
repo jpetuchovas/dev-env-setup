@@ -10,8 +10,14 @@ in {
 
   networking.hostName = hostName;
 
-  services.openssh.enable = true;
-  services.spice-vdagentd.enable = true;
+  services = {
+    openssh.enable = true;
+    openssh.settings.PermitRootLogin = "yes";
+  };
+
+  users.users.root.initialPassword = "root";
+
+  virtualisation.vmware.guest.enable = true;
 
   users.users.${user} = {
     extraGroups = [

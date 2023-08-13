@@ -15,19 +15,27 @@ ifeq ($(UNAME), Darwin)
 	nix build .#darwinConfigurations.$(HOSTNAME).system
 	./result/sw/bin/darwin-rebuild switch --flake .
 else
-	nixos-rebuild switch --flake .
+	sudo nixos-rebuild switch --flake .
+endif
+
+test:
+ifeq ($(UNAME), Darwin)
+	nix build .#darwinConfigurations.$(HOSTNAME).system
+	./result/sw/bin/darwin-rebuild check --flake .
+else
+	nixos-rebuild test --flake .
 endif
 
 vm-install:
 	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) " \
-		parted /dev/vda -- mklabel gpt; \
-		parted /dev/vda -- mkpart primary 512MB -8GB; \
-		parted /dev/vda -- mkpart primary linux-swap -8GB 100%; \
-		parted /dev/vda -- mkpart ESP fat32 1MB 512MB; \
-		parted /dev/vda -- set 3 esp on; \
-		mkfs.ext4 -L nixos /dev/vda1; \
-		mkswap -L swap /dev/vda2; \
-		mkfs.fat -F 32 -n boot /dev/vda3; \
+		parted /dev/sda -- mklabel gpt; \
+		parted /dev/sda -- mkpart primary 512MB -8GB; \
+		parted /dev/sda -- mkpart primary linux-swap -8GB 100%; \
+		parted /dev/sda -- mkpart ESP fat32 1MB 512MB; \
+		parted /dev/sda -- set 3 esp on; \
+		mkfs.ext4 -L nixos /dev/sda1; \
+		mkswap -L swap /dev/sda2; \
+		mkfs.fat -F 32 -n boot /dev/sda3; \
 		mount /dev/disk/by-label/nixos /mnt; \
 		mkdir -p /mnt/boot; \
 		mount /dev/disk/by-label/boot /mnt/boot; \
@@ -38,7 +46,7 @@ vm-install:
 			users.users.root.initialPassword = \"root\";\n \
 			networking.hostName = \"$(VM_HOSTNAME)\";\n \
 		' /mnt/etc/nixos/configuration.nix; \
-		nixos-install --no-root-passwd && shutdown -h now; \
+		nixos-install --no-root-passwd && reboot; \
 	"
 
 vm-bootstrap:
