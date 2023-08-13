@@ -8,14 +8,11 @@ in {
     ./hardware-configuration.nix
   ];
 
+  environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
+
   networking.hostName = hostName;
 
-  services = {
-    openssh.enable = true;
-    openssh.settings.PermitRootLogin = "yes";
-  };
-
-  users.users.root.initialPassword = "root";
+  services.openssh.enable = true;
 
   virtualisation.vmware.guest.enable = true;
 
