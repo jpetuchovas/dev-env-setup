@@ -25,6 +25,14 @@ else
 	sudo nixos-rebuild test --flake .
 endif
 
+format:
+	nix fmt .
+
+gc:
+	nix profile wipe-history
+	nix store gc
+	brew cleanup --prune=all
+
 vm-install:
 	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) " \
 		parted /dev/sda -- mklabel gpt; \

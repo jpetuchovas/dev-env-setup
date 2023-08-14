@@ -86,18 +86,6 @@ Finally, reboot the VM by using the `reboot` command. After that, clone this rep
 
 ## Misc
 
-Delete non-current versions of a profile:
-
-```bash
-nix profile wipe-history
-```
-
-Clean up Nix store:
-
-```bash
-nix store gc
-```
-
 Update flake lock file:
 
 ```bash
