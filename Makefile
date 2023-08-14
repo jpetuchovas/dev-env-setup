@@ -29,9 +29,14 @@ format:
 	nix fmt .
 
 gc:
+ifeq ($(UNAME), Darwin)
 	nix profile wipe-history
 	nix store gc
 	brew cleanup --prune=all
+else
+	nix profile wipe-history
+	nix store gc
+endif
 
 vm-install:
 	ssh $(SSH_OPTIONS) $(ROOT_USER)@$(VM_ADDRESS) " \
