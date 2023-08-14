@@ -2,7 +2,8 @@
 
 let
   user = "justinasp";
-in {
+in
+{
   imports = [
     ../../common/nixos
     ./hardware-configuration.nix
@@ -26,13 +27,14 @@ in {
   };
 
   home-manager.users.${user} = { pkgs, ... }:
-  let
-    common-packages = import ../../common/packages.nix { inherit pkgs; };
-  in {
-    imports = [
-      ../../common/home-manager-users.nix
-    ];
+    let
+      common-packages = import ../../common/packages.nix { inherit pkgs; };
+    in
+    {
+      imports = [
+        ../../common/home-manager-users.nix
+      ];
 
-    home.packages = common-packages;
-  };
+      home.packages = common-packages;
+    };
 }

@@ -4,7 +4,8 @@ let
   user = "justinas";
   common-casks = import ../../common/darwin/casks.nix;
   additional-casks = import ./casks.nix;
-in {
+in
+{
   imports = [
     ../../common/darwin
   ];
@@ -15,16 +16,17 @@ in {
   };
 
   home-manager.users.${user} = { pkgs, ... }:
-  let
-    common-packages = import ../../common/packages.nix { inherit pkgs; };
-    additional-packages = import ./packages.nix { inherit pkgs; };
-  in {
-    imports = [
-      ../../common/home-manager-users.nix
-    ];
+    let
+      common-packages = import ../../common/packages.nix { inherit pkgs; };
+      additional-packages = import ./packages.nix { inherit pkgs; };
+    in
+    {
+      imports = [
+        ../../common/home-manager-users.nix
+      ];
 
-    home.packages = common-packages ++ additional-packages;
-  };
+      home.packages = common-packages ++ additional-packages;
+    };
 
   homebrew = {
     brews = import ./brews.nix;

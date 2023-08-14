@@ -19,7 +19,7 @@
     # mas list
     masApps = {
       Pages = 409201541;
-      Keynote =  409183694;
+      Keynote = 409183694;
       Numbers = 409203825;
     };
     onActivation = {
@@ -87,10 +87,10 @@
       };
 
       CustomUserPreferences = {
-         "com.apple.finder" = {
-           FXRemoveOldTrashItems = true;
-           _FXSortFoldersFirst = true;
-         };
+        "com.apple.finder" = {
+          FXRemoveOldTrashItems = true;
+          _FXSortFoldersFirst = true;
+        };
       };
     };
 
