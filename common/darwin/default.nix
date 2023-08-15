@@ -57,6 +57,7 @@
 
       finder = {
         FXDefaultSearchScope = "SCcf";
+        FXEnableExtensionChangeWarning = false;
         ShowPathbar = true;
         _FXShowPosixPathInTitle = true;
       };
@@ -91,6 +92,7 @@
           FXRemoveOldTrashItems = true;
           _FXSortFoldersFirst = true;
         };
+        "com.apple.screencapture".show-thumbnail = false;
       };
     };
 
