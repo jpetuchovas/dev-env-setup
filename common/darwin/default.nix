@@ -38,7 +38,11 @@
     zsh.enable = true;
   };
 
-  services.nix-daemon.enable = true;
+  services = {
+    nix-daemon.enable = true;
+    skhd.enable = true;
+    yabai.enable = true;
+  };
 
   system = {
     defaults = {
@@ -51,6 +55,7 @@
       dock = {
         autohide = true;
         launchanim = false;
+        mru-spaces = false;
         show-recents = false;
         wvous-br-corner = 1;
       };
@@ -77,6 +82,7 @@
         # Values in System Preferences UI: 120, 90, 60, 30, 12, 6, 2.
         KeyRepeat = 2;
 
+        NSAutomaticWindowAnimationsEnabled = false;
         NSDocumentSaveNewDocumentsToCloud = false;
         "com.apple.keyboard.fnState" = true;
         "com.apple.sound.beep.feedback" = 0;

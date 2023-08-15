@@ -62,7 +62,7 @@ Update the preferences:
     * Sort By -> Snap to Grid.
     * Use as Defaults.
 
-### System Preferences
+### System Settings
 
 #### General
 
