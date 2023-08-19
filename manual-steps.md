@@ -64,26 +64,43 @@ Update the preferences:
 
 ### System Settings
 
+#### Accessibility
+
+* Display -> Check "Reduce motion".
+
+#### Battery
+
+* Next to "Low Power Mode" check "Never".
+
+#### Desktop & Dock
+
+* Windows & Apps -> Uncheck "Close windows when quitting an application".
+* Menu Bar -> Next to "Recent documents, applications, and servers" select
+  "None".
+
+### Displays
+
+* Night Shift -> Set a custom schedule.
+
 #### General
 
-* Uncheck "Close windows when quitting an app".
-* Next to "Recent items" select "None".
-* Uncheck "Allow Handoff between this Mac and your iCloud devices".
+* Airdrop & Handoff -> Uncheck "Allow Handoff between this Mac and your iCloud
+  devices".
+* Language & Region -> Next to "Region" select "United States".
 
-#### Desktop & Screen Saver
+#### Keyboard
 
-* Screen Saver -> Uncheck "Show screen saver after".
+* Dictation -> Select "Off".
+* Create 9 spaces with Ctrl + Up Arrow -> Clicking "+" Button. Then, Keyboard
+  Shortcuts -> Mission Control -> Mission Control:
+    * Select From "Switch to Desktop 1" up to "Switch to Desktop 9".
 
-#### Language & Region
+#### Lock Screen
 
-* Next to "Region" select "United States".
+* Next to "Require password immediately after screen saver
+  begins or display is turned off" choose "Immediately".
 
-#### Security & Privacy
-
-* Make sure that "Require password immediately after sleep or screen saver
-  begins" is chosen.
-
-#### Spotlight
+#### Siri & Spotlight
 
 Uncheck:
 
@@ -95,26 +112,11 @@ Uncheck:
 * Mail & Messages.
 * Siri Suggestions.
 
-### Displays
+#### Sound
 
-* Night Shift -> Set a custom schedule.
-
-#### Battery
-
-* Battery -> Uncheck "Enable Power Nap while on battery power".
-* Power Adapter -> Uncheck "Put hard disks to sleep when possible".
-
-#### Keyboard
-
-* Shortcuts:
-    * Input Sources -> Uncheck "Select the previous input source"
-* Dictation -> Next to "Shortcut" select "Off".
+* Sound Effects -> Uncheck "Play sound on startup" and "Play user interface
+  sound effects".
 
 #### Trackpad
 
 * More Gestures -> Uncheck "Notification Center".
-
-#### Sound
-
-* Sound Effects -> Uncheck "Play sound on startup" and "Play user interface sound
-  effects".
