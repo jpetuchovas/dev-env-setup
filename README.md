@@ -83,11 +83,3 @@ make vm-bootstrap
 ```
 
 Finally, reboot the VM by using the `reboot` command. After that, clone this repository inside the VM and use `make switch` from now on.
-
-## Misc
-
-Update flake lock file:
-
-```bash
-nix flake update
-```

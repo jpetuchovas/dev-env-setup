@@ -28,6 +28,9 @@ endif
 format:
 	nix fmt .
 
+update:
+	nix flake update
+
 gc:
 ifeq ($(UNAME), Darwin)
 	nix profile wipe-history
