@@ -31,8 +31,4 @@
     name = "skim";
     greedy = true;
   }
-  {
-    name = "vlc";
-    greedy = true;
-  }
 ]
