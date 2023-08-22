@@ -8,7 +8,7 @@
     greedy = true;
   }
   {
-    name = "google-chrome";
+    name = "brave-browser";
     greedy = true;
   }
   {
