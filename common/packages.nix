@@ -12,6 +12,7 @@ with pkgs; [
   tmux
   wget
   yt-dlp
+  zathura
   zsh-autosuggestions
   zsh-completions
 ]
