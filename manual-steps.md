@@ -2,6 +2,13 @@
 
 A couple of manual steps to perform on a new computer.
 
+## Browser Apps
+
+Create browser apps for:
+
+* Gmail.
+* Google Calendar.
+
 ## Obsidian
 
 Install Obsidian plugins:
