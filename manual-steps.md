@@ -26,9 +26,7 @@ Install IntelliJ IDEA if needed and enable plugins:
 * Bazel.
 * IdeaVim.
 * Makefile Language.
-* Protocol Buffers.
 * Scala.
-* VSCode Keymap.
 
 Update the preferences:
 
