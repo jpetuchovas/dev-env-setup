@@ -12,6 +12,10 @@
     greedy = true;
   }
   {
+    name = "calibre";
+    greedy = true;
+  }
+  {
     name = "hammerspoon";
     greedy = true;
   }
