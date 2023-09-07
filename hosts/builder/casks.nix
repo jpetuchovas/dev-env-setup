@@ -36,10 +36,6 @@
     greedy = true;
   }
   {
-    name = "vienna";
-    greedy = true;
-  }
-  {
     name = "zotero";
     greedy = true;
   }
