@@ -2,6 +2,7 @@
 
 with pkgs; [
   alacritty
+  fd
   git
   gnumake
   jq
@@ -10,6 +11,7 @@ with pkgs; [
   ripgrep
   texlive.combined.scheme-full
   tmux
+  vifm
   wget
   yt-dlp
   zathura
