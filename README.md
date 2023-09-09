@@ -40,6 +40,12 @@ ln -s ~/.nix-profile/share/terminfo/61/alacritty ~/.terminfo/61/alacritty
 ln -s ~/.nix-profile/share/terminfo/61/alacritty-direct ~/.terminfo/61/alacritty-direct
 ```
 
+If `infocmp tmux-256color` produces an error, run:
+
+```bash
+ln -s ~/.nix-profile/share/terminfo/74/tmux-256color ~/.terminfo/74/tmux-256color
+```
+
 From now on, changes to the configuration can be applied by running:
 
 ```bash
