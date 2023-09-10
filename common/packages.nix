@@ -10,6 +10,7 @@ with pkgs; [
   mpv-unwrapped
   neovim
   ripgrep
+  sc-im
   texlive.combined.scheme-full
   tmux
   vifm
