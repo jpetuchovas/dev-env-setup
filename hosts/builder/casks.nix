@@ -24,10 +24,6 @@
     greedy = true;
   }
   {
-    name = "mathpix-snipping-tool";
-    greedy = true;
-  }
-  {
     name = "signal";
     greedy = true;
   }
