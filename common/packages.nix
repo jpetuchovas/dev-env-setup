@@ -3,6 +3,7 @@
 with pkgs; [
   alacritty
   fd
+  fzf
   git
   gnumake
   jq
