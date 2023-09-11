@@ -20,10 +20,6 @@
     greedy = true;
   }
   {
-    name = "menumeters";
-    greedy = true;
-  }
-  {
     name = "obsidian";
     greedy = true;
   }

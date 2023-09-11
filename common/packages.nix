@@ -6,6 +6,7 @@ with pkgs; [
   fzf
   git
   gnumake
+  htop
   jq
   mpv-unwrapped
   neovim
