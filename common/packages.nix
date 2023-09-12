@@ -4,6 +4,7 @@ with pkgs; [
   alacritty
   fd
   fzf
+  gh
   git
   gnumake
   htop
