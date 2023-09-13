@@ -16,6 +16,10 @@
     greedy = true;
   }
   {
+    name = "freetube";
+    greedy = true;
+  }
+  {
     name = "hammerspoon";
     greedy = true;
   }
