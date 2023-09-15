@@ -15,7 +15,7 @@ Install Obsidian plugins:
 
 * Kanban.
 * Reminder.
-* Relative Line Numbers.
+* Relativenumber (relative line numbers).
 * Obsidian_to_Anki.
 
 ## IntelliJ IDEA

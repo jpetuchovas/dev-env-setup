@@ -20,10 +20,6 @@
     greedy = true;
   }
   {
-    name = "malwarebytes";
-    greedy = true;
-  }
-  {
     name = "signal";
     greedy = true;
   }
