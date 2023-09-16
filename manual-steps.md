@@ -41,9 +41,7 @@ Update the preferences:
   "Indent" to 2 as well as "Continuation indent" to 4.
 * Editor -> Code Style -> Java -> Imports -> Change "Class count to use import
   with '\*'" and "Names count to use static import with '*'" to 100.
-* Editor -> Code Style -> Scala -> Scalafmt -> Check "Reformat on file save".
 * Editor -> Inlay Hints -> Code vision -> Uncheck "Code author".
-* Tools -> Actions on Save -> Check "Reformat code" for Java and Scala.
 
 ## macOS
 
