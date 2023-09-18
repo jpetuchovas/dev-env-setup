@@ -29,7 +29,7 @@ in
     };
 
   homebrew = {
-    brews = import ./brews.nix;
+    brews = import ../../common/darwin/brews.nix;
     casks = common-casks ++ additional-casks;
   };
 }
