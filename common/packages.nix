@@ -2,6 +2,7 @@
 
 with pkgs; [
   alacritty
+  cargo
   fd
   fzf
   gh

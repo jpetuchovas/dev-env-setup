@@ -2,7 +2,15 @@
 
 A couple of manual steps to perform on a new computer.
 
-## Browser Apps
+## Browser
+
+Install extensions:
+
+* Bitwarden.
+* News Feed Eradicator.
+* Nimbus Screenshot & Screen Video Recorder.
+* Unhook.
+* Zotero Connector.
 
 Create browser apps for:
 
