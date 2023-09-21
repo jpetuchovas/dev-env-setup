@@ -32,6 +32,7 @@ Install IntelliJ IDEA if needed and enable plugins:
 
 * Archive Browser.
 * Bazel.
+* HarpoonIJ.
 * IdeaVim.
 * Makefile Language.
 * Scala.
