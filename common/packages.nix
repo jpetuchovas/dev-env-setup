@@ -14,6 +14,7 @@ with pkgs; [
   neovim
   ripgrep
   sc-im
+  slack
   texlive.combined.scheme-full
   tmux
   vifm
