@@ -21,6 +21,7 @@ with pkgs; [
   wget
   yt-dlp
   zathura
+  zoom-us
   zsh-autosuggestions
   zsh-completions
 ]
