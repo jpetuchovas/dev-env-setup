@@ -31,7 +31,12 @@
 
   home-manager.useGlobalPkgs = true;
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      "libxls-1.6.2"
+    ];
+  };
 
   programs = {
     bash.enable = false;
