@@ -15,7 +15,7 @@ with pkgs; [
   ripgrep
   sc-im
   slack
-  texlive.combined.scheme-full
+  texlive.combined.scheme-basic
   tmux
   vifm
   wget
