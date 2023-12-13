@@ -32,6 +32,10 @@
     greedy = true;
   }
   {
+    name = "signal";
+    greedy = true;
+  }
+  {
     name = "skim";
     greedy = true;
   }

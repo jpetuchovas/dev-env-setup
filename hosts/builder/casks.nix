@@ -20,10 +20,6 @@
     greedy = true;
   }
   {
-    name = "signal";
-    greedy = true;
-  }
-  {
     name = "transmission";
     greedy = true;
   }
