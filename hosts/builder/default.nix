@@ -15,9 +15,7 @@ in
     shell = pkgs.zsh;
   };
 
-  services = {
-    karabiner-elements.enable = true;
-  };
+  services.karabiner-elements.enable = true;
 
   home-manager.users.${user} = { pkgs, ... }:
     let

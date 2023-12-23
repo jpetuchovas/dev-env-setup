@@ -1,10 +1,10 @@
 [
   {
-    name = "hammerspoon";
+    name = "grammarly";
     greedy = true;
   }
   {
-    name = "grammarly";
+    name = "hammerspoon";
     greedy = true;
   }
   {
