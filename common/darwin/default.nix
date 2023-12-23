@@ -44,7 +44,6 @@
   };
 
   services = {
-    karabiner-elements.enable = true;
     nix-daemon.enable = true;
     skhd.enable = true;
     yabai.enable = true;

@@ -15,6 +15,10 @@ in
     shell = pkgs.zsh;
   };
 
+  services = {
+    karabiner-elements.enable = true;
+  };
+
   home-manager.users.${user} = { pkgs, ... }:
     let
       common-packages = import ../../common/packages.nix { inherit pkgs; };
