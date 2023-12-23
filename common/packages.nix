@@ -14,14 +14,12 @@ with pkgs; [
   neovim
   ripgrep
   sc-im
-  slack
   texlive.combined.scheme-basic
   tmux
   vifm
   wget
   yt-dlp
   zathura
-  zoom-us
   zsh-autosuggestions
   zsh-completions
 ]
