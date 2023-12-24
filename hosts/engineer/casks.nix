@@ -1,5 +1,9 @@
 [
   {
+    name = "battery";
+    greedy = true;
+  }
+  {
     name = "grammarly";
     greedy = true;
   }
