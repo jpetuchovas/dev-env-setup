@@ -80,10 +80,6 @@ Update the preferences:
 
 * Display -> Check "Reduce motion".
 
-#### Battery
-
-* Next to "Low Power Mode" check "Never".
-
 #### Desktop & Dock
 
 * Windows & Apps -> Uncheck "Close windows when quitting an application".
@@ -98,7 +94,6 @@ Update the preferences:
 
 * Airdrop & Handoff -> Uncheck "Allow Handoff between this Mac and your iCloud
   devices".
-* Language & Region -> Next to "Region" select "United States".
 
 #### Keyboard
 
