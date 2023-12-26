@@ -1,9 +1,5 @@
 [
   {
-    name = "aldente";
-    greedy = true;
-  }
-  {
     name = "authy";
     greedy = true;
   }
