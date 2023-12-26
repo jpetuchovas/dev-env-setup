@@ -4,8 +4,6 @@ let
   user = "justinas";
   common-casks = import ../../common/darwin/casks.nix;
   additional-casks = import ./casks.nix;
-  common-brews = import ../../common/darwin/brews.nix;
-  additional-brews = import ./brews.nix;
 in
 {
   imports = [
@@ -33,10 +31,7 @@ in
     };
 
   homebrew = {
-    brews = common-brews ++ additional-brews;
+    brews = import ../../common/darwin/brews.nix;
     casks = common-casks ++ additional-casks;
-    taps = [
-      "zackelia/formulae"
-    ];
   };
 }

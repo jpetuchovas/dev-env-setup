@@ -52,15 +52,6 @@ Update the preferences:
   with '\*'" and "Names count to use static import with '*'" to 100.
 * Editor -> Inlay Hints -> Code vision -> Uncheck "Code author".
 
-## BCLM
-
-Run the following to set battery charging limit max to ~80%:
-
-```bash
-sudo bclm write 77
-sudo bclm persist
-```
-
 ## macOS
 
 ### Finder
