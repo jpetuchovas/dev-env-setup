@@ -54,7 +54,7 @@ Update the preferences:
 
 ## BCLM
 
-Run the following to limit battery charging limit max to ~80%:
+Run the following to set battery charging limit max to ~80%:
 
 ```bash
 sudo bclm write 77
