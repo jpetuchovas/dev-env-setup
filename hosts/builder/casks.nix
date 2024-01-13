@@ -12,10 +12,6 @@
     greedy = true;
   }
   {
-    name = "freedom";
-    greedy = true;
-  }
-  {
     name = "kensingtonworks";
     greedy = true;
   }
