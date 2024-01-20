@@ -34,11 +34,11 @@ update:
 gc:
 ifeq ($(UNAME), Darwin)
 	nix profile wipe-history
-	nix store gc
+	sudo nix-collect-garbage --delete-old
 	brew cleanup --prune=all
 else
 	nix profile wipe-history
-	nix store gc
+	sudo nix-collect-garbage --delete-old
 endif
 
 vm-install:
