@@ -34,11 +34,15 @@ update:
 gc:
 ifeq ($(UNAME), Darwin)
 	nix profile wipe-history
-	sudo nix-collect-garbage --delete-old
+	# Both calls with and without sudo are required to delete old home-manager
+	# and system-wide profile generations.
+	nix-collect-garbage -d
+	sudo nix-collect-garbage -d
 	brew cleanup --prune=all
 else
 	nix profile wipe-history
-	sudo nix-collect-garbage --delete-old
+	nix-collect-garbage -d
+	sudo nix-collect-garbage -d
 endif
 
 vm-install:
