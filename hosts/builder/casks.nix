@@ -12,10 +12,6 @@
     greedy = true;
   }
   {
-    name = "kensingtonworks";
-    greedy = true;
-  }
-  {
     name = "keybase";
     greedy = true;
   }
