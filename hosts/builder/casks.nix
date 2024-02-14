@@ -1,9 +1,5 @@
 [
   {
-    name = "authy";
-    greedy = true;
-  }
-  {
     name = "discord";
     greedy = true;
   }
