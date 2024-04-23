@@ -40,6 +40,10 @@
     greedy = true;
   }
   {
+    name = "spotify";
+    greedy = true;
+  }
+  {
     name = "zoom";
     greedy = true;
   }
