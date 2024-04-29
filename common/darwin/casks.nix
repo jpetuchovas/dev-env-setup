@@ -44,6 +44,10 @@
     greedy = true;
   }
   {
+    name = "vlc";
+    greedy = true;
+  }
+  {
     name = "zoom";
     greedy = true;
   }
