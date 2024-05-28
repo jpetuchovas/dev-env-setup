@@ -1,4 +1,4 @@
 [
   "git-lfs"
-  "openjdk@11"
+  "openjdk@17"
 ]
