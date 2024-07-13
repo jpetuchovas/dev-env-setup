@@ -2,6 +2,15 @@
 
 A couple of manual steps to perform on a new computer.
 
+## Node.js
+
+Install the latest Node.js version and Tree-sitter CLI:
+
+```bash
+n lts
+npm install -g tree-sitter-cli
+```
+
 ## Browser
 
 Install extensions:
