@@ -16,6 +16,14 @@
       builder = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
+          ./hosts/builder-old
+          home-manager.darwinModules.home-manager
+        ];
+      };
+
+      Justinass-MacBook-Pro = darwin.lib.darwinSystem {
+        system = "x86_64-darwin";
+        modules = [
           ./hosts/builder
           home-manager.darwinModules.home-manager
         ];
