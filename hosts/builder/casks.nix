@@ -16,6 +16,10 @@
     greedy = true;
   }
   {
+    name = "mullvadvpn";
+    greedy = true;
+  }
+  {
     name = "transmission";
     greedy = true;
   }
