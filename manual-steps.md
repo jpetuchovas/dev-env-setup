@@ -26,6 +26,13 @@ Create browser apps for:
 * Gmail.
 * Google Calendar.
 
+Create shortcuts:
+
+* GitHub: `:gh` - <https://github.com/search?q=%s&ref=opensearch&type=repositories>
+* Google Translate: `:t` - <https://translate.google.com/?source=osdd&sl=auto&tl=auto&text=%s&op=translate>
+* NixOS: `:nix` - <https://search.nixos.org/packages?query=%s>
+* Wikipedia: `:w` - <https://en.wikipedia.org/w/index.php?title=Special:Search&search=%s>
+
 ## Obsidian
 
 Install Obsidian plugins:
