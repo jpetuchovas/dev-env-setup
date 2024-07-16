@@ -13,15 +13,15 @@
 
   outputs = { self, darwin, nixpkgs, home-manager }: {
     darwinConfigurations = {
-      builder = darwin.lib.darwinSystem {
+      elder = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
-          ./hosts/builder-old
+          ./hosts/elder
           home-manager.darwinModules.home-manager
         ];
       };
 
-      Justinass-MacBook-Pro = darwin.lib.darwinSystem {
+      builder = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
           ./hosts/builder
