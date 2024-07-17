@@ -68,26 +68,42 @@ Update the preferences:
   with '\*'" and "Names count to use static import with '*'" to 100.
 * Editor -> Inlay Hints -> Code vision -> Uncheck "Code author".
 
+## Neovim
+
+Install using Mason:
+
+* DAP:
+    * debugpy.
+    * js-debug-adapter.
+* Linter:
+    * cspell.
+    * shellcheck.
+    * yamllint.
+* Formatter:
+    * black.
+    * isort.
+
 ## macOS
 
 ### Finder
 
 #### Preferences
 
-* General -> Next to "New Finder windows show" select "justinas".
+* General -> Next to "New Finder windows show" select "justinasp".
 * Sidebar -> Leave only the following checkboxes checked:
     * Applications.
     * Desktop.
     * Documents.
-    * justinas.
+    * Downloads.
+    * justinasp.
     * All checkboxes under "Locations".
 
 #### View Options
 
 * Go to any folder.
 * View -> Show View Options:
-    * Group By -> Name.
-    * Sort By -> Snap to Grid.
+    * Group By -> None.
+    * Sort By -> Name.
     * Use as Defaults.
 
 ### System Settings
@@ -102,7 +118,7 @@ Update the preferences:
 * Menu Bar -> Next to "Recent documents, applications, and servers" select
   "None".
 
-### Displays
+#### Displays
 
 * Night Shift -> Set a custom schedule.
 
