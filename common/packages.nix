@@ -10,7 +10,7 @@ with pkgs; [
   gnumake
   htop
   jq
-  mpv-unwrapped
+  # mpv-unwrapped
   neovim
   ripgrep
   # sc-im

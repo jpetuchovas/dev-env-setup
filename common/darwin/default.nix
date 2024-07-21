@@ -9,10 +9,7 @@
     shells = [ pkgs.zsh ];
   };
 
-  fonts = {
-    fontDir.enable = true;
-    fonts = import ../font-packages.nix { inherit pkgs; };
-  };
+  fonts.packages = import ../font-packages.nix { inherit pkgs; };
 
   homebrew = {
     enable = true;

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  user = "justinas";
+  user = "justinasp";
   common-casks = import ../../common/darwin/casks.nix;
   additional-casks = import ./casks.nix;
 in
