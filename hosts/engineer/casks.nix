@@ -1,9 +1,5 @@
 [
   {
-    name = "grammarly";
-    greedy = true;
-  }
-  {
     name = "hammerspoon";
     greedy = true;
   }
