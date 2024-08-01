@@ -13,7 +13,7 @@ with pkgs; [
   mpv-unwrapped
   neovim
   ripgrep
-  # sc-im
+  sc-im
   texlive.combined.scheme-basic
   tmux
   vifm
