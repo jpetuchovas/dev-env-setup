@@ -8,6 +8,7 @@ with pkgs; [
   gh
   git
   gnumake
+  go
   htop
   jq
   # mpv-unwrapped
