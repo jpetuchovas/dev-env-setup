@@ -19,8 +19,4 @@
     name = "rancher";
     greedy = true;
   }
-  {
-    name = "vmware-fusion";
-    greedy = true;
-  }
 ]
