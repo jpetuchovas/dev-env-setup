@@ -1,5 +1,5 @@
 [
   "git-lfs"
-  "openjdk@17"
+  "openjdk@21"
   "yarn"
 ]
