@@ -108,5 +108,7 @@
       enableKeyMapping = true;
       remapCapsLockToControl = true;
     };
+
+    stateVersion = 5;
   };
 }
