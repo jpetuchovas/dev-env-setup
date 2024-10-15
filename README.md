@@ -5,7 +5,7 @@
 Install Nix using [nix-installer](https://github.com/DeterminateSystems/nix-installer):
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --diagnostic-endpoint=""
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install macos --diagnostic-endpoint=""
 ```
 
 Install [Homebrew](https://github.com/Homebrew/brew):
