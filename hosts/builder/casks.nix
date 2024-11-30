@@ -20,10 +20,6 @@
     greedy = true;
   }
   {
-    name = "nordvpn";
-    greedy = true;
-  }
-  {
     name = "transmission";
     greedy = true;
   }
