@@ -79,9 +79,6 @@ Install using Mason:
     * cspell.
     * shellcheck.
     * yamllint.
-* Formatter:
-    * black.
-    * isort.
 
 ## macOS
 
