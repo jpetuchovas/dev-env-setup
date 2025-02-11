@@ -72,7 +72,6 @@ Update the preferences:
 Install using Mason:
 
 * DAP:
-    * debugpy.
     * js-debug-adapter.
 * Linter:
     * cspell.
