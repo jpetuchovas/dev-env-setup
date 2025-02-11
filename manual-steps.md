@@ -17,7 +17,6 @@ Install extensions:
 
 * Bitwarden.
 * News Feed Eradicator.
-* Nimbus Screenshot & Screen Video Recorder.
 * Unhook.
 * Zotero Connector.
 
