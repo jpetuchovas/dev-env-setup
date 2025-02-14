@@ -11,6 +11,20 @@ n lts
 npm install -g tree-sitter-cli
 ```
 
+## Scala
+
+If needed, install Scala 2.12.20 using [coursier](https://get-coursier.io/):
+
+```bash
+cs install scala:2.12.20 scalac:2.12.20
+```
+
+To see installed applications:
+
+```bash
+cs list
+```
+
 ## Browser
 
 Install extensions:
