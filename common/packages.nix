@@ -4,7 +4,6 @@ with pkgs; [
   alacritty
   ammonite_2_12
   cargo
-  coursier
   fd
   fzf
   gh
