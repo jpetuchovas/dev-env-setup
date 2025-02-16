@@ -28,6 +28,8 @@
 
   home-manager.useGlobalPkgs = true;
 
+  nix.enable = false;
+
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = [
@@ -41,7 +43,6 @@
   };
 
   services = {
-    nix-daemon.enable = true;
     skhd.enable = true;
     yabai.enable = true;
   };
