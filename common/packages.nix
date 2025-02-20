@@ -19,6 +19,7 @@ with pkgs; [
   texlive.combined.scheme-basic
   tmux
   vifm
+  websocat
   wget
   yt-dlp
   zathura
