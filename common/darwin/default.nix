@@ -7,6 +7,14 @@
       zshrc.enable = false;
     };
     shells = [ pkgs.zsh ];
+    # Include man search paths missing from Nix-installed man and available by
+    # default on macOS. Compare:
+    # ~/.nix-profile/bin/manpath
+    # with
+    # /usr/bin/manpath
+    variables = {
+      MANPATH = ":/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man";
+    };
   };
 
   fonts.packages = import ../font-packages.nix { inherit pkgs; };

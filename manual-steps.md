@@ -2,6 +2,16 @@
 
 A couple of manual steps to perform on a new computer.
 
+## makewhatis
+
+If it's needed to search the names and descriptions of some manual pages available on macOS but which are not indexed for searching with Nix-installed `man`, e.g., for `man -k printf` and similar searches to work, run `makewhatis`:
+
+```bash
+sudo /usr/libexec/makewhatis /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man/
+```
+
+This generates a `whatis` file in `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man/whatis`.
+
 ## Node.js
 
 Install the latest Node.js version and Tree-sitter CLI:
