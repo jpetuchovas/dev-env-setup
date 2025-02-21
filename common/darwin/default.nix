@@ -40,9 +40,6 @@
 
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [
-      "libxls-1.6.2"
-    ];
   };
 
   programs = {
