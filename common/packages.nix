@@ -13,7 +13,7 @@ with pkgs; [
   go
   htop
   jq
-  # mpv-unwrapped
+  mpv-unwrapped
   neovim
   ripgrep
   sc-im
