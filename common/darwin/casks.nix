@@ -16,6 +16,10 @@
     greedy = true;
   }
   {
+    name = "cursor";
+    greedy = true;
+  }
+  {
     name = "freedom";
     greedy = true;
   }
