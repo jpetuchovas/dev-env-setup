@@ -1,7 +1,6 @@
 { pkgs }:
 
 with pkgs; [
-  alacritty
   ammonite_2_12
   cargo
   entr

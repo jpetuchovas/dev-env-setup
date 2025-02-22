@@ -1,5 +1,9 @@
 [
   {
+    name = "alacritty";
+    greedy = true;
+  }
+  {
     name = "android-file-transfer";
     greedy = true;
   }

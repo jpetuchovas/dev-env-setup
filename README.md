@@ -33,13 +33,6 @@ If the macOS user was not created by nix-darwin and [Can't set user shell withou
 chsh -s /run/current-system/sw/bin/zsh
 ```
 
-If `infocmp alacritty` produces an error, run:
-
-```bash
-ln -s ~/.nix-profile/share/terminfo/61/alacritty ~/.terminfo/61/alacritty
-ln -s ~/.nix-profile/share/terminfo/61/alacritty-direct ~/.terminfo/61/alacritty-direct
-```
-
 If `infocmp tmux-256color` produces an error, run:
 
 ```bash
