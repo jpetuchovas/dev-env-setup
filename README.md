@@ -89,3 +89,43 @@ make vm-bootstrap
 ```
 
 Finally, reboot the VM by using the `reboot` command. After that, clone this repository inside the VM and use `make switch` from now on.
+
+## Rollback
+
+List home-manager profile versions:
+
+```bash
+nix profile history
+```
+
+Switch to the previous home-manager profile version:
+
+```bash
+nix profile rollback
+```
+
+Switch to version 39 of the home-manager profile:
+
+```bash
+nix profile rollback --to 39
+```
+
+List nix-darwin profile versions:
+
+```bash
+darwin-rebuild --list-generations
+# OR
+nix profile history --profile /nix/var/nix/profiles/system
+```
+
+Switch to the previous nix-darwin profile version:
+
+```bash
+darwin-rebuild switch --rollback
+```
+
+Switch to version 30 of the nix-darwin profile:
+
+```bash
+darwin-rebuild -G 30
+```
