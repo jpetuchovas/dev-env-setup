@@ -22,6 +22,9 @@
   homebrew = {
     enable = true;
     # mas list
+    # OR
+    # Extract infro from the App Store using the following instructions:
+    # https://github.com/mas-cli/mas?tab=readme-ov-file#-app-ids
     masApps = {
       Pages = 409201541;
       Keynote = 409183694;
