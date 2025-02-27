@@ -60,6 +60,10 @@
     greedy = true;
   }
   {
+    name = "wireshark";
+    greedy = true;
+  }
+  {
     name = "zoom";
     greedy = true;
   }
