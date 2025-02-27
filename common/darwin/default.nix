@@ -35,6 +35,9 @@
       cleanup = "zap";
       upgrade = true;
     };
+    taps = [
+      "homebrew/services"
+    ];
   };
 
   home-manager.useGlobalPkgs = true;
