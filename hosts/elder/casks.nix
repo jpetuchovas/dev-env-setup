@@ -1,9 +1,5 @@
 [
   {
-    name = "discord";
-    greedy = true;
-  }
-  {
     name = "dropbox";
     greedy = true;
   }

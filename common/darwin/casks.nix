@@ -24,6 +24,10 @@
     greedy = true;
   }
   {
+    name = "discord";
+    greedy = true;
+  }
+  {
     name = "freedom";
     greedy = true;
   }
