@@ -36,6 +36,10 @@
     greedy = true;
   }
   {
+    name = "hammerspoon";
+    greedy = true;
+  }
+  {
     name = "obsidian";
     greedy = true;
   }

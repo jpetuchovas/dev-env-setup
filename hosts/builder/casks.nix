@@ -4,10 +4,6 @@
     greedy = true;
   }
   {
-    name = "hammerspoon";
-    greedy = true;
-  }
-  {
     name = "keybase";
     greedy = true;
   }

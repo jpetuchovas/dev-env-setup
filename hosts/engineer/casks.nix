@@ -1,9 +1,5 @@
 [
   {
-    name = "hammerspoon";
-    greedy = true;
-  }
-  {
     name = "jetbrains-toolbox";
     greedy = true;
   }
