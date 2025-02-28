@@ -40,9 +40,15 @@
     greedy = true;
   }
   {
+    name = "multipass";
+    greedy = true;
+  }
+  {
     name = "obsidian";
     greedy = true;
   }
+  # There might be less networking issues when using Orbstack compared to
+  # Multipass, e.g., ping 8.8.8.8 works out of the box.
   {
     name = "orbstack";
     greedy = true;
