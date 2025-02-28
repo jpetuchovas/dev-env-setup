@@ -54,6 +54,7 @@ Create shortcuts:
 * GitHub: `:gh` - <https://github.com/search?q=%s&ref=opensearch&type=repositories>
 * Google Translate: `:t` - <https://translate.google.com/?source=osdd&sl=auto&tl=auto&text=%s&op=translate>
 * NixOS: `:nix` - <https://search.nixos.org/packages?query=%s>
+* Python: `:py` - <https://docs.python.org/3/search.html?q=%s>
 * Wikipedia: `:w` - <https://en.wikipedia.org/w/index.php?title=Special:Search&search=%s>
 
 ## Obsidian
