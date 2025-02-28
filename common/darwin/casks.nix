@@ -44,6 +44,10 @@
     greedy = true;
   }
   {
+    name = "orbstack";
+    greedy = true;
+  }
+  {
     name = "scroll-reverser";
     greedy = true;
   }
