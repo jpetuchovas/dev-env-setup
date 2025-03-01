@@ -39,6 +39,10 @@
     name = "hammerspoon";
     greedy = true;
   }
+  # For ping 8.8.8.8 to work, "Enable stealth mode" should be unchecked in
+  # System Settings -> Network -> Firewall -> Options...
+  # Network troubleshooting docs:
+  # https://canonical.com/multipass/docs/troubleshoot-networking
   {
     name = "multipass";
     greedy = true;
@@ -48,7 +52,7 @@
     greedy = true;
   }
   # There might be less networking issues when using Orbstack compared to
-  # Multipass, e.g., ping 8.8.8.8 works out of the box.
+  # Multipass, e.g., ping 8.8.8.8 works even if stealth mode is enabled.
   {
     name = "orbstack";
     greedy = true;
