@@ -11,6 +11,7 @@ with pkgs; [
   gnumake
   go
   htop
+  hyperfine
   jq
   mpv-unwrapped
   neovim
