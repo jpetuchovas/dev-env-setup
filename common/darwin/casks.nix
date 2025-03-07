@@ -51,12 +51,6 @@
     name = "obsidian";
     greedy = true;
   }
-  # There might be less networking issues when using Orbstack compared to
-  # Multipass, e.g., ping 8.8.8.8 works even if stealth mode is enabled.
-  {
-    name = "orbstack";
-    greedy = true;
-  }
   {
     name = "scroll-reverser";
     greedy = true;
