@@ -164,7 +164,6 @@ Install using Mason:
 Uncheck:
 
 * Bookmarks & History.
-* Calculator.
 * Contacts.
 * Events & Reminders.
 * Fonts.
