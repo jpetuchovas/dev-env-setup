@@ -1,6 +1,6 @@
 [
+  "fnm"
   "lua"
-  "n"
   "pyenv"
   "pyenv-virtualenv"
   {

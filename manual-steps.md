@@ -17,7 +17,7 @@ This generates a `whatis` file in `/Library/Developer/CommandLineTools/SDKs/MacO
 Install the latest Node.js version and Tree-sitter CLI:
 
 ```bash
-n lts
+fnm install --lts
 npm install -g tree-sitter-cli
 ```
 
