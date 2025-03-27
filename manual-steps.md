@@ -10,7 +10,7 @@ If it's needed to search the names and descriptions of some manual pages availab
 sudo /usr/libexec/makewhatis /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man/
 ```
 
-This generates a `whatis` file in `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man/whatis`.
+This generates a `whatis` file in `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man` directory.
 
 ## Node.js
 
