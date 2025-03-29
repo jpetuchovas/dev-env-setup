@@ -3,6 +3,8 @@
   "lua"
   "pyenv"
   "pyenv-virtualenv"
+  # An example of connecting to "mysql" system database:
+  # mysql -D mysql
   {
     name = "mysql@8.4";
     conflicts_with = [ "mysql" ];
