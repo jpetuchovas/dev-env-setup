@@ -16,10 +16,6 @@
     greedy = true;
   }
   {
-    name = "calibre";
-    greedy = true;
-  }
-  {
     name = "cursor";
     greedy = true;
   }
