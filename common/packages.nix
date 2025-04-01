@@ -13,7 +13,6 @@ with pkgs; [
   htop
   hyperfine
   jq
-  lua-language-server
   mpv-unwrapped
   neovim
   ripgrep
