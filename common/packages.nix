@@ -17,6 +17,7 @@ with pkgs; [
   neovim
   ripgrep
   sc-im
+  stylua
   texlive.combined.scheme-basic
   tmux
   vifm
