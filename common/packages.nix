@@ -2,7 +2,10 @@
 
 with pkgs; [
   ammonite_2_12
+  bash-language-server
+  buf
   cargo
+  clang-tools
   entr
   fd
   fzf
@@ -10,19 +13,30 @@ with pkgs; [
   git
   gnumake
   go
+  gopls
   htop
   hyperfine
   jq
+  lua-language-server
+  marksman
   mpv-unwrapped
   neovim
+  nil
+  pyright
+  python313Packages.debugpy
   ripgrep
   sc-im
+  shellcheck
   stylua
   texlive.combined.scheme-basic
   tmux
+  typescript-language-server
   vifm
+  vscode-langservers-extracted
   websocat
   wget
+  yaml-language-server
+  yamllint
   yt-dlp
   zathura
   zsh-autosuggestions

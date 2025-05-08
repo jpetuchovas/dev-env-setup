@@ -1,4 +1,6 @@
 [
+  "cspell"
+  "dockerfile-language-server"
   "fnm"
   "lua"
   "pyenv"
