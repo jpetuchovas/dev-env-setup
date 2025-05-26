@@ -11,6 +11,7 @@ in
   imports = [
     ../../common/darwin
   ];
+  system.primaryUser = user;
 
   users.users.${user} = {
     home = "/Users/${user}";

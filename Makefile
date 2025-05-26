@@ -12,7 +12,7 @@ SSH_OPTIONS = -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o Stri
 switch:
 ifeq ($(UNAME), Darwin)
 	nix build .#darwinConfigurations.$(HOSTNAME).system
-	./result/sw/bin/darwin-rebuild switch --flake .
+	sudo ./result/sw/bin/darwin-rebuild switch --flake .
 else
 	sudo nixos-rebuild switch --flake .
 endif
