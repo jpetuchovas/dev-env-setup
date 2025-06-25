@@ -39,6 +39,14 @@
 
   home-manager.useGlobalPkgs = true;
 
+  networking = {
+    applicationFirewall = {
+      allowSignedApp = true;
+      enable = true;
+      enableStealthMode = true;
+    };
+  };
+
   nix.enable = false;
 
   nixpkgs.config = {
@@ -84,12 +92,6 @@
 
       WindowManager = {
         EnableStandardClickToShowDesktop = false;
-      };
-
-      alf = {
-        allowdownloadsignedenabled = 1;
-        globalstate = 1;
-        stealthenabled = 1;
       };
 
       dock = {
