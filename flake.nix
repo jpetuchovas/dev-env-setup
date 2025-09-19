@@ -13,14 +13,6 @@
 
   outputs = { self, darwin, nixpkgs, home-manager }: {
     darwinConfigurations = {
-      elder = darwin.lib.darwinSystem {
-        system = "x86_64-darwin";
-        modules = [
-          ./hosts/elder
-          home-manager.darwinModules.home-manager
-        ];
-      };
-
       builder = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         modules = [
@@ -34,19 +26,6 @@
         modules = [
           ./hosts/engineer
           home-manager.darwinModules.home-manager
-        ];
-      };
-    };
-
-    nixosConfigurations = {
-      nixos-vm-aarch64 = nixpkgs.lib.nixosSystem {
-        system = "aarch64-linux";
-        specialArgs = {
-          hostName = "nixos-vm-aarch64";
-        };
-        modules = [
-          ./hosts/pheonix
-          home-manager.nixosModules.home-manager
         ];
       };
     };
