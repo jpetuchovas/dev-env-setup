@@ -2,10 +2,10 @@
 
 ## macOS
 
-Install Nix using [nix-installer](https://github.com/DeterminateSystems/nix-installer):
+Install Determinate Nix using [nix-installer](https://github.com/DeterminateSystems/nix-installer):
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install macos --diagnostic-endpoint=""
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determinate --diagnostic-endpoint=""
 ```
 
 Install [Homebrew](https://github.com/Homebrew/brew):
