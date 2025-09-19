@@ -72,7 +72,7 @@
     greedy = true;
   }
   {
-    name = "wireshark";
+    name = "wireshark-app";
     greedy = true;
   }
   {
