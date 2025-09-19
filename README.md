@@ -47,42 +47,6 @@ make switch
 
 To activate configuration changes such as autohiding the dock, log out and log in again.
 
-## NixOS VM
-
-Download the [minimal NixOS ISO image](https://nixos.org/download.html#nixos-iso).
-
-Create a VMware Fusion VM with the following settings:
-
-* Display: 3D graphics acceleration, maximum shared graphics memory, and full resolution for Retina display.
-* Hard Disk: SATA 192 GB.
-
-Once the VM is booted, change the root password to "root":
-
-```bash
-sudo su
-passwd
-```
-
-Run `ifconfig` in the VM to figure out its IP address and export an environment variable with the VM's IP address:
-
-```bash
-export VM_ADDRESS=<VM's IP address>
-```
-
-Perform NixOS installation:
-
-```bash
-make vm-install
-```
-
-Then run:
-
-```bash
-make vm-bootstrap
-```
-
-Finally, reboot the VM by using the `reboot` command. After that, clone this repository inside the VM and use `make switch` from now on.
-
 ## Rollback
 
 List home-manager profile versions:
