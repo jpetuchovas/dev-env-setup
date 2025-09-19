@@ -92,17 +92,6 @@ Update the preferences:
   with '\*'" and "Names count to use static import with '*'" to 100.
 * Editor -> Inlay Hints -> Code vision -> Uncheck "Code author".
 
-## Neovim
-
-Install using Mason:
-
-* DAP:
-    * js-debug-adapter.
-* Linter:
-    * cspell.
-    * shellcheck.
-    * yamllint.
-
 ## macOS
 
 ### Finder
