@@ -32,6 +32,10 @@
     greedy = true;
   }
   {
+    name = "google-chrome";
+    greedy = true;
+  }
+  {
     name = "hammerspoon";
     greedy = true;
   }
