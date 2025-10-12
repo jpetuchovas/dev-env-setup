@@ -8,7 +8,7 @@
     greedy = true;
   }
   {
-    name = "mullvadvpn";
+    name = "mullvad-vpn";
     greedy = true;
   }
   {
