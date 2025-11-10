@@ -19,3 +19,6 @@ gc:
 	nix-collect-garbage -d
 	sudo nix-collect-garbage -d
 	brew cleanup --prune=all
+	# Uninstall formulae that were only installed as a dependency of another formula
+	# and are now no longer needed.
+	brew autoremove
