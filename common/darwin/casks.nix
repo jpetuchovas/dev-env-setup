@@ -23,10 +23,10 @@
     name = "discord";
     greedy = true;
   }
-  {
-    name = "freedom";
-    greedy = true;
-  }
+  # {
+  #   name = "freedom";
+  #   greedy = true;
+  # }
   {
     name = "freetube";
     greedy = true;
