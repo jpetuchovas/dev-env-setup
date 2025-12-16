@@ -28,10 +28,6 @@
   #   greedy = true;
   # }
   {
-    name = "freetube";
-    greedy = true;
-  }
-  {
     name = "google-chrome";
     greedy = true;
   }
