@@ -20,6 +20,10 @@
     greedy = true;
   }
   {
+    name = "cursor-cli";
+    greedy = true;
+  }
+  {
     name = "discord";
     greedy = true;
   }
