@@ -76,6 +76,10 @@
     greedy = true;
   }
   {
+    name = "whatsapp";
+    greedy = true;
+  }
+  {
     name = "wireshark-app";
     greedy = true;
   }
