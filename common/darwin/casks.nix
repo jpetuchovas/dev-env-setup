@@ -27,10 +27,10 @@
     name = "discord";
     greedy = true;
   }
-  # {
-  #   name = "freedom";
-  #   greedy = true;
-  # }
+  {
+    name = "freedom";
+    greedy = true;
+  }
   {
     name = "google-chrome";
     greedy = true;
