@@ -8,6 +8,10 @@
     greedy = true;
   }
   {
+    name = "codex-app";
+    greedy = true;
+  }
+  {
     name = "jetbrains-toolbox";
     greedy = true;
   }

@@ -72,6 +72,10 @@
     greedy = true;
   }
   {
+    name = "visual-studio-code";
+    greedy = true;
+  }
+  {
     name = "vlc";
     greedy = true;
   }
