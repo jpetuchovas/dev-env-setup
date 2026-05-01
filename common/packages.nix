@@ -14,6 +14,7 @@ with pkgs; [
   gnumake
   go
   gopls
+  grpcurl
   htop
   hyperfine
   jq
