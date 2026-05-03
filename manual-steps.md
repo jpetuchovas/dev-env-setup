@@ -41,6 +41,7 @@ Install extensions:
 
 * Bitwarden
 * News Feed Eradicator
+* Obsidian Web Clipper
 * Unhook
 * Zotero Connector
 * React Developer Tools
