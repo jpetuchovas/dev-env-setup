@@ -4,10 +4,6 @@
     greedy = true;
   }
   {
-    name = "android-file-transfer";
-    greedy = true;
-  }
-  {
     name = "bitwarden";
     greedy = true;
   }
