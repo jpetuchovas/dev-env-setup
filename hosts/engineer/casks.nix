@@ -8,6 +8,10 @@
     greedy = true;
   }
   {
+    name = "codex";
+    greedy = true;
+  }
+  {
     name = "codex-app";
     greedy = true;
   }
