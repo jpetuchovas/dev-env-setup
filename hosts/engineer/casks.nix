@@ -4,7 +4,7 @@
     greedy = true;
   }
   {
-    name = "claude-code";
+    name = "claude-code@latest";
     greedy = true;
   }
   {
