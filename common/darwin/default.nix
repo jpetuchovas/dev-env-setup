@@ -33,6 +33,10 @@
     onActivation = {
       autoUpdate = true;
       cleanup = "zap";
+      # https://github.com/nix-darwin/nix-darwin/issues/1787#issuecomment-4605644819
+      extraFlags = [
+        "--force-cleanup"
+      ];
       upgrade = true;
     };
   };
