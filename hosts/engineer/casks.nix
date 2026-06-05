@@ -20,10 +20,6 @@
     greedy = true;
   }
   {
-    name = "microsoft-teams";
-    greedy = true;
-  }
-  {
     name = "rancher";
     greedy = true;
   }

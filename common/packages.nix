@@ -6,6 +6,7 @@ with pkgs; [
   buf
   cargo
   clang-tools
+  dockerfile-language-server
   entr
   fd
   fzf
