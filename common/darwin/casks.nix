@@ -1,9 +1,5 @@
 [
   {
-    name = "alacritty";
-    greedy = true;
-  }
-  {
     name = "bitwarden";
     greedy = true;
   }
@@ -25,6 +21,10 @@
   }
   {
     name = "freedom";
+    greedy = true;
+  }
+  {
+    name = "ghostty";
     greedy = true;
   }
   {
