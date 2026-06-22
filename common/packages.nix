@@ -40,7 +40,7 @@ with pkgs; [
   yaml-language-server
   yamllint
   yt-dlp
-  zathura
+  # zathura
   zsh-autosuggestions
   zsh-completions
 ]
