@@ -14,17 +14,10 @@ Install [Homebrew](https://github.com/Homebrew/brew):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Bootstrap [nix-darwin](https://github.com/LnL7/nix-darwin):
+Changes to the configuration can be applied by running:
 
 ```bash
-nix build .#darwinConfigurations.$(hostname).system
-
-# Create a symlink from /run to /private/var/run required by nix-darwin. This step is needed since macOS does not allow any software to write to the root directory.
-printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf
-# If the following command fails, restart the OS to achieve the same thing.
-/System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util -t
-
-sudo ./result/sw/bin/darwin-rebuild switch --flake .
+make switch
 ```
 
 If the macOS user was not created by nix-darwin and [Can't set user shell without giving nix-darwin complete control over my user](https://github.com/LnL7/nix-darwin/issues/328) issue is still not solved, run:
@@ -37,12 +30,6 @@ If `infocmp tmux-256color` produces an error, run:
 
 ```bash
 ln -s ~/.nix-profile/share/terminfo/74/tmux-256color ~/.terminfo/74/tmux-256color
-```
-
-From now on, changes to the configuration can be applied by running:
-
-```bash
-make switch
 ```
 
 To activate configuration changes such as autohiding the dock, log out and log in again.

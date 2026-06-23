@@ -28,6 +28,14 @@
           home-manager.darwinModules.home-manager
         ];
       };
+
+      LT-JVX017WWY0 = darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        modules = [
+          ./hosts/engineer
+          home-manager.darwinModules.home-manager
+        ];
+      };
     };
 
     formatter = {
