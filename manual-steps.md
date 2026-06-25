@@ -65,7 +65,6 @@ Install Obsidian plugins:
 * Kanban
 * Reminder
 * Relativenumber (relative line numbers)
-* Obsidian_to_Anki
 
 ## IntelliJ IDEA
 
