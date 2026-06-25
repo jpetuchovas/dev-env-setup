@@ -32,6 +32,7 @@ with pkgs; [
   stylua
   texlive.combined.scheme-basic
   tmux
+  tree-sitter
   typescript-language-server
   vifm
   vscode-langservers-extracted

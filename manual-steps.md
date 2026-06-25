@@ -14,11 +14,10 @@ This generates a `whatis` file in `/Library/Developer/CommandLineTools/SDKs/MacO
 
 ## Node.js
 
-Install the latest Node.js version and Tree-sitter CLI:
+Install the latest Node.js version:
 
 ```bash
 fnm install --lts
-npm install -g tree-sitter-cli
 ```
 
 ## Scala
