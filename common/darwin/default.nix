@@ -70,10 +70,6 @@
   system = {
     defaults = {
       CustomUserPreferences = {
-        "com.apple.finder" = {
-          FXRemoveOldTrashItems = true;
-          _FXSortFoldersFirst = true;
-        };
         "com.apple.screencapture".show-thumbnail = false;
       };
 
@@ -109,8 +105,11 @@
       finder = {
         FXDefaultSearchScope = "SCcf";
         FXEnableExtensionChangeWarning = false;
+        FXRemoveOldTrashItems = true;
+        NewWindowTarget = "Home";
         ShowPathbar = true;
         _FXShowPosixPathInTitle = true;
+        _FXSortFoldersFirst = true;
       };
 
       menuExtraClock = {
