@@ -103,8 +103,8 @@ Update the preferences:
     * Desktop
     * Documents
     * Downloads
-    * justinasp
-    * All checkboxes under "Locations"
+    * All checkboxes under "Locations" except "iCloud Drive", "Cloud Storage",
+      and the hostname of the computer
 
 #### View Options
 
@@ -116,19 +116,14 @@ Update the preferences:
 
 ### System Settings
 
-#### Desktop & Dock
-
-* Menu Bar -> Next to "Recent documents, applications, and servers" select
-  "None"
-
 #### Displays
 
 * Night Shift -> Set a custom schedule
 
 #### General
 
-* Airdrop & Handoff -> Uncheck "Allow Handoff between this Mac and your iCloud
-  devices"
+* Airdrop & Continuity -> Uncheck "Allow Handoff between this Mac and your
+  iCloud devices"
 
 #### Keyboard
 
@@ -137,19 +132,23 @@ Update the preferences:
   Shortcuts -> Mission Control -> Mission Control:
     * Select From "Switch to Desktop 1" up to "Switch to Desktop 9"
 
+#### Menu Bar
+
+* Next to "Recent documents, applications, and servers" select "None"
+
 #### Privacy & Security
 
 * Full Disk Access granted for the terminal. This is required to be able to set
-  settings via nix-darwin. Note that logging out and back again may be
+  some settings via nix-darwin. Note that logging out and back again may be
   required.
 
-#### Siri & Spotlight
+#### Spotlight
 
 Uncheck:
 
-* Bookmarks & History
+* Help Apple Improve Search
+* Calendar
 * Contacts
-* Events & Reminders
-* Fonts
-* Mail & Messages
-* Siri Suggestions
+* Mail
+* Notes
+* Reminders
