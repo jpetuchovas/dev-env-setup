@@ -119,6 +119,7 @@
       trackpad = {
         Clicking = true;
         FirstClickThreshold = 0;
+        TrackpadTwoFingerFromRightEdgeSwipeGesture = 0;
       };
 
       universalaccess = {
@@ -129,6 +130,10 @@
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToControl = true;
+    };
+
+    startup = {
+      chime = false;
     };
 
     stateVersion = 7;

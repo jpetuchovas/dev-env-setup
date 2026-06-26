@@ -98,7 +98,6 @@ Update the preferences:
 
 #### Preferences
 
-* General -> Next to "New Finder windows show" select "justinasp"
 * Sidebar -> Leave only the following checkboxes checked:
     * Applications
     * Desktop
@@ -160,12 +159,3 @@ Uncheck:
 * Fonts
 * Mail & Messages
 * Siri Suggestions
-
-#### Sound
-
-* Sound Effects -> Uncheck "Play sound on startup" and "Play user interface
-  sound effects"
-
-#### Trackpad
-
-* More Gestures -> Uncheck "Notification Center"
