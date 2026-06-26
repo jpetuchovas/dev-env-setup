@@ -121,6 +121,10 @@
         Clicking = true;
         FirstClickThreshold = 0;
       };
+
+      universalaccess = {
+        reduceMotion = true;
+      };
     };
 
     keyboard = {

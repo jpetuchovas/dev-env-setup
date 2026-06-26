@@ -117,10 +117,6 @@ Update the preferences:
 
 ### System Settings
 
-#### Accessibility
-
-* Display -> Check "Reduce motion"
-
 #### Desktop & Dock
 
 * Windows & Apps -> Uncheck "Close windows when quitting an application"
@@ -147,6 +143,12 @@ Update the preferences:
 
 * Next to "Require password immediately after screen saver
   begins or display is turned off" choose "Immediately"
+
+#### Privacy & Security
+
+* Full Disk Access granted for the terminal. This is required to be able to set
+  settings via nix-darwin. Note that logging out and back again may be
+  required.
 
 #### Siri & Spotlight
 
