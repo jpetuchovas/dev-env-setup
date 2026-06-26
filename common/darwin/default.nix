@@ -69,10 +69,6 @@
 
   system = {
     defaults = {
-      CustomUserPreferences = {
-        "com.apple.screencapture".show-thumbnail = false;
-      };
-
       NSGlobalDomain = {
         AppleScrollerPagingBehavior = true;
         AppleShowAllExtensions = true;
@@ -114,6 +110,15 @@
 
       menuExtraClock = {
         ShowDate = 0;
+      };
+
+      screencapture = {
+        show-thumbnail = false;
+      };
+
+      screensaver = {
+        askForPassword = true;
+        askForPasswordDelay = 0;
       };
 
       trackpad = {

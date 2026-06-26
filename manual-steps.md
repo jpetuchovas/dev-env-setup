@@ -138,11 +138,6 @@ Update the preferences:
   Shortcuts -> Mission Control -> Mission Control:
     * Select From "Switch to Desktop 1" up to "Switch to Desktop 9"
 
-#### Lock Screen
-
-* Next to "Require password immediately after screen saver
-  begins or display is turned off" choose "Immediately"
-
 #### Privacy & Security
 
 * Full Disk Access granted for the terminal. This is required to be able to set
