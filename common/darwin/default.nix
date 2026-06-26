@@ -69,6 +69,13 @@
 
   system = {
     defaults = {
+      CustomUserPreferences = {
+        NSGlobalDomain = {
+          NSQuitAlwaysKeepsWindows = true;
+          "com.apple.sound.uiaudio.enabled" = 0;
+        };
+      };
+
       NSGlobalDomain = {
         AppleScrollerPagingBehavior = true;
         AppleShowAllExtensions = true;

@@ -118,7 +118,6 @@ Update the preferences:
 
 #### Desktop & Dock
 
-* Windows & Apps -> Uncheck "Close windows when quitting an application"
 * Menu Bar -> Next to "Recent documents, applications, and servers" select
   "None"
 
