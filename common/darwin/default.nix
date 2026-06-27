@@ -97,6 +97,12 @@
         EnableStandardClickToShowDesktop = false;
       };
 
+      controlcenter = {
+        BatteryShowPercentage = true;
+        Bluetooth = true;
+        Sound = true;
+      };
+
       dock = {
         autohide = true;
         launchanim = false;
