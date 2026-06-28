@@ -116,6 +116,12 @@ Update the preferences:
 
 ### System Settings
 
+#### Battery
+
+* Charging:
+    * Charge Limit -> 80%
+    * Optimized Battery Charging turned off
+
 #### Displays
 
 * Night Shift -> Set a custom schedule
