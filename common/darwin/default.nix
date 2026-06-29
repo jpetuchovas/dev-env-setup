@@ -81,6 +81,7 @@
 
       WindowManager = {
         EnableStandardClickToShowDesktop = false;
+        StandardHideWidgets = true;
       };
 
       controlcenter = {
