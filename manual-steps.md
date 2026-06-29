@@ -4,7 +4,7 @@ A couple of manual steps to perform on a new computer.
 
 ## makewhatis
 
-If it's needed to search the names and descriptions of some manual pages available on macOS but which are not indexed for searching with Nix-installed `man`, e.g., for `man -k printf` and similar searches to work, run `makewhatis`:
+If it's needed to search the names and descriptions of some manual pages available on macOS but which are not indexed for searching, e.g., for `man -k printf` and similar searches to work, run `makewhatis`:
 
 ```bash
 sudo /usr/libexec/makewhatis /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man/
@@ -57,12 +57,12 @@ Install extensions:
 * Unhook
 * React Developer Tools
 
-Create browser apps for:
+Using main menu -> Save and Share -> Install page as app..., create browser apps for:
 
 * Gmail
 * Google Calendar
 
-Create shortcuts:
+Create shortcuts via Search engine settings:
 
 * GitHub: `:gh` - <https://github.com/search?q=%s&ref=opensearch&type=repositories>
 * Google Translate: `:t` - <https://translate.google.com/?source=osdd&sl=auto&tl=auto&text=%s&op=translate>
