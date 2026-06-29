@@ -19,8 +19,4 @@
     name = "transmission";
     greedy = true;
   }
-  {
-    name = "zotero";
-    greedy = true;
-  }
 ]

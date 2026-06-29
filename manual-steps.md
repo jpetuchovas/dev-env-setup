@@ -55,7 +55,6 @@ Install extensions:
 * News Feed Eradicator
 * Obsidian Web Clipper
 * Unhook
-* Zotero Connector
 * React Developer Tools
 
 Create browser apps for:
