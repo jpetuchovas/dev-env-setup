@@ -92,6 +92,7 @@ Install IntelliJ IDEA if needed and enable plugins:
 
 * Archive Browser
 * Bazel
+* Claude Code
 * HarpoonIJ
 * IdeaVim
 * Makefile Language
