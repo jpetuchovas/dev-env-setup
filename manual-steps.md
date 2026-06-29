@@ -34,6 +34,19 @@ To see installed applications:
 cs list
 ```
 
+## Bitwarden
+
+* Settings -> Security:
+    * Unlock with Touch ID
+    * Ask for Touch ID on app start
+
+* Settings -> App settings (all accounts):
+    * Show menu bar icon
+    * Minimize to menu bar
+    * Close to menu bar
+    * Start automatically on login
+    * Allow browser integration
+
 ## Browser
 
 Install extensions:
@@ -57,6 +70,14 @@ Create shortcuts:
 * NixOS: `:nix` - <https://search.nixos.org/packages?query=%s>
 * Python: `:py` - <https://docs.python.org/3/search.html?q=%s>
 * Wikipedia: `:w` - <https://en.wikipedia.org/w/index.php?title=Special:Search&search=%s>
+
+* Bitwarden extension:
+    * Settings -> Account security:
+        * Unlock with biometrics
+        * Ask for biometrics on launch
+    * Manage Extension
+        * Allow in Private
+        * Allow access to file URLs
 
 ## Obsidian
 
