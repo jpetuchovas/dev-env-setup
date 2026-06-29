@@ -93,6 +93,7 @@
         autohide = true;
         launchanim = false;
         mru-spaces = false;
+        persistent-others = [];
         show-recents = false;
         wvous-br-corner = 1;
       };

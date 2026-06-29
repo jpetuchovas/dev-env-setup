@@ -9,6 +9,17 @@ in
   imports = [
     ../../common/darwin
   ];
+  system.defaults.dock.persistent-apps = [
+    {
+      app = "/Applications/Ghostty.app";
+    }
+    {
+      app = "/Applications/Obsidian.app";
+    }
+    {
+      app = "/Applications/Brave Browser.app";
+    }
+  ];
   system.primaryUser = user;
 
   users.users.${user} = {
