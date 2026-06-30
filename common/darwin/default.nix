@@ -1,6 +1,12 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./user.nix
+  ];
+
+  _module.args.user = "justinasp";
+
   environment = {
     etc = {
       "nix/nix.conf".enable = false;

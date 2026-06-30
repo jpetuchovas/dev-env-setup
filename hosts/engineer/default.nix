@@ -1,8 +1,5 @@
-{ pkgs, ... }:
+{ pkgs, user, ... }:
 
-let
-  user = "justinasp";
-in
 {
   imports = [
     ../../common/darwin
@@ -28,26 +25,7 @@ in
       app = "/Applications/Slack.app";
     }
   ];
-  system.primaryUser = user;
-
-  users.users.${user} = {
-    home = "/Users/${user}";
-    shell = pkgs.zsh;
-  };
-
-  home-manager.users.${user} =
-    { pkgs, ... }:
-    let
-      common-packages = import ../../common/packages.nix { inherit pkgs; };
-      additional-packages = import ./packages.nix { inherit pkgs; };
-    in
-    {
-      imports = [
-        ../../common/home-manager-users.nix
-      ];
-
-      home.packages = common-packages ++ additional-packages;
-    };
+  home-manager.users.${user}.home.packages = import ./packages.nix { inherit pkgs; };
 
   homebrew = {
     brews = import ./brews.nix;
