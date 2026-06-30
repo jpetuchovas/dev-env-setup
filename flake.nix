@@ -21,7 +21,6 @@
     {
       darwinConfigurations = {
         builder = darwin.lib.darwinSystem {
-          system = "x86_64-darwin";
           modules = [
             ./hosts/builder
             home-manager.darwinModules.home-manager
@@ -29,7 +28,6 @@
         };
 
         LT-QL0WRWJ26R = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
           modules = [
             ./hosts/engineer
             home-manager.darwinModules.home-manager
@@ -37,7 +35,6 @@
         };
 
         LT-JVX017WWY0 = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
           modules = [
             ./hosts/engineer
             home-manager.darwinModules.home-manager

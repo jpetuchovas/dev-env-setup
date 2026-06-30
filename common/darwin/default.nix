@@ -13,6 +13,7 @@
 
   homebrew = {
     enable = true;
+    greedyCasks = true;
     # Extract info from the App Store using the following instructions:
     # https://github.com/mas-cli/mas?tab=readme-ov-file#-app-ids
     masApps = {

@@ -1,22 +1,7 @@
 [
-  {
-    name = "dropbox";
-    greedy = true;
-  }
-  {
-    name = "keybase";
-    greedy = true;
-  }
-  {
-    name = "mullvad-vpn";
-    greedy = true;
-  }
-  {
-    name = "nordvpn";
-    greedy = true;
-  }
-  {
-    name = "transmission";
-    greedy = true;
-  }
+  "dropbox"
+  "keybase"
+  "mullvad-vpn"
+  "nordvpn"
+  "transmission"
 ]

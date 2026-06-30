@@ -1,90 +1,27 @@
 [
-  {
-    name = "bitwarden";
-    greedy = true;
-  }
-  {
-    name = "brave-browser";
-    greedy = true;
-  }
-  {
-    name = "cursor";
-    greedy = true;
-  }
-  {
-    name = "cursor-cli";
-    greedy = true;
-  }
-  {
-    name = "discord";
-    greedy = true;
-  }
-  {
-    name = "freedom";
-    greedy = true;
-  }
-  {
-    name = "ghostty";
-    greedy = true;
-  }
-  {
-    name = "google-chrome";
-    greedy = true;
-  }
-  {
-    name = "hammerspoon";
-    greedy = true;
-  }
+  "bitwarden"
+  "brave-browser"
+  "cursor"
+  "cursor-cli"
+  "discord"
+  "freedom"
+  "ghostty"
+  "google-chrome"
+  "hammerspoon"
   # For ping 8.8.8.8 to work, "Enable stealth mode" should be unchecked in
   # System Settings -> Network -> Firewall -> Options...
   # Network troubleshooting docs:
   # https://canonical.com/multipass/docs/troubleshoot-networking
-  {
-    name = "multipass";
-    greedy = true;
-  }
-  {
-    name = "obsidian";
-    greedy = true;
-  }
-  {
-    name = "scroll-reverser";
-    greedy = true;
-  }
-  {
-    name = "signal";
-    greedy = true;
-  }
-  {
-    name = "skim";
-    greedy = true;
-  }
-  {
-    name = "slack";
-    greedy = true;
-  }
-  {
-    name = "spotify";
-    greedy = true;
-  }
-  {
-    name = "visual-studio-code";
-    greedy = true;
-  }
-  {
-    name = "vlc";
-    greedy = true;
-  }
-  {
-    name = "whatsapp";
-    greedy = true;
-  }
-  {
-    name = "wireshark-app";
-    greedy = true;
-  }
-  {
-    name = "zoom";
-    greedy = true;
-  }
+  "multipass"
+  "obsidian"
+  "scroll-reverser"
+  "signal"
+  "skim"
+  "slack"
+  "spotify"
+  "visual-studio-code"
+  "vlc"
+  "whatsapp"
+  "wireshark-app"
+  "zoom"
 ]

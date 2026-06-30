@@ -11,6 +11,7 @@ in
   imports = [
     ../../common/darwin
   ];
+  nixpkgs.hostPlatform = "aarch64-darwin";
   system.defaults.dock.persistent-apps = [
     {
       app = "/Applications/Ghostty.app";
