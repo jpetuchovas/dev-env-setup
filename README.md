@@ -20,7 +20,7 @@ Changes to the configuration can be applied by running:
 make switch
 ```
 
-If the macOS user was not created by nix-darwin and [Can't set user shell without giving nix-darwin complete control over my user](https://github.com/LnL7/nix-darwin/issues/328) issue is still not solved, run:
+If the macOS user was not created by nix-darwin and [Can't set user shell without giving nix-darwin complete control over my user](https://github.com/nix-darwin/nix-darwin/issues/328) issue is still not solved, run:
 
 ```bash
 chsh -s /run/current-system/sw/bin/zsh

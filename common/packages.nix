@@ -1,6 +1,7 @@
 { pkgs }:
 
-with pkgs; [
+with pkgs;
+[
   ammonite_2_12
   bash-language-server
   buf

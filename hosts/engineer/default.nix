@@ -38,7 +38,8 @@ in
     shell = pkgs.zsh;
   };
 
-  home-manager.users.${user} = { pkgs, ... }:
+  home-manager.users.${user} =
+    { pkgs, ... }:
     let
       common-packages = import ../../common/packages.nix { inherit pkgs; };
       additional-packages = import ./packages.nix { inherit pkgs; };
