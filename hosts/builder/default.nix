@@ -2,8 +2,6 @@
 
 let
   user = "justinasp";
-  common-casks = import ../../common/darwin/casks.nix;
-  additional-casks = import ./casks.nix;
 in
 {
   imports = [
@@ -46,7 +44,6 @@ in
     };
 
   homebrew = {
-    brews = import ../../common/darwin/brews.nix;
-    casks = common-casks ++ additional-casks;
+    casks = import ./casks.nix;
   };
 }
