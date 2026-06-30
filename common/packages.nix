@@ -30,7 +30,7 @@ with pkgs; [
   sc-im
   shellcheck
   stylua
-  texlive.combined.scheme-basic
+  texliveBasic
   tmux
   tree-sitter
   typescript-language-server
