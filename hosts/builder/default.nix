@@ -17,6 +17,9 @@ in
       app = "/Applications/Obsidian.app";
     }
     {
+      app = "/Users/${user}/Applications/Brave Browser Apps.localized/Google Calendar.app";
+    }
+    {
       app = "/Applications/Brave Browser.app";
     }
   ];
