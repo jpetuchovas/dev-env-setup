@@ -46,8 +46,8 @@
       };
 
       formatter = {
-        aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixfmt;
-        x86_64-darwin = nixpkgs.legacyPackages.x86_64-darwin.nixfmt;
+        aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixfmt-tree;
+        x86_64-darwin = nixpkgs.legacyPackages.x86_64-darwin.nixfmt-tree;
       };
     };
 }
