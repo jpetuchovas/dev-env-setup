@@ -54,7 +54,6 @@ Install extensions:
 * Bitwarden
 * News Feed Eradicator
 * Obsidian Web Clipper
-* Unhook
 * React Developer Tools
 
 Using main menu -> Save and Share -> Install page as app..., create browser apps for:
