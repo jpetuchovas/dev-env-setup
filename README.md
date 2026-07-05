@@ -14,13 +14,13 @@ Install [Homebrew](https://github.com/Homebrew/brew):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Make sure that the terinal has Full Disk Access permission. Then, changes to the configuration can be applied by running:
+Make sure that Full Disk Access permission is granted to the terminal. Then, changes to the configuration can be applied by running:
 
 ```bash
 make switch
 ```
 
-If the macOS user was not created by nix-darwin and [Can't set user shell without giving nix-darwin complete control over my user](https://github.com/nix-darwin/nix-darwin/issues/328) issue is still not solved, run:
+Run:
 
 ```bash
 chsh -s /run/current-system/sw/bin/zsh

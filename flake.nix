@@ -27,9 +27,9 @@
           ];
         };
 
-        LT-QL0WRWJ26R = darwin.lib.darwinSystem {
+        phoenix = darwin.lib.darwinSystem {
           modules = [
-            ./hosts/engineer
+            ./hosts/builder
             home-manager.darwinModules.home-manager
           ];
         };
