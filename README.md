@@ -20,16 +20,10 @@ Make sure that Full Disk Access permission is granted to the terminal. Then, cha
 make switch
 ```
 
-Run:
+For the first time setup, run:
 
 ```bash
 chsh -s /run/current-system/sw/bin/zsh
-```
-
-If `infocmp tmux-256color` produces an error, run:
-
-```bash
-ln -s ~/.nix-profile/share/terminfo/74/tmux-256color ~/.terminfo/74/tmux-256color
 ```
 
 To activate configuration changes such as autohiding the dock, log out and log in again.
