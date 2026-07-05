@@ -14,7 +14,7 @@ Install [Homebrew](https://github.com/Homebrew/brew):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Changes to the configuration can be applied by running:
+Make sure that the terinal has Full Disk Access permission. Then, changes to the configuration can be applied by running:
 
 ```bash
 make switch
