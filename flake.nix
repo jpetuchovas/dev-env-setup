@@ -20,16 +20,10 @@
     }:
     {
       darwinConfigurations = {
-        builder = darwin.lib.darwinSystem {
-          modules = [
-            ./hosts/builder
-            home-manager.darwinModules.home-manager
-          ];
-        };
 
         phoenix = darwin.lib.darwinSystem {
           modules = [
-            ./hosts/builder
+            ./hosts/phoenix
             home-manager.darwinModules.home-manager
           ];
         };
