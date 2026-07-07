@@ -146,6 +146,10 @@ Update the preferences:
 
 * Night Shift -> Set a custom schedule
 
+#### Focus
+
+Uncheck "Share across devices"
+
 #### General
 
 * Airdrop & Continuity -> Uncheck "Allow Handoff between this Mac and your
