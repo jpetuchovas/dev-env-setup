@@ -10,6 +10,7 @@ with pkgs;
   dockerfile-language-server
   entr
   fd
+  ffmpeg
   fzf
   gh
   git
