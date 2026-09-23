@@ -142,6 +142,8 @@ Update the preferences:
 * Charging:
     * Charge Limit -> 80%
     * Optimized Battery Charging turned off
+* Options:
+    * Turn on "Prevent automatic sleeping on power adapter when the display is off"
 
 #### Displays
 
