@@ -1,6 +1,7 @@
 [
   "git-lfs"
   "metals"
+  "openssl@3"
   "watchman"
   "yarn"
   {
