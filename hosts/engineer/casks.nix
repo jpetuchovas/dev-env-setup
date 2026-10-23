@@ -2,7 +2,7 @@
   "claude"
   "claude-code@latest"
   "codex"
-  "codex-app"
+  "chatgpt"
   "jetbrains-toolbox"
   "rancher"
 ]

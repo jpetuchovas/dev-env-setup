@@ -1,4 +1,5 @@
 [
+  "coder"
   "git-lfs"
   "metals"
   "openssl@3"

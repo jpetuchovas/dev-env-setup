@@ -27,7 +27,6 @@ with pkgs;
   neovim
   nil
   pyright
-  python313Packages.debugpy
   ripgrep
   sc-im
   shellcheck
